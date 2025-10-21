@@ -1,0 +1,1267 @@
+REDDIT POSTS & COMMENTS DATA
+Generated: 2025-10-19 16:09:15
+Time Filter: day
+POST: Stanford just dropped 5.5hrs worth of lectures on foundational LLM knowledge
+📍 r/LocalLLaMA | 👍 540 upvotes | 💬 11 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oakwgs/stanford_just_dropped_55hrs_worth_of_lectures_on/
+Post Content:
+Enjoy? [https://www.youtube.com/@stanfordonline/videos](https://www.youtube.com/@stanfordonline/videos)
+
+TOP 8 COMMENTS
+
+1. (54 ⬆️) I just scrubbed through the videos. It's not digging all the way down into the math, so you don't really need much linear algebra knowledge to understand it. Mostly talking about architecture stuff. 
+
+It's a medium level overview of:
+
+- tokenization
+- self attention
+- encoder-decoder transformer architecture
+- RoPE
+- layernorm
+- decoder only transformer architecture
+- MoE routing
+- N+1 token prediction 
+- ICL/CoT 
+- KV Cache, GQA, paged attention, MLA (which only deepseek really does), spec deco...
+   💬 Replies (1):
+   1.1. (6 ⬆️) Then where can I learn these deeply?
+
+2. (31 ⬆️) 5 hours!? I would have to stop doom scrolling for 5 hours!?
+   💬 Replies (2):
+   2.1. (5 ⬆️) I know, I haven't even started watching them. This is very much a do not disturb mode watch :D
+   2.2. (1 ⬆️) When you're done with the videos, you can have the robots doom scroll for you and summarize.
+
+3. (30 ⬆️) Thanks for this, I will use this to continue my self study
+
+4. (6 ⬆️) Thanks!
+
+5. (1 ⬆️) Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW)
+
+You've also been given a special flair for your contribution. We appreciate your post!
+
+*I am a bot and this action was performed automatically.*
+
+6. (1 ⬆️) videos still seem to work fine for me?
+
+7. (1 ⬆️) Open sourcing knowledge.
+
+8. (-10 ⬆️) i will ask grok to summarize them all in 1000 words or less, thanks
+
+
+
+POST: dgx, it's useless , High latency
+📍 r/LocalLLaMA | 👍 421 upvotes | 💬 198 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1o9xiza/dgx_its_useless_high_latency/
+Post Content:
+Ahmad posted a tweet where DGX latency is high :   https://x.com/TheAhmadOsman/status/1979408446534398403?t=COH4pw0-8Za4kRHWa2ml5A&s=19
+
+TOP 10 COMMENTS
+
+1. (337 ⬆️) Can we take a moment to appreciate that this diagram came from an earlier post here on this sub, then that post got published on X, and now someone took a screenshot of the X post and posted it back here?
+
+Edit: pretty sure the source is this one: https://www.reddit.com/r/LocalLLaMA/comments/1o9it7v/benchmark_visualization_rtx_pro_6000_vs_dgx_spark
+
+Edit 2: Seems like the original source is [the sglang post made a few days earlier](https://lmsys.org/blog/2025-10-13-nvidia-dgx-spark), so we have ...
+   💬 Replies (5):
+   1.1. (52 ⬆️) Begins to feel like AI copy paste role playing on social media slop.
+   1.2. (27 ⬆️) I miss the time when the internet wasn't just five websites filled with screenshots of each other.
+   1.3. (19 ⬆️) What you describe sounds a lot like these companies investing in AI infrastructure
+   1.4. (8 ⬆️) Nah, I’m going to screenshot the Discord message (as a JPEG no less!) and post it to BlueSky. They need to hear about this.
+   1.5. (4 ⬆️) I didnt see it early enough, I would have removed it. Now, I dont want to nix  the discussion.
+
+2. (84 ⬆️) I think that we need an AI box with a weak mobile CPU and a couple of stacks of HBM memory, somewhere in the 128gb department + 32gb of usual ram. I don't know whether it's doable but that would have sold like hot donuts in 2500$ range.
+   💬 Replies (5):
+   2.1. (45 ⬆️) A single 32GB HBM3 stack is something like $1,500
+   2.2. (8 ⬆️) A used/previous gen Mac Studio with the Ultra series chips. 800GB/s+ memory bandwidth,  128GB+ RAM. Prefill is a bit slow but inference is fast.
+   2.3. (4 ⬆️) > a weak mobile CPU
+
+Then everyone will complain about how slow the PP is and that they have to wait years for it to process a tiny prompt.
+
+People oversimplify everything when they say it's only about memory bandwidth. Without the compute to use it, there's no point to having a lot of memory bandwi...
+   2.4. (4 ⬆️) Kind of like the Framework Strix Halo? 
+   2.5. (1 ⬆️) I'm not holding my breath for anything with a large footprint of HBM for anything resembling affordable.
+
+3. (55 ⬆️) Not sure what people expected from 273 GB/s , this this is a curiosity at best, not something anyone should be spending real money on. Feel like Nvidia kind of dropped the ball on this one.
+   💬 Replies (5):
+   3.1. (26 ⬆️) Yeah, it's slow enough that hobbyists have better alternatives, and expensive enough (and again, slow enough) that professionals will just buy the tier higher hardware (blackwell 6000) for their training needs.
+
+I mean, yeah, you can **toy** about with fine-tuning and quantizing stuff.  But at $4000...
+   3.2. (11 ⬆️) How does it compare to all the 128GB Ryzen AI 395+ boxes popping up, they all seem to be using ddr5x-8300 ram.
+   3.3. (5 ⬆️) You are not the target audience for this, it's meant for AI developers.
+
+So they can have the same kind of architecture and networking stack on their desk as in the cloud or datacenter.
+   3.4. (4 ⬆️) nvidia dgaf right now; all their time just goes to server stacks from their 2 big mystery customers printing them gobs of money. They don't give a shit about anything outside of blackwell.
+   3.5. (1 ⬆️) Lol why would nvidia give a shit, people are paying them billions to build 100 h200 racks. The money we give them isnt fucking jack shit
+
+4. (22 ⬆️) I feel like this was such a missed opportunity for nvidia. If they want us to make something creative they need to sell functional units that dont suck vs gaming setups.
+   💬 Replies (2):
+   4.1. (17 ⬆️) > I feel like this was such a missed opportunity for nvidia.
+
+Nvidia doesn't miss opportunities.  This is a fantastic opportunity to pawn off some the excess 5070 chip supply to a bunch of rubes.
+   4.2. (3 ⬆️) I have good reasons to believe that Nvidia is testing the water for a full pc launch without cannibalising its GPU offerings. The investment in Intel just tells me so.
+
+5. (20 ⬆️) The RTX Pro 6000 is multiple times the cost of a DGX Spark. Very few people are cross-shopping those, but quite a few people are cross-shopping “build an AI desktop for $3000” options, which includes a normal desktop with a high end gaming GPU, or Strix Halo, or a Spark, or a Mac Studio.
+
+The point of the Spark is that it has a lot of memory. Compared to a gaming GPU with 32GB or less, the Spark will run circles around it for a very specific size of models that are too big to fit on the GPU, but...
+   💬 Replies (4):
+   5.1. (10 ⬆️) It's not multiple times. It's less than 2 times the price but multiple times better.
+   5.2. (2 ⬆️) Strix Halo made the Spark Obeslete before it was released.  Kinda wild at that price point.
+   5.3. (1 ⬆️) It fills a very specific niche. Better at prompt processing / latency for a big sparse fp4 model than any other single device at that price. 
+
+
+Not worth it for me, but there are people that are buying it. 
+
+
+It will be interesting to me to see if having this device means that a few companies might ...
+   5.4. (1 ⬆️) Without CUDA the strix halo is gonna be rough tho.. :/
+
+6. (15 ⬆️) My Toyota Camry is useless vs Ferrari.
+   💬 Replies (1):
+   6.1. (46 ⬆️) Imagine paying $270,000 for that Camry. 
+
+That's what this is. lol
+
+7. (8 ⬆️) Not sure if you've heard but it isn't for inference lol
+
+8. (7 ⬆️) Something's not right here. On the one hand, NVIDIA cooked with the 5090 and Blackwell GPUs, but then they released...whatever this is...?
+
+- When NVIDIA announced the DGX earlier this year, they started flexing all its fancy features and RAM capacity but withheld information about its memory bandwidth. Zero mention of it anywhere, not a peep.
+
+- Its too slow for researchers and dedicated enthusiasts, while casual users would be priced out of the product, making the target market unclear. 
+
+- Th...
+   💬 Replies (3):
+   8.1. (7 ⬆️) 
+>Its too slow for researchers
+
+You don't know any researchers.
+   8.2. (3 ⬆️) The memory bandwidth has been known since announcement. We knew it would be 128GB of 8x32bit LP DDR5X at around 8000mhz.  
+
+~270GB/s is not a surprise, nor is the impact of that bandwidth on LLM inference performance.
+   8.3. (2 ⬆️) > When NVIDIA announced the DGX earlier this year, they started flexing all its fancy features and RAM capacity but withheld information about its memory bandwidth. Zero mention of it anywhere, not a peep.
+
+
+It was in the announcement. Here is a thread from earlier this year that references it: http...
+
+9. (6 ⬆️) It's a really rough sell.
+
+Home LLM inference enjoyers can go for the Ryzen 395 and accept some rough edges with rocm and mediocre prefill for half the price.
+
+The more adventurous DIY builders can go for a whole bunch of 3090s. 
+
+Oilers can get the RTX 6000 or several 5090s.
+
+I see universities wanting the Spark for relatively inexpensive labs to teach students Cuda plus NCCL/FSDP.  For the cost of a single DGX 8xGPU box they could buy a dozens of Sparks and yet give students something that  ap...
+   💬 Replies (1):
+   9.1. (1 ⬆️) You say its not good for inference,  I was thinking with larger vram it would allow longer ai generated videos and/or higher resolution,  and that I would be able to run larger LLMs for coding assistance.... am I way off base here?
+
+10. (4 ⬆️) This is like buying a really expensive screwdriver and complaining that it’s useless as a hammer.
+
+It wasn’t built for LLM inference.
+
+
+
+POST: Made a website to track 348 benchmarks across 188 models.
+📍 r/LocalLLaMA | 👍 288 upvotes | 💬 37 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oa98jf/made_a_website_to_track_348_benchmarks_across_188/
+Post Content:
+Hey all, I've been building a website from a while ago in which we track the benchmark results from the official papers / model cards that the labs publish.   I thought it would be interesting to compile everything in one place to fill in the gaps on each model release.    All the data is open in Github and all scores have references to the original posts.  [https://llm-stats.com/benchmarks](https://llm-stats.com/benchmarks)  Feel free to provide candid feedback.     \---  \*\*We don't think this is the best approach yet\*\*. We're now building a way to replicate the results from the most interesting and useful benchmarks, but we understand that most of them haven't been created yet.  Current benchmarks are too simple and are not testing real capabilities. We're looking to build interesting, real world, independent benchmarks with held out data, but that can be easy to reproduce and extend.  Another thing we're currently doing is benchmarking across different inference providers to mon...
+
+TOP 10 COMMENTS
+
+1. (30 ⬆️) why not just give us a flat table of models and scores?
+   💬 Replies (1):
+   1.1. (42 ⬆️) makes sense. I just added it. let me know if it works for you.
+
+https://preview.redd.it/npirudz3czvf1.png?width=1638&format=png&auto=webp&s=e10d64bc70620c2ef2db0702ba876f98c53e3c1e
+
+2. (12 ⬆️) Awesome! I've been wanting to do the same thing.
+
+You gotta get [Simple Bench](https://simple-bench.com/) on there!
+
+Edit: When you compare two models it only seems to cover like 6 benchmarks though?
+   💬 Replies (1):
+   2.1. (7 ⬆️) I didn’t know about it. I’ll add it, thanks!
+
+When comparing, it takes the scores if both models have been evaluated on it.
+
+We’re working on independent evaluations, soon we’ll be able to show 20+ benchmarks per comparison across multiple domains.
+
+3. (9 ⬆️) It’s like a metacritic score but for language models.
+
+4. (7 ⬆️) On the home page, it seems to be sorting by GPQA alone and assigning "gold", "silver", "bronze" based on that which seems... really bad. It doesn't even make it clear that this is what's happening.
+
+I also expected the benchmarks page to provide an overview of sorts, not require me to specifically select a benchmark to see anything.
+
+I also am unclear as to whether you are running these benchmarks, or just relying on the gamed, unreproducible numbers that some of these AI companies are publishin...
+   💬 Replies (1):
+   4.1. (4 ⬆️) 1. I agree, we're using GPQA as main criteria, which is really bad. The reason why is because this is the benchmark most reported by the labs, thus has greater coverage. The only way out of this is to run independent benchmarks on most models. We are doing this already and we'll be able to have full...
+
+5. (6 ⬆️) Some of the data looks off (screenshot) but I like the concept. Would be nice to see a more polished final result :D
+
+https://preview.redd.it/i3hihqqqdyvf1.png?width=1828&format=png&auto=webp&s=842ed87bed2b4bd61e29a72aac1ccef93a2647fe
+   💬 Replies (2):
+   5.1. (3 ⬆️) what's incorrect about that score? if the benchmark you're referencing is lcb, the model has a score of 71.1% (https://build.nvidia.com/nvidia/nvidia-nemotron-nano-9b-v2/modelcard)
+   5.2. (1 ⬆️) thanks! we'll keep adding better data over time
+
+6. (5 ⬆️) I will come to this site daily if you keep it up to date daily with new models. You don't have qwen 3 vl yet, so its a little behind. Has good potential, keep at it!
+   💬 Replies (1):
+   6.1. (3 ⬆️) Thanks! I’ll add it.
+
+7. (3 ⬆️) I run a bunch of benchmarks, maybe some are interesting:
+
+General ability: https://dubesor.de/benchtable
+
+Chess: https://dubesor.de/chess/chess-leaderboard
+
+Vision: https://dubesor.de/visionbench
+   💬 Replies (1):
+   7.1. (1 ⬆️) trying to send you a dm but i can’t. can you send me one? we’d love to talk more about it!
+
+8. (2 ⬆️) See I was always looking for something like, is there really not anything that exists that does this already to compare against? If not, good job! If so, good job (but I want to see the others)!
+   💬 Replies (1):
+   8.1. (1 ⬆️) There are a few websites that keep track of the top models and the top scores for top benchmarks, but I haven't found anything comprehensive and up-to-date on the whole field.  
+   
+Hugging Face itself has leaderboards.
+
+9. (2 ⬆️) grok 3 mini beating everything on livecodebench???
+
+10. (2 ⬆️) regular deepseek v3.1 is 75% on aider polyglot. many tests been done
+
+
+
+POST: Apple M5 Max and Ultra will finally break monopoly of NVIDIA for AI interference
+📍 r/LocalLLaMA | 👍 163 upvotes | 💬 124 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oak08e/apple_m5_max_and_ultra_will_finally_break/
+Post Content:
+According to  [https://opendata.blender.org/benchmarks](https://opendata.blender.org/benchmarks)   The Apple M5 10-core GPU already scores 1732 - outperforming the M1 Ultra with 64 GPU cores.   With simple math:   Apple M5 Max 40-core GPU will score 7000 - that is league of M3 Ultra   Apple M5 Ultra 80-core GPU will score 14000 on par with RTX 5090 and RTX Pro 6000!      Seems like it will be the best performance/memory/tdp/price deal.
+
+TOP 10 COMMENTS
+
+1. (202 ⬆️) Bold to assume this scales linearly. Check M4 Pro with 16 vs 20 cores. The 20 core model does not seem to be 25% faster than the 16 core model. It's about 8% faster only.
+
+Also, the blender score says nothing about prefill speed. Also, the batch performance of these nvidia cards you mention are still another question. It's absolutely unrealistic that this will be matched, and as far as I know currently there is no inference engine on mac that even supports batched calls.
+   💬 Replies (5):
+   1.1. (122 ⬆️) Exactly, this has all the "9 women making a baby in 1 month" energy of someone who never wrote parallel code.
+   1.2. (12 ⬆️) We already know the llama.cpp benchmarks scale (almost) linearly with core count, with little change across generations. That should change, if M5 implements matmul in the GPU.
+
+Anyone needing to catch up: *Performance of llama.cpp on Apple Silicon M-series* · ggml-org/llama.cpp · Discussion #4167 ·...
+   1.3. (8 ⬆️) > Check M4 Pro with 16 vs 20 cores
+
+That's because both 16 and 20 cores have the same amount of RT cores, and Blender heavily relies on those to compute. Same goes for M4 Max 32 and 40 BTW.
+
+I don't think we should use Blender OpenData benchmark results to infer what AI performance will be, as AI co...
+   1.4. (3 ⬆️) MLX supports batched generation. The prefill speed increase will be far more than the Blender increase, Blender isn’t using the neural accelerators.
+
+Mac Studios have a superior combination of memory capacity and bandwidth, but were severely lacking in compute. The fix for decent compute is coming s...
+   1.5. (-6 ⬆️) > Bold to assume this scales linearly.
+
+Linearly wrt what? Memory bandwidth isn't even listed.
+
+2. (187 ⬆️) Nvidia doesn’t have a monopoly on inference, and they never did. There was always AMD (which costs roughly the same but has inferior support in the ecosystem), Apple (which costs less but has *abysmal* support, and is useless for training), massive multi-channel DDR5 setups (which cost less but require some strange server board from China, plus Bios hacks), etc.
+
+Nvidia has a monopoly on GPUs that you buy, plug into your computer, and then immediately work with every machine learning project eve...
+   💬 Replies (5):
+   2.1. (41 ⬆️) Pretty much agree with all of this - I would add as well Apple's stuff is not modular, it could be, but right now its soldered to consumer devices and not available off the shelf as an individual GPU. I can't see that ever changing, as it would be a huge pivot for Apple to go from direct to consumer...
+   2.2. (19 ⬆️) You say abysmal support but MLX was the first to add support for GLM, Qwen3 Next and Qwen3 VL.
+   2.3. (17 ⬆️) I wouldn't say Apple's inference support is abysmal. MLX is great!
+   2.4. (12 ⬆️) >Apple (which costs less...
+
+Apple prices its base models competitively, but any upgrades come at eye-bleeding costs. So you want to run LLMs on that shiny Macbook? You'll need to upgrade the RAM to run it and the SSD to store it. And only Apple charges €1000 per 64 GB of RAM upgrade and €1500 per 4...
+   2.5. (8 ⬆️) I can only **very mildly** disagree with Apple having abysmal support, Qwen3-next and VL runs on MLX day 0. I haven't been following but I know that most users here are using llama.cpp which did not have support until recently or through some patches. So there is some mild support I suppose.
+
+3. (44 ⬆️) Blender is a completely different workload. AFAIK it uses higher precision (probably int32/float32), and usually, especially compared to inference of LLMs, are not that memory bandwidth bound.
+
+Assuming that the M5 variants are all going to have enough compute power to saturate the memory bandwidth, 800GB/s like in the M2 Ultra gives you at best 200 T/s on a 8B 4-bit Quantized model (no MoE), as it needs to read every weight for every token once.
+
+So, comparing it to a 5090, which has nearly 1.8...
+   💬 Replies (1):
+   3.1. (9 ⬆️) Plus: NVIDIA has been adding hardware operations to accelerate neural networks / ML for generations. Meanwhile, Apple has just now gotten around to matmul in A19/M5.
+
+4. (17 ⬆️) To have 512gb RAM for the price of an RTX Pro 6000 and the same level of performance... that would be so awesome it sounds almost too good to be true.
+   💬 Replies (1):
+   4.1. (5 ⬆️) so basically 10k $ ? thats good?
+
+5. (9 ⬆️) nobody mentioned CUDA?
+
+6. (8 ⬆️) Who says M5 Max will have 40 GPU cores?
+   💬 Replies (2):
+   6.1. (14 ⬆️) The same OP who does not realize that blender score (highly local, 32bit floats, no need for big memory or bandwith) has close to zero impact for AI performance.
+   6.2. (7 ⬆️) OP does
+
+7. (7 ⬆️) You got to be very clueless if you think M5 will be anywhere near dedicated Nvidia cards for compute.
+
+
+Apple said it was faster when M4 was announced:
+"M4 has Apple’s fastest Neural Engine ever, capable of up to 38 trillion operations per second, which is faster than the neural processing unit of any AI PC today."
+
+
+But the fact is that the RTX 5090 has nearly 100x(!!!) the TOPS of the M4.
+
+
+M chips has decent memory bandwidth, and more RAM than most GPUs, that's why they are decent for LLMs wh...
+   💬 Replies (1):
+   7.1. (2 ⬆️) Not to mention that these advanced chips will suck for diffusion models.
+
+8. (6 ⬆️) They dont realize that nvidia is really a software company selling hardware… 
+Apple should've made johnny ive or someone innovative  the ceo and cook the CFO.. Cook is only good at cooking for the shareholders, less   for the consumers .. funny enough Job grew the stock more than cook as the ceo
+
+9. (6 ⬆️) I always find it funny when people say that Nvidia has a monopoly, and yet all they do is...work hard on better support for their products, and it worked out. They never stopped AMD, AMD stopped AMD because they have dogshit support.
+
+That's like saying Nvidia has a monopoly is the content creation sphere because they put a lot of time and money into working with companies, and making their products better than everyone else's.
+   💬 Replies (1):
+   9.1. (3 ⬆️) That is blatant misinformation. People don't call out Nvidia for making a better product, they call them out because they abuse their current position to push monopolistic practices. There was no need to ~~bribe~~ promote their closed-source Nvidia-only software or threaten their partners from using...
+
+10. (5 ⬆️) At the moment apple's software is buggy. It's not production ready with Torch.
+
+
+
+POST: When you have little money but want to run big models
+📍 r/LocalLLaMA | 👍 113 upvotes | 💬 49 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oahpmx/when_you_have_little_money_but_want_to_run_big/
+Post Content:
+I live in India. Everything is expensive. Importers want hefty margin. Government want hefty tax.  Rtx 6000 96gb which is possible to get for 7-8k usd in USA is impossible to find even for 11 lakhs(12-13k usd) in India. So we have a couple of friends  1) Juggad 2) Olx ( indian craigslists) 3) Other similar p2p sites like fb marketplace.  Let me show you what I built. 1) Dell T7910 - it has 7 pci slots. I can only get 5 to work. Found it on fb mp with 256 gb ddr4 2) 5 * 3090 from olx 3) 5 pci raisers amazon. These are hard to find for cheap. 4) 1300 watt additional power supply   There are only 4*3090 in this build 5th slot I am using for nvme extension.  Total cost for this build of 96gb vram is around 3.25 lakhs. ( Around 4.6k usd) This post is just for reference for those who are in a similar boat. Please understand there is a lot of difference between planning and execution. Keep +1 lakhs in hand for things that can go wrong.
+
+TOP 10 COMMENTS
+
+1. (22 ⬆️) Damn 96GB for only \~$4.6k?? Not bad... How much did you get each 3090 for?
+   💬 Replies (1):
+   1.1. (10 ⬆️) 37-50k inr
+420 to 570 usd
+
+2. (6 ⬆️) https://preview.redd.it/nfbzbo0m71wf1.jpeg?width=739&format=pjpg&auto=webp&s=a0909b223e9c86417185c39780488f2dbce0c31e
+
+3. (6 ⬆️) Nice build. I have a same problem with import tax on my country which make it not economically to order a rtx 6000 pro. Looks into 4x3090 (I have 1x3090 with 128gb RAM). The problem I’m facing is to fit in any case it has to be a 3090 micro edition which add 40% to the market price. Or the other track is to use an open frames like you have. How much heat/noise and power drawn are you experiencing? Would that be possible to run in an apartment or you will have to put it in a garage?
+   💬 Replies (3):
+   3.1. (6 ⬆️) It's in my apartment. My kid of 5 years sleeps in the same room. If your gpus are okay you wont have much sound. If the windows are closed then the temp increases by 3-4 degrees. If windows are open it is about 1 degree.
+   3.2. (2 ⬆️) You could use an open/custom frame and then enclose it in a larger box to reduce noise.
+   3.3. (1 ⬆️) Go open style case.
+
+4. (4 ⬆️) In Poland we have also olx :) I purchased all three 3090 from there
+
+5. (3 ⬆️) Little money but spends $4.6K on GPUs. All good, but don't call it "little money". What models are you intending to run and for what use case?
+
+6. (2 ⬆️) Sounds very cool! Good luck
+
+7. (2 ⬆️) Little money? I feel rich with my 3k computer xDD
+   💬 Replies (1):
+   7.1. (3 ⬆️) Big and little are words that depend on the frame of reference.
+
+8. (1 ⬆️) What model are you planning to run?
+   💬 Replies (1):
+   8.1. (1 ⬆️) So it runs oss 120b with full 128k context at round 100 tps. I have that jailbroken. Also Air 4.5 4 bits is good. 8bits is also doable.
+
+9. (1 ⬆️) "蚂蚁搬家" - get someone you know coming back from the US to buy one
+   💬 Replies (1):
+   9.1. (4 ⬆️) It's mandatory to declare stuff worth more than 1k. Indian customs is highly unpredictable. There are ways. Loose the box and hide it as used but I don't want my relatives to be in a soup because of a hobby.
+
+10. (1 ⬆️) Little money, this looks like little money to you?!!
+   💬 Replies (1):
+   10.1. (3 ⬆️) Look at the frame of reference. You can't run a 70b model locally in India useably without spending at least 4-5 lakhs. This can run much bigger.
+
+
+
+POST: Drummer's Cydonia and Magidonia 24B v4.2.0
+📍 r/LocalLLaMA | 👍 108 upvotes | 💬 30 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oa29de/drummers_cydonia_and_magidonia_24b_v420/
+Post Content:
+Magidonia is Cydonia using Magistral 2509 base.  Magidonia variant: [https://huggingface.co/TheDrummer/Magidonia-24B-v4.2.0](https://huggingface.co/TheDrummer/Magidonia-24B-v4.2.0)  Cydonia (Small 3.2) variant: [https://huggingface.co/TheDrummer/Cydonia-24B-v4.2.0](https://huggingface.co/TheDrummer/Cydonia-24B-v4.2.0)  4.2.0 is an upgrade from 4.1 in regards to creativity. Enjoy!  Does anyone have a base to recommend for finetuning? Waiting for GLM Air 4.6 to come out :\^)  \---  By the way, Huggingface has restricted storage in my account and I'm having a harder time doing my open-source work for the community. I'll be all out of space after a few days of work thanks to their storage restriction.   I tried contacting them via [billing@hf.co](mailto:billing@hf.co) but they told me to make my case to [models@hf.co](mailto:models@hf.co) . I haven't received a response from *that* team yet. Other employees I've reached out to recommended that I pay around $200 / mo to get the storage I ne...
+
+TOP 10 COMMENTS
+
+1. (54 ⬆️) By the way, Huggingface has restricted storage in my account and I'm having a harder time doing my open-source work for the community. I'll be all out of space after a few days of work thanks to their storage restriction.
+
+I tried contacting them via [billing@hf.co](mailto:billing@hf.co) but they told me to make my case to [models@hf.co](mailto:models@hf.co) . I haven't received a response from *that* team yet. Other employees I've reached out to recommended that I pay around $200 / mo to get th...
+   💬 Replies (5):
+   1.1. (22 ⬆️) That’s disappointing to hear. Just a few days ago there was a thread here where HF employees claimed that the restrictions were only to prevent “abuse” of the storage system, and that they handed out exemptions liberally.
+
+My advice is to keep pushing for a response. If they don’t want to give a com...
+   1.2. (6 ⬆️) > I got bundled up with those who upload 1T frankenmerges
+
+Not sure about that, [DavidAU](https://huggingface.co/DavidAU) is at **24.55 TB** and still uploading cooked merges.
+
+> Let me know if you guys have any ideas!
+
+- Let the exempt "quarters" handle the GGUFs?
+
+- Does [Modelscope](https://www.m...
+   1.3. (3 ⬆️) Torrents, maybe? I personally wouldn't mind seeding a bunch of models, I'm sure there are enough others who feel the same that we could probably keep a good number of torrents alive.
+
+Also, I recently discovered it's possible to add huggingface as a webseed with only a minor amount of jank, which is...
+   1.4. (3 ⬆️) Patreon?
+   1.5. (2 ⬆️) When you need to free space for new models, delete quantized versions that can be recreated with simple recipe, such as \*-Q\*.gguf, starting with oldest models. Leave it to others to publish quantized models on their HF accounts.
+
+IDK if you have any non-trivial quantized versions, such as \*-IQ\*....
+
+2. (12 ⬆️) >Does anyone have a base to recommend for finetuning?
+
+Seed OSS 36B might be interesting. I think it's one of the more unique dense models to come out in a while. I'm a little surprised that nobody's done a fine tune just to be the first with "Sneed 36B".
+
+3. (12 ⬆️) I saw this coming a mile away, the endless storage was not sustainable, but it is indeed a huge problem, especially when quants for big models (50B - 100+B) can take x10 the space of the full precision weights.
+
+The thought of having these limits alone is not very nice, what do we do? Only publish gguf? wait for one of the 2-3 major quanters to release a quant, and then delete our own quants?
+
+I think the (long term) solution is collocation. It will still cost money each month, but it will be yo...
+   💬 Replies (1):
+   3.1. (0 ⬆️) Or just rent from a server provider. You can find some decent providers who offer 20tb w/ unlimited bandwidth for like $25 a month or something like that.
+
+4. (11 ⬆️) Delete older LLMs? Reduce the number of quants by checking which quants are the most downloaded. You make great finetunes but I can't imagine every one of them is worth keeping as you improve on them over time and better LLMs come out to finetune.
+   💬 Replies (1):
+   4.1. (1 ⬆️) I second this. if you really want to archive them i say upload them to google drive/onedrive or something of the like, id assume its a lil cheaper than storing them on HF
+
+5. (6 ⬆️) /u/vaibhavs0 would be great if this kind of community-driven work could receive an exemption.
+
+6. (4 ⬆️) I'm not aware how their business model runs, but maybe it's possible to save on space by dropping some quants?
+
+7. (4 ⬆️) I, too, am eagerly awaiting your 4.6 Air finetune! Should be early next week for 4.6 Air base release, but given the lack of direct hype posts, it might be later. At least we know they're working on it.
+
+8. (3 ⬆️) Recommend settling for story writing?
+   💬 Replies (1):
+   8.1. (4 ⬆️) Got Magidonia v4s a few days ago and tested. I set its defaults in Msty for Magistral-Small-2509...
+
+top_p: 0.95
+temperature: 0.7
+max_tokens: 131072
+
+... and used the basic chat template provided for Magistral-Small-2509, with a simple starting addition of "You are an advanced Large Language Model s...
+
+9. (3 ⬆️) I feel like there is a place for a decentralized storage for LLM models , like torrents that someone who has knowhow in that regard could build. (Just as a an idea :D)
+
+10. (3 ⬆️) Why iGranite is a bad base? ;)
+What about other 32B models?
+
+
+
+POST: [Experiment] Qwen3-VL-8B VS Qwen2.5-VL-7B test results
+📍 r/LocalLLaMA | 👍 54 upvotes | 💬 10 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1o9xf4q/experiment_qwen3vl8b_vs_qwen25vl7b_test_results/
+Post Content:
+**TL;DR:**   I tested the brand-new **Qwen3-VL-8B** against **Qwen2.5-VL-7B** on the same set of visual reasoning tasks — OCR, chart analysis, multimodal QA, and instruction following.   Despite being only 1B parameters larger, Qwen3-VL shows a ***clear generation-to-generation leap*** and delivers more accurate, nuanced, and faster multimodal reasoning.  # 1. Setup  * **Environment:** Local inference * **Hardware:** Mac Air M4, 8-core GPU, 24 GB VRAM * **Model format:** gguf, Q4 * **Tasks tested:**    * Visual perception (receipts, invoice)    * Visual captioning (photos)    * Visual reasoning (business data)    * Multimodal Fusion (does paragraph match figure)    * Instruction following (structured answers)  Each prompt + image pair was fed to both models, using identical context.  # 2. Evaluation Criteria  **Visual Perception**  * **Metric**: Correctly identifies text, objects, and layout. * **Why It Matters**: This reflects the model’s baseline visual IQ.  **Visual Captioning**  * ...
+
+TOP 5 COMMENTS
+
+1. (29 ⬆️) ok now PR your changes upstream to llama.cpp
+   💬 Replies (1):
+   1.1. (6 ⬆️) EXACTLY!  ;)
+
+2. (7 ⬆️) What's the size of each of your 5 test sets? Did you run at temperature 0 or multiple runs at the recommended temperature? How did you generate the scores from that?
+
+Speaking of scores: Those would be way easier to compare - also across tests - in a simple 2x5 table.
+
+The model is "Q4", with imatrix? It makes quite a difference there. Was the projection matrix left at f16?
+   💬 Replies (1):
+   2.1. (15 ⬆️) You are talking to NexaAI marketing slop, it's not about Qwen3, it's about advertising their sdk, which is a ~~ripoff~~ closed source version of llama.cpp
+
+3. (2 ⬆️) Do you know how Gemma 3 (either size) does in these tests?
+
+4. (1 ⬆️) Yup, it's pretty good. In my own testing it placed #7 whereas 2.5 7B was #26. It was on par with models such as Grok-4-fast (reasoning) and codex-mini.
+
+5. (1 ⬆️) How does the 8B fair in comparision with Gemma 3-12B?
+
+So far I haven't found something in the small-ish vision category that can dethrone the Gemma3.
+
+
+
+POST: 3x Price Increase on Llama API
+📍 r/LocalLLaMA | 👍 52 upvotes | 💬 19 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oa1zfp/3x_price_increase_on_llama_api/
+Post Content:
+This went pretty under the radar, but a few days ago the 'Meta: Llama 3 70b' model went from 0.13c/M to 0.38c/M.  I noticed because I run one of the apps listed in the top 10 consumers of that model (the one with the weird penguin icon). I cannot find any evidence of this online, except my openrouter bill.  I ditched my local inference last month because the openrouter Llama price looked so good. But now I got rug pulled.  Did anybody else notice this? Or am I crazy and the prices never changed? It feels unusual for a provider to bump their API prices this much.
+
+TOP 8 COMMENTS
+
+1. (43 ⬆️) A few weeks ago I napkin-mathed GPU rental and there was no way to beat the market price on openrouter with rental hardware \*at that time\*, and owning didn't look good for anything other than constant use. Looks like the market is correcting, and some players are abandoning the market altogether (e.g. https://lambda.ai/inference)
+   💬 Replies (1):
+   1.1. (7 ⬆️) Exactly my thought!
+
+2. (18 ⬆️) Man.. if only there was some solution to run l3 70b yourself.
+   💬 Replies (2):
+   2.1. (36 ⬆️) Running on a 24gb GPU llama 3 70b gives around 20t/s. A 4090 costs min ~2000$. For that money, 0.38c/M gives you ~6B tokens. Which will take the local 4090 ~7 years of continuous running.
+
+Price wise there is just no contest, even after increased prices.
+
+I might run something smaller though.
+   2.2. (5 ⬆️) Price to performance ratio
+
+3. (12 ⬆️) If you have such a big consumption, why not rent or buy a GPU yourself? It will be cheaper at scale.
+   💬 Replies (1):
+   3.1. (10 ⬆️) I did before using openrouter, but the cheaper price lured me out. 
+
+I got a Llama 8b to a cost of ~5c/M if I use the GPU 24/7 (with monthly rental). I had to fine tune and quantize it even for that. I ran it with VLLM to increase throughput. 
+
+But vanilla Llama 70b, on demand, 0.13c/M is just a muc...
+
+4. (9 ⬆️) Deepinfra announced this a few weeks ago, quite a significant increase.
+
+5. (4 ⬆️) there was a discount period from a specific provider (Crusoe) who offered 70% off for a limited period of time, but $0.38 is roughly an average price for the model. I checked my openrouter history, since I call all types of models frequently (including the one you mentioned, which is Llama 3.3 70B btw, not just Llama 3).
+
+here's also a tweet/screen: https://x.com/OpenRouterAI/status/1938735144824652005
+
+6. (2 ⬆️) Anyone hosting nemotron 49B based on it? I heard it was better.
+   💬 Replies (1):
+   6.1. (1 ⬆️) It's a reasoning model, so it's unfit for many applications.
+
+https://openrouter.ai/nvidia/llama-3.3-nemotron-super-49b-v1.5
+
+It's hosted at a higher output price too.
+
+7. (1 ⬆️) Sucks to have prices change for something you are using. Sounds like you either have to accept it or switch models. Gemini 2.0 flash , gpt-4.1-nano, gpt-oss-120b (reasoning) are models you might want to try if you want to switch. They are all incredibly cheap and on average better than llama-3-70b. 
+   💬 Replies (1):
+   7.1. (2 ⬆️) Also llama-3.3 70b , Qwen/Qwen3-235B-A22B-Instruct-2507 are very cheap. Guessing people just migrating away from the older llama3 and inference providers want to hasten the move away from it by increasing prices 
+
+8. (-1 ⬆️) Most of the reason these companies are still able to operate is because Intel won't sell the B60 to the public yet and AMD won't sell the RX 9700 Pro retail.
+
+
+
+POST: Open source custom implementation of GPT-5 Pro / Gemini Deepthink now supports local models
+📍 r/LocalLLaMA | 👍 47 upvotes | 💬 13 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oa8klx/open_source_custom_implementation_of_gpt5_pro/
+TOP 5 COMMENTS
+
+1. (9 ⬆️) I am terribly sorry about the bad recording quality and speed up.
+
+Here is the repo link:
+
+[https://github.com/ryoiki-tokuiten/Iterative-Contextual-Refinements](https://github.com/ryoiki-tokuiten/Iterative-Contextual-Refinements)
+
+If you have API key and directly want to try it:
+
+[https://ryoiki-tokuiten.github.io/Iterative-Contextual-Refinements/](https://ryoiki-tokuiten.github.io/Iterative-Contextual-Refinements/)
+
+This is fully client side application btw. I don't have any server or some scri...
+   💬 Replies (1):
+   1.1. (7 ⬆️) This is again experimental and do not expect too much. I have significantly worked on making it configurable, reducing no of api calls and context window as much as possible. Used Sonnet 4.0 and recently Sonnet 4.5 for most of the development.
+
+The other modes of the application includes:
+
+1. Refine...
+
+2. (4 ⬆️) This looks very cool! Looking forward to give it a try. Question, does deepthink mode (mode 3) have access to websearch, for example via searxng? Also, do you plan MCP support or custom tool enablement? Is there a possibility to expose an API endpoint per mode (or make them MCP servers), I see possibilities to integrate with other systems I am running. Finally, would it be possible to assign different models to different subagents? I have seen sometimes better results using different models toge...
+   💬 Replies (1):
+   2.1. (2 ⬆️) Hey, thank you. And yes, currently you can assign different models to different sub-agents.
+
+Right now i am focused solely on improving the quality, efficiency and context management throughout the system by comprehensively testing what actually works, how to actually make the system adapt and learn...
+
+3. (2 ⬆️) This is cool. The future! I'll what it can do with local models. Thank you.
+
+4. (1 ⬆️) Thanks, I had some fun with this!  
+Apparently it's geared towards web development, so my prompt had some interesting side-effects. But, some bugs and comments first:
+
+* Either templating or the LLM seems broken: The refinement LLM sometimes writes: "...the input contains a placeholder: "{{featuresToImplementStr}}" - this appears to be a template variable"
+* It'd be nice to have an abort button for pipelines, or a pause/resume. However, reloading the page conserves at least the input. Background...
+   💬 Replies (1):
+   4.1. (1 ⬆️) Ah thanks for trying. I will look into refine mode. I have only tried that mode with Gemini 2.5 Pro and it worked flawlessly with it because of it's long context window. I need to check up on that. Some issue with context management ig not a big issue. Thanks for reporting.
+
+5. (1 ⬆️) Any word on how this might work with local models?
+   💬 Replies (2):
+   5.1. (1 ⬆️) It does work with local models right now. Try it out.  
+Start the server in LM Studio or whatever the local llm app you are using and just get the endpoint URL and the model ID. Paste that in the "Providers" menu in this application and you are good to go.
+   5.2. (1 ⬆️) `npm install`  
+`npm run dev`  
+`llama-server ...`
+
+Open the printed localhost link, go to providers, enter [http://localhost:8080/](http://localhost:8080/) as local provider.
+
+Run a prompt. If it doesn't work (probably some CORS stuff) then edit package.json  
+`"scripts": {`  
+`"dev": "vite --host"...
+
+
+
+POST: The size difference of gpt-oss-120b vs it's abliterated version
+📍 r/LocalLLaMA | 👍 44 upvotes | 💬 67 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oa3u2d/the_size_difference_of_gptoss120b_vs_its/
+Post Content:
+I was away from the locally hosted models, so please forgive my ignorance.  Here are two versions of gpt-oss-120b:  [https://ollama.com/library/gpt-oss](https://ollama.com/library/gpt-oss)   [https://ollama.com/huihui\_ai/gpt-oss-abliterated](https://ollama.com/huihui_ai/gpt-oss-abliterated)  As you can see, one takes 88 GB and the other takes 65 GB, and the difference shows when they are loaded as well. I thought they were both 4-bit. Would someone be able to explain where the discrepancy is coming from? And if any abliterated versions of the original model's quant occupy the same space?  Another question would be, I can see the GGUF versions of gpt-oss. Why would we need GGUF versions, as the model itself already is quantized?
+
+TOP 4 COMMENTS
+
+1. (130 ⬆️) Friends don't let friends use ollama
+   💬 Replies (4):
+   1.1. (7 ⬆️) Lol, just here for simplicity and quick tests while looking for a RAM-efficient engine. I'm very open to suggestions, though.
+   1.2. (6 ⬆️) As an Ollama user, what would you recommend that I use and why?
+   1.3. (1 ⬆️) Why? It works
+   1.4. (-21 ⬆️) assholes won't ever stop sharing their opinions as facts
+
+2. (10 ⬆️) Ollama use the quantized version, while the original/full models are usually in 16 or 32-bit.
+
+And you're comparing 2 different quants, MXFP4 vs Q4_K_M, where not all part of the model converted to 4-bit, thus have different file size, since they're quantized in different ways.
+   💬 Replies (1):
+   2.1. (-3 ⬆️) MXFP4 is not a quant, it's the original trained format.
+
+Any larger version of GTP-OSS is pointless, including Q4KM.
+
+3. (3 ⬆️) reading this thread, i wasn't really happy with any answer to your question even though i had to chime in downstream in a couple places (ugly redditor habit, i know).
+
+so, here you go: this model is unusual in that part of the model comes quantized. there is not enough support built into various things for mxfp4 to work for every downstream task, so to perform operations on the model people completely unquantize it to bf16 so the tools work, then it gets requantized by ollama in a totally separa...
+
+4. (-25 ⬆️) Abliterated has literally no refusal layers. That's what abliteration means. You are removing a huge chunk of the model itself, to remove its ability to disagree. 
+
+You look through the model to find the layer that contains all the "Sorry, i can't do that", "No, this is incorrect", etc - and just yank it out, along with all the stuff that is on that layer.
+
+That's why abliteration almost always so catastrophically affects model performance. It's not a fine-tune that skews the bias, it's literall...
+   💬 Replies (2):
+   4.1. (39 ⬆️) That's not true, there is no such thing as a refusal layer. When you hit a vector that indicates refusal, you calculate its negative and then add them. It's a Lora that charges the weights.
+   4.2. (3 ⬆️) Got it. So, why does the ablated version take 23 GB more than the original one?
+
+Another question: Is this the go-to path people are taking to "uncensor" models nowadays?
+
+
+
+POST: Weird observation of the Grok Share Link Feature
+📍 r/artificial | 👍 0 upvotes | 💬 2 comments
+🔗 https://reddit.com/r/artificial/comments/1o9wwrr/weird_observation_of_the_grok_share_link_feature/
+Post Content:
+When I create a video with Grok Imagine and share it via a link, then view the video in a browser using that link, the video remains accessible even after I delete the account that created it. However, if I create a video, share the link, but delete the account without ever opening the video via the link beforehand, the video is no longer accessible through the link after the account deletion.  (Translated by AI)
+
+TOP 1 COMMENTS
+
+1. (2 ⬆️) Because it’s loaded in some kind of cache the first time you access it. Hopefully the link stops working when the cached item expires.
+
+
+
+POST: [D] On AAAI 2026 Discussion
+📍 r/MachineLearning | 👍 55 upvotes | 💬 20 comments
+🔗 https://reddit.com/r/MachineLearning/comments/1oaf1v0/d_on_aaai_2026_discussion/
+Post Content:
+I'm a reviewer (PC) and don’t have a submission myself, but honestly, this is the weirdest reviewing process I’ve ever experienced.      1. Phase 2 papers are worse than Phase 1.    In Phase 1, I reviewed four papers and gave scores of 3, 4, 5, and 5. I was even open to raising the scores after the discussion, but all of them ended up being rejected. Now, in Phase 2, I have papers rated 3 and 4, but they’re noticeably weaker than the ones from Phase 1.  2. It feels like one reviewer is personally connected to a paper.   I gave a score of 3 because the paper lacked technical details, justifications, and clear explanations for inconsistencies in conventions. My review was quite detailed—thousands of characters long—and I even wrote another long response after the rebuttal. Meanwhile, another reviewer gave an initial rating of 7 (confidence 5) with a very short review, and later tried to defend the paper and raise the score to 8. That reviewer even wrote, *“The authors have clearly addres...
+
+TOP 7 COMMENTS
+
+1. (23 ⬆️) Yep, I think you should. But I wouldn’t use a term such as collusion ring
+   💬 Replies (2):
+   1.1. (6 ⬆️) Should I just leave an official comment to Program chair and Area Chair? Is there any designated way to report it? BTW, I agree with that. Collusion ring means a group of people doing that, and I don't want to read too much into it.
+   1.2. (4 ⬆️) In niche topics, all the papers are from the same lab and they are using the same data, table and avoiding answering the main question that the paper claims to make. That happened with neurips this year. 
+
+
+Think of the bewilderment. You see 5 promising papers that claim to change the world, you go ...
+
+2. (23 ⬆️) AAAI has become a trash conference and I forbid my students to ever do anything related to it.
+   💬 Replies (4):
+   2.1. (13 ⬆️) Can you elaborate? Never submitted to AAAI before but was considering it as a potential venue for my next work (symbolic system related).
+   2.2. (12 ⬆️) The NeurIPS papers that I reviewed were far worse than the AAAI ones that I reviewed. Just because your papers got rejected in Phase 1 does not mean that it is any worse (or better) than the stochastic "peer" review that goes on at other conferences like ICLR/ICML/NeurIPS.
+
+Same people, different ba...
+   2.3. (9 ⬆️) My aaai batch was substantially better than my ICLR batch. 
+   2.4. (4 ⬆️) AAAI still accepts more originality than Liverpool’s transfer strategy.
+
+3. (10 ⬆️) Instead of reporting it, I decided to discuss it with other reviewers since this is the discussion period. If they genuinely think the paper is good, they should be able to address all my concerns, right?
+
+4. (10 ⬆️) Academia is a scam
+   💬 Replies (1):
+   4.1. (-2 ⬆️) There is no consensus on the explanation of explanation. Most academics (and non-academics) operate with a blend of one or more of a handful of half-baked and unexplained explanations of explanation. What you end up with is fragmentation into separately cooperative but isolated domains which, while ...
+
+5. (5 ⬆️) Collusion isn’t the bug, it’s the acceptance criterion.
+
+6. (4 ⬆️) What is your track? Do you think I have a chance with 7, 7,6, 5? CV track.
+   💬 Replies (1):
+   6.1. (3 ⬆️) I'm just a reviewer so IDK, especially due to score inflation like papers in my batch. Totally bad paper also got rating 8 or 7... At least you don't have a bad review (under 5) so I would say 60%. Edited: it's CV track, generative model
+
+7. (2 ⬆️) I have a paper which is quite weak, but then there's one reviewer in phase one who wrote 2 lines of strength, no weakness, then gave the score 10. What we can do is hope that the chairs are reading the comments carefully. Because as they've noted, acceptances are not based on the scores but are the decision of the chairs.
+   💬 Replies (1):
+   7.1. (1 ⬆️) they won't read it, they even said that they will use AI to summarize the rebuttal, comments, etc. So depending on how positive or negative AI will summarize, the paper can be accepted/rejected. So I am assuming AI will also consider 10 as a very high positive signal.
+
+
+
+POST: [D] What are some trendy or emerging topics in AI/ML research beyond LLMs and NLP?
+📍 r/MachineLearning | 👍 32 upvotes | 💬 26 comments
+🔗 https://reddit.com/r/MachineLearning/comments/1oa7bb2/d_what_are_some_trendy_or_emerging_topics_in_aiml/
+Post Content:
+Hi everyone,  I’ve noticed that most discussions lately revolve around LLMs and NLP, but I’m curious about what other areas in AI/ML are currently getting attention in research.  What topics or fields do you think are becoming exciting right now?
+
+TOP 10 COMMENTS
+
+1. (39 ⬆️) i think World Models are getting a ton of hype — people are taking the LLM lessons and applying them to simulation-amenable non-text stuff.
+   💬 Replies (1):
+   1.1. (3 ⬆️) Can you share some papers of such examples.
+
+I know about world models tgat are commonly used in RL.
+
+2. (16 ⬆️) Neural Architecture Search
+
+Deep Haptics
+
+Physics Inspired Neural Networks
+
+Inverse RL
+   💬 Replies (2):
+   2.1. (2 ⬆️) eh, PINNs don’t work as well as we’d hoped :(.
+
+I haven’t kept up with the NAS lit — are people doing anything cool?
+   2.2. (1 ⬆️) Inverse RL ? can you TLDR (I know google exists) ?
+
+3. (6 ⬆️) Event camera-based vision research is one. The cameras can be quite expensive, but it's possible to use synthetic event streams rendered from things like game engines. As the cost drops over the next ~20 years this (or SPAD event cameras) will become the standard for robotics and mixed reality. [UZH has a lot of work in this area](https://www.youtube.com/watch?v=0wGBpgIrd9M). It has so much potential to provide high quality image and video data to generation methods also. From a research perspec...
+
+4. (6 ⬆️) Automatic driving or Robotics combined with deep learning or reinforcement learning.
+
+5. (4 ⬆️) I have seen lots of ai4science paper recently
+
+6. (4 ⬆️) Explainable AI, AI for development, EDA, and Root cause analysis. Using models to highlight patterns and causes.
+   💬 Replies (1):
+   6.1. (1 ⬆️) I wish this stuff worked better than it does
+
+7. (4 ⬆️) My professor said DRO and RLHF are trending
+   💬 Replies (2):
+   7.1. (1 ⬆️) DRO as in distributionally robust optimization? Isn't that a somehow older concept.
+
+RLHF was trending in 2023/2024.  Still very relevant but I wouldn't call it trending now
+   7.2. (1 ⬆️) Those are for LLM training, though.
+
+8. (3 ⬆️) Thanks for asking this. The posts about LLM/AI/AI slop everywhere are getting old.    
+
+Biological and physiological signals for assisting medical diagnoses.
+
+9. (3 ⬆️) [https://arxiv.org/abs/2509.19349](https://arxiv.org/abs/2509.19349)
+
+10. (3 ⬆️) I think Edge AI is going pretty strong. Correct me if I'm wrong.
+
+
+
+POST: OpenAI researcher Sebastian Bubeck falsely claims GPT-5 solved 10 Erdos problems. Has to delete his tweet and is ridiculed by Demis Hassabis who replied "how embarrassing"
+📍 r/OpenAI | 👍 224 upvotes | 💬 88 comments
+🔗 https://reddit.com/r/OpenAI/comments/1oacp38/openai_researcher_sebastian_bubeck_falsely_claims/
+Post Content:
+Sebastian Bubeck is the leading author of the 'Sparks of Artificial General Intelligence ' paper which made a lot of headlines but was subsequently ridiculed, for over interpreting the results of his internal testing or even that he misunderstood the mechanics of how LLMs work. He was also the lead on Microsoft's Phi series of small models which performed incredibly well on benchmarks but were in fact just overfit on testing and benchmark data. He's been a main voice within OAI for over hyping GPT-5. I'm not surprised that he finally got called out for misrepresenting AI capabilities. 
+
+TOP 10 COMMENTS
+
+1. (61 ⬆️) Bubeck’s follow up message reads like someone who is trying to cover their ass. His originally tweet clearly implies that, well, to quote him: “two researchers found the solutions to 10 Erdos problems over the weekend with the help of gpt-5”.
+   💬 Replies (4):
+   1.1. (17 ⬆️) Right. Sellke’s post was fine, but Bubeck at best represented it in a way that was easily misinterpretable. Obviously Bubeck agrees (after being called out) or he wouldn’t have deleted it.
+   1.2. (12 ⬆️) He was technically correct. He "found" the solutions. Solutions from other people.
+
+
+The slimiest form of correct.
+   1.3. (12 ⬆️) Right but that’s what they did, found the solutions, just via literature search. It’s not clear from that tweet that’s what he means but if you follow his quoted tweet which then quotes his first tweet from a week before it shows he talks about literature search being how an erdos problem was solved...
+   1.4. (-5 ⬆️) He's not wrong though. it was "found".
+
+2. (52 ⬆️) Called out by the head of google AI oh man. That is embarrassing
+   💬 Replies (3):
+   2.1. (27 ⬆️) That’s Nobel Laureate Head of Google AI to you.
+   2.2. (6 ⬆️) Well at least he had head of Google read his thing. That is something.
+   2.3. (-3 ⬆️) I would have deleted my twitter account.
+
+3. (28 ⬆️) >I thought the phrasing was clear
+
+Sure, it was clear. Clearly misleading. 
+I fucking hate those non apologies. Like a toddler.
+   💬 Replies (1):
+   3.1. (6 ⬆️) I think that goes from a self interested hype dealer to straight up lies to cover mistakes. I wouldn’t trust any work he has worked on.
+
+4. (24 ⬆️) Demis is about the ONLY leader of an AI company I trust. Like he said, this was embarrassing and misleading.
+   💬 Replies (2):
+   4.1. (1 ⬆️) why do you trust him?
+   4.2. (-10 ⬆️) I don't trust him one bit. He is always talking about his own achievements.  
+
+And calling out someone like this is a passive aggressive child move.
+
+5. (7 ⬆️) I dunno I read the original post and the dude didn’t say solved he said the researchers “found” the solution using gpt search. So personally I think people took that the wrong way.
+   💬 Replies (3):
+   5.1. (25 ⬆️) Quoting from the screenshots of this very thread:
+
+Researchers:
+
+> Using thousands of GPT5 queries, we **found** solutions to 10 Erdős problems 
+
+Bubeck: 
+
+> two researchers **found** the solution to 10 Erdos problems over the weekend with help from gpt-5...
+
+OP of this thread:
+
+> Bubeck falsely cla...
+   5.2. (7 ⬆️) I’m going to be honest can’t you just say “ChatGPT found a cure for cancer” by that same merit claiming that it looked information about chemotherapy and found that? Because honestly that’s kind of a ridiculous way to phrase things. The word found does not just mean found online it means a bunch of ...
+   5.3. (3 ⬆️) Except he didn’t just say “found” with no preamble. He explicitly said the era of science being accelerated by ai has begun *because* it found the solutions. 
+
+But that claim only makes sense, and is only noteworthy, if it solved the problems. Otherwise he’s saying that science acceleration starts n...
+
+6. (3 ⬆️) Still substantial, just misrepresented the situation 
+
+7. (2 ⬆️) Not cool. Just deleted my X account.
+
+8. (2 ⬆️) These people are idiots, they desperately want ChatGPT to be something more than good bot for code and to talk to. ChatGPT is not smart, it's good for code and to talk with, it will never reach AGI, this is lie.
+   💬 Replies (1):
+   8.1. (0 ⬆️) Smarter than you
+
+9. (2 ⬆️) This is a recurring theme for Bubeck
+
+10. (1 ⬆️) Yeah, that Sellke person and this Bubeck person are both to blame for this confusion.
+
+
+
+POST: CHATGPT5 FINDS SOLUTION TO 10 ERDOS PROBLEMS!
+📍 r/OpenAI | 👍 170 upvotes | 💬 78 comments
+🔗 https://reddit.com/r/OpenAI/comments/1o9zgom/chatgpt5_finds_solution_to_10_erdos_problems/
+Post Content:
+lol as in it literally found references to papers where those Erdos problems were solved, but the owner of a database listing Erdos problem solutions hadn’t yet found.
+
+TOP 10 COMMENTS
+
+1. (146 ⬆️) It searched the web… and found existing answer the owner of the website hadn’t found yet.
+   💬 Replies (4):
+   1.1. (7 ⬆️) The real test for AI intelligence is when it becomes as smart as Erdos himself! In other words, the Erdos-level AI intelligence can almost open a carton of juice in the middle of the night at his friend's place, orange juice all over the place but maybe something left to drink or could be licked fro...
+   1.2. (4 ⬆️) For all 10?
+   1.3. (1 ⬆️) That is good actually; it means frontier LLMs with tools are getting better or superhuman at literature search; this with harness allowing 100 GPT5-Pro to generate solutions to problems and allowing a different gpt-5 pro to search through these solutions, evaluate, combine and present a valid soluti...
+   1.4. (-9 ⬆️) [deleted]
+
+2. (42 ⬆️) The post by Sebastian is a bit of a clickbait though.
+   💬 Replies (2):
+   2.1. (20 ⬆️) "a bit"
+   2.2. (1 ⬆️) Like his Sparks of AGI paper
+
+3. (14 ⬆️) What’s erdos?
+   💬 Replies (4):
+   3.1. (18 ⬆️) He proposed hundreds of open mathematical problems and many are still unsolved
+   3.2. (9 ⬆️) You know Kevin bacon?
+   3.3. (8 ⬆️) Hungarian jewish mathematician.
+
+After his mother's death in 1971 he started taking antidepressants and amphetamines, despite the concern of his friends, one of whom (Ron Graham) bet him $500 that he could not stop taking them for a month. Erdős won the bet but complained that it impacted his perfor...
+   3.4. (5 ⬆️) Paul Erdos
+
+https://en.wikipedia.org/wiki/Paul_Erd%C5%91s
+
+4. (8 ⬆️) [deleted]
+   💬 Replies (1):
+   4.1. (2 ⬆️) Isn’t that what the post says? Or was it edited at some point:
+
+“lol as in it literally found references to papers where those Erdos problems were solved, but the owner of a database listing Erdos problem solutions hadn’t yet found.”
+
+5. (8 ⬆️) But is the solution actually correct?
+   💬 Replies (1):
+   5.1. (44 ⬆️) Yes, because it just found people that had done them, just not reported, it didn't invent or discover anything novel, nor did it solve anything.
+
+With a few thousand prompts, it discovered solutions made 20 and more years ago, in short.
+
+6. (8 ⬆️) It was slightly better at googling stuff than a site admin.
+   💬 Replies (1):
+   6.1. (3 ⬆️) We don't even know if it was better or if the researchers involved just tried longer.  Thousands of queries is a lot.
+
+7. (6 ⬆️) To all who say that it “just” found solutions that had already been published, I want to clarify that mathematical theorems can sometimes be written in very obscure form and it can take lot of insight and understanding to realize you are actually looking at a theorem you need. So unless the papers specifically mention that this is exactly Erdos 408 or whatever, it is still remarkable. Not to mention its value as a search tool.
+   💬 Replies (3):
+   7.1. (5 ⬆️) This is true, but in this case it found solutions to equations that have been solved.
+   7.2. (3 ⬆️) Considering that it took thousands of queries to find 10 solutions, are you sure it's that remarkable?  Are you sure that the same researchers using Google or the right mathematical databases with the same amount of effort wouldn't have found those solutions more quickly?
+   7.3. (2 ⬆️) This is stupid. No paper is going to mention that this is "Erdos 408" because this is simply a number assigned by this website which was made something like last year. If you go look at these "newly found solutions", several of them mention Erdos explicitly in the title, one is written by Erdos, and...
+
+8. (4 ⬆️) Chathpt didn’t do shit.  Chaptgpt isn’t a sentient and self-motivated entity that one day decided to go find those answers.
+
+Researchers used a new tool that helped them find the solutions more effectively and mostly by gluing together information that already existed.
+   💬 Replies (1):
+   8.1. (1 ⬆️) Why do you think that's not obvious? Headline is no different "sonar finds stuff underground"
+
+9. (2 ⬆️) Great. It can out google google googling for answers.
+   💬 Replies (1):
+   9.1. (1 ⬆️) Agreed, that actually is pretty great.
+
+10. (2 ⬆️) It “found” the solutions that already existed in writing. Demis actually posted on this that it was an embarrassment because it wasn’t a new discovery and the person who posted it agreed and apologized.
+
+
+
+POST: For those who use claude code, what ide do you use?
+📍 r/AI_Agents | 👍 2 upvotes | 💬 4 comments
+🔗 https://reddit.com/r/AI_Agents/comments/1oaasj7/for_those_who_use_claude_code_what_ide_do_you_use/
+Post Content:
+I'm still new to all this and have only used claude code, I just wanted to know what ide you use  I really don't like vs code and usually use jetbraisn the things you have to pay an extra 20 for it so I was just what you used
+
+TOP 4 COMMENTS
+
+1. (2 ⬆️) IntelliJ. Get ghostty as terminal and use claude code with ghostty. Works better than intellij with cc plugin. And its free
+
+2. (1 ⬆️) Thank you for your submission, for any questions regarding AI, please check out our wiki at https://www.reddit.com/r/ai_agents/wiki (this is currently in test and we are actively adding to the wiki)
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AI_Agents) if you have any questions or concerns.*
+
+3. (1 ⬆️) While at the moment I'm using windsurf my setup for Claude code is Kitty terminal, Nvim, Claude code and tmux.
+
+4. (1 ⬆️) Windsurf. It has so many good features, and I use cascade as well. The DeepWiki feature is really handy as well.
+
+
+
+POST: What Are You Charging for Voice AI Agents?
+📍 r/AI_Agents | 👍 2 upvotes | 💬 3 comments
+🔗 https://reddit.com/r/AI_Agents/comments/1oa36fl/what_are_you_charging_for_voice_ai_agents/
+Post Content:
+Hey everyone, exploring voice AI agent space and trying to understand market rates better.  Few quick questions for people already building these:  What do you charge clients for building voice AI agents? Just want ballpark project costs.  What tools you using - Pipecat, LiveKit, Vapi, Retell or something else?  And how much clients typically spending monthly on running these agents? API costs, hosting etc.  Trying to figure out realistic pricing so I don't undercharge or overcharge. Any numbers would help.  Thanks!
+
+TOP 1 COMMENTS
+
+1. (1 ⬆️) Thank you for your submission, for any questions regarding AI, please check out our wiki at https://www.reddit.com/r/ai_agents/wiki (this is currently in test and we are actively adding to the wiki)
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AI_Agents) if you have any questions or concerns.*
+
+
+
+POST: Mainstream people think AI is a bubble?
+📍 r/ArtificialInteligence | 👍 82 upvotes | 💬 238 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1oa2vgx/mainstream_people_think_ai_is_a_bubble/
+Post Content:
+I came across this video on my YouTube feed, the curiosity in me made me click on it and I’m kind of shocked that so many people think AI is a bubble. Makes me worry about the future  https://youtu.be/55Z4cg5Fyu4?si=1ncAv10KXuhqRMH-
+
+TOP 10 COMMENTS
+
+1. (193 ⬆️) A technology bubble or a business bubble are two different conversations.
+
+As tech, my opinion is it’s under hyped in the long term
+
+As business, yes these companies are acting crazy- circular investing, throwing billions at incremental progress, investing in data centers that will take years to build, by which time all of the parts of the data center will be obsolete- it’s absurd
+
+Also the coming job-pocalypse might be overhyped bc businesses are trying it, prompting shitty prompts and then say...
+   💬 Replies (5):
+   1.1. (21 ⬆️) This makes sense! Business bubble maybe but not a technology bubble, I feel like society is going to be completely different in 10 years from today
+   1.2. (9 ⬆️) Under hyped? lol. What problems are AI solving? None. We’re just creating slop. Slop videos, slop code, slop writing. It’s 95% garbage that no one is willing to pay for. So how much longer will they keep pumping 100’s of billions in this?
+   1.3. (8 ⬆️) I would add people starting ai companies with massive funding without any viable product or profits. 
+
+Another concern of mine is that the AIs we see now are subsidized to generate market for the providers. Once prices go up (or consumption is throttled) many businesses will see their foundations cr...
+   1.4. (7 ⬆️) Under hyped? You have got to be fucking kidding me. It could literally be no more hyped than it is.
+   1.5. (2 ⬆️) One of the best takes I’ve seen.
+
+2. (39 ⬆️) It is a bubble. OpenAI has stated that every service they are running for people loses them money. If we are going to hit a wall with LLMs, investors and funders will not see this as worth funding anymore. IMO with the release of CGPT 5 it’s looking more likely that we’re hitting this wall.
+   💬 Replies (5):
+   2.1. (4 ⬆️) They’ve already hit the wall and everyone paying attention has noticed. It might take another year before the morons in charge of money-shoveling notice though
+   2.2. (2 ⬆️) Isn't this only after accounting for training the next models? Presumably if competition drops because the bubble pops, they would be profitable just serving their current models.
+   2.3. (1 ⬆️) So After the bubble pops they'll be profitable because Gen-AI associated costs will have come down creating a compute glut
+   2.4. (1 ⬆️) I'll believe in the idea of the wall when we see it. 
+
+So far the pace of AI improvements has been lightyears ahead of any other technology I've ever seen. It's absurdly fast. Within a year we've gone from not being able to count fingers in videos, to being able to create realistic scenes which are ...
+   2.5. (0 ⬆️) Uber, abnb, YouTube, Amazon, Tesla, Spotify... They all lost money for years, that part is nothing new.  I'm more interested in daily active users, and gpt has continued to grow in that regard.  monitization comes later.  People had the exact same concerns when Google bought YouTube.  But yea might ...
+
+3. (25 ⬆️) AI, as a technology, is pretty amazing.  The bubble is from the investors doing crappy and reckless things.  There's no doubt companies are overvalued.  Some companies, which have sketchy business plans, are getting ridiculous money.  There's no way Nvidia is worth $4 trillion.  OpenAI, an unprofitable company, isn't worth $500 billion.  It's cool but way overhyped and investors are just passing around money hoping they aren't the ones left holding the bag at the end.  At some point, this whole ...
+   💬 Replies (2):
+   3.1. (8 ⬆️) As much as people talking like the world is going to end with the AI bubble. Wiping 20 trillion off the stock market is a little under a 30% decline. Not exactly unprecedented or unusual. 08 was a 57% decline, covid 34%, 22 inflation freakout 22%, Trump liberation day 19%.
+   3.2. (3 ⬆️) 100% this
+
+What often drives bubbles like this is people’s desire for instant riches & it’s associated fear of missing out.
+
+4. (23 ⬆️) look into the dot com bubble.
+
+
+
+>I came across this video on my YouTube feed, 
+
+made by a guy who may not have been in the workforce when the dot com CRASH happened.
+   💬 Replies (2):
+   4.1. (10 ⬆️) While there are some similarities, the sheer level of long term commitments dwarf that of anything during the dot com bubble.
+
+Most of the companies investing are healthy and extremely wealthy, if it all goes sour they'll still be fine. 
+
+Pets.com and Webvan are not the same as a company  trying to ...
+   4.2. (2 ⬆️) It’s hard to compare the dot com bubble to the AI bubble, though, and they’re less and less comparable as time goes on.
+
+The “the dot com bubble left infrastructure we all got to use” argument is one of the most common ones, but the resources left behind were significantly.more broadly usable than w...
+
+5. (10 ⬆️) The “bubble” is the valuations and “money” used to create those valuations because company A will invest in company B who invests in company C who then uses that money to buy products from company A. Only the first amount of money is “real” and the rest of that money is only real “on paper”. This is similar to how banks loan more money than they have. So what happens is these companies claim to make profits that are not really there and eventually, when people want to pull their money out, there...
+   💬 Replies (1):
+   5.1. (2 ⬆️) A lot of it is also NVIDIA *promising* to pay X amount on the proviso that another company achieves their gigawatt data centre.
+
+So they're not even investing anywhere close to those numbers but still get to enjoy the benefits of stock growth.
+
+6. (9 ⬆️) True, but that bubble won't pop if my flux capacitor has anything to say about it.
+
+![gif](giphy|c23OB3KN3lnKo)
+
+7. (7 ⬆️) I know ML engineers in big tech companies that think a lot of the promises are actually completely unrealistic with the current state of LLMs. 
+
+I would not recommend thinking about the topic in binary terms. It could be a bubble but only 10% inflated and actually most of the value the market is pricing in is accurate…. This is a shit ton of value by the way. Or it could be a AI is great for productivity but not the 5Trillion that is baked in right now, instead it’s 2 or 3 trillion and there wil...
+
+8. (5 ⬆️) With respect to accuracy, the AI models most people use are not as good as the user’s own judgment for specialised areas of knowledge.  AI will attempt to people please with a not completely correct answer instead of admitting it does not know something.  Being almost right is useless in lots of things.  At the moment, many people see AI as not living up to its promise and think the value of AI to them, and therefore stock prices of AI, is overvalued.  Whether AI is over valued will be determine...
+   💬 Replies (1):
+   8.1. (5 ⬆️) > people please with a not completely correct answer instead of admitting it does not know something
+
+
+It's worse than that.  The LLM doesn't merely tell little white lie just to avoid disappointing you -- it has no concept of accuracy.  LLMs are basically Dunning-Kruger incarnate: the model is gene...
+
+9. (5 ⬆️) doctorow does - [https://pluralistic.net/2025/09/27/econopocalypse/#subprime-intelligence](https://pluralistic.net/2025/09/27/econopocalypse/#subprime-intelligence)
+
+10. (4 ⬆️) If Deutsche Bank is giving warnings about the risks to the US economy because of the ai bubble, then I think everyone should be paying attention.
+
+
+
+POST: AI boom is draining the power grid, and maybe our wallet?
+📍 r/ArtificialInteligence | 👍 15 upvotes | 💬 13 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1oa6c6q/ai_boom_is_draining_the_power_grid_and_maybe_our/
+Post Content:
+Source：[https://finance.yahoo.com/news/big-techs-ai-ambitions-are-remaking-the-us-power-grid-consumers-are-paying-the-price-160535898.html?utm\_source=chatgpt.com](https://finance.yahoo.com/news/big-techs-ai-ambitions-are-remaking-the-us-power-grid-consumers-are-paying-the-price-160535898.html?utm_source=chatgpt.com)  Big Tech’s race to build massive AI data centers is starting to reshape the U.S. power grid, and not in a cheap way. These centers consume huge amounts of electricity, forcing utilities to build new power plants (many still fossil-fueled) and upgrade old infrastructure. Those costs are being passed down to consumers, meaning higher bills for the rest of us.  AI might be the future, but it’s burning a lot of power to get there. Do you think this is a fair trade-off or are we all paying the price for Big Tech’s ambitions?
+
+TOP 9 COMMENTS
+
+1. (4 ⬆️) Ai or not,  power grid massive increase is unavoidable.
+
+2. (4 ⬆️) Reminds me of how they were redirecting corn to biofuels .. capital really doesn't care if people go hungry.
+
+3. (3 ⬆️) We will see. We needed \*something\* that would push to upgrade our power plants and infrastructure, and if the AI arms race is the cause, it's worth it.
+
+While maybe the cost is being pushed to the consumer, I haven't seen any real indication of that happening, yet. Maybe it will, but also, if we want the infrastructure upgraded in general, that's going to have to come from increased pries, we just don't want to have to pay that. Honestly it's going to be the ones building the data centers, and...
+   💬 Replies (1):
+   3.1. (1 ⬆️) My electricity has more than doubled in the last 2 years due to the increase of data centers being built on the same grid. Also, they negotiate a "priority" standing so if the power grid has problems, residential homes may lose power in order to keep the data centers running.
+
+4. (2 ⬆️) Meh. Datacenter energy is just a few percentage of overall power usage. Ai labs keep spinning that “urgently need all the power” narrative so that they can get exceptions for environmental restrictions.
+
+5. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### News Posting Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Use a direct link to the news article, blog, etc
+* Provide details regarding your connection with the blog / news source
+* Include a description about what the news/article is about. It will drive more people to your blog
+* Note that AI generated news content is all over t...
+
+6. (1 ⬆️) I hope AI actually invents fusion or something soon. 
+
+
+I do like that we are pouring gobs of money into it though. I've always wanted humanity to pour massive money into the pursuit of knowledge, like science and space stuff. But we always dump most of it into stupid shit like bombs. Sure, AI is getting all this funding for a variety of reasons, including I'm sure a new arms race. But like, by it's very nature it is a massive pursuit of knowledge that all has a long term goal of new science. Pl...
+   💬 Replies (1):
+   6.1. (1 ⬆️) > I hope AI actually invents fusion or something soon. 
+
+The priorities seem to be making pretend friends for autistic teenagers and generating realistic videos of Stephen Hawking riding a half-pipe. I’m not sure AI developers are all that interested in saving society, just TikTok slop and making an...
+
+7. (1 ⬆️) whereas China are using this as a push to massively upgrade their power infrastructure, including frankly ridiculous amounts of new renewable energy
+
+8. (1 ⬆️) They said the same thing about crypto mining, Which also uses a lot of energy. AI uses more now but....
+
+9. (0 ⬆️) obligatory "Ai Is BaD" post for the day
+
+
+
+POST: Has Any One Found Tangible Enterprise Value?
+📍 r/ArtificialInteligence | 👍 12 upvotes | 💬 23 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1oa2qbz/has_any_one_found_tangible_enterprise_value/
+Post Content:
+Top down are trying to shove AI into everything at the moment. It feels like we’re trying to invent issues for AI to suddenly fix which just isn’t working and leading to frustration.   Outside of simple use cases like helping build cards on a planner, or anything code related; as I do see the value there….   I’m racking my brain as I’m feeling like there is a sudden shift to lean on AI which in turn is actually having a negative affect on productivity as we’re just shouting at a If Else script to “do better”.   Has anyone found actual productivity value with AI?   It’s rac  Please tell me it’s not just me. 🤯
+
+TOP 10 COMMENTS
+
+1. (15 ⬆️) You're not alone on this one. We've had clients at Cloudastra Technologies come to us with AI initiatives that were basically solutions looking for problems. One company wanted to use AI to "revolutionize" their expense reporting process when their existing system worked fine.. they just needed better training docs.
+
+The real value i've seen is in the boring stuff - log analysis, pattern detection in infrastructure metrics, automated ticket categorization. Not sexy, but it saves actual time. The...
+   💬 Replies (3):
+   1.1. (2 ⬆️) Exactly, it definitely saves time and effort on the 'boring' stuff.
+   1.2. (1 ⬆️) You could probably eliminate most of your HR department with AI.  I think amazon did that
+   1.3. (1 ⬆️) Here’s a related example
+
+Company I’m associated with has all types of relatively well paid engineers and sales people that do a fair amount of travel and have to complete expense reports.
+
+Their Concur setup requires them to itemize all hotel stays to parse out the official nightly rate and daily t...
+
+2. (6 ⬆️) - i can do days of code refactoring in hours.  
+- i can hand it 100 RTL files and ask it to trace the logic fanout cone of a net and explain what the net does. 
+- i can ask it to write unit tests and mock data.   
+- i can ask it to analyze debug and fix errors in code. 
+- i can ask it to optimize my code for performance and readability and maintainability. 
+- i can ask AI to write docstrings and git pish comments
+- i can ask it to write throwaway script to automate boring tasks
+- i can use MCP t...
+   💬 Replies (2):
+   2.1. (2 ⬆️) So code related then which I agree it has value in. I see the value in troubleshooting, building code and the permitted stuff around it like test cases, dev stories blah blah. That I think we agree it’s good with. Sometimes it’s 95% and still needs human review but it certainly accelerates tasks
+   2.2. (-1 ⬆️) Most good engineers do all of this in their head.  Writing unit tests helps understand your code.   
+
+AI is useful for creating quizzes and flash cards tho.
+
+3. (2 ⬆️) And that’s it ! The non-sexy stuff is the value, buts it’s hard to communicate up as it’s not something “crazy or groundbreaking”. 
+
+All I’m seeing right now is a drive to go after genetic AI for something a powershell script could have done. 
+
+Glad it’s not just me.
+
+4. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### Question Discussion Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Your question might already have been answered. Use the search feature if no one is engaging in your post.
+    * AI is going to take our jobs - its been asked a lot!
+* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectf...
+
+5. (1 ⬆️) I use it extensively for documentation. Transcribe every meeting, send notes (after i review), build instructions, SBARs, root cause analysis etc based on transcripts and linked documents. Saves us a huge amount of time.  
+  
+Every new problem is now documented along with a complete solution as part of the resolution process without a huge lift from my team. Anyone can come behind and even without any specific knowledge, have a very clear description of the issue and solution along with detailed...
+
+6. (1 ⬆️) A vast majority of AI projects are raw dough, not even half-baked.  The value of AI is sacrificing accuracy (to various degrees, and with various mitigations) for speed and scope.  If you have massive complexity, which every enterprise does, in the form of heterogeneous and immense data and elaborate business processes that exists mostly to serve/support that data, AI is perfect to alleviate both.
+
+Most of the AI offerings/implementations are focused on the end of the processes which yields poor...
+
+7. (1 ⬆️) To my knowledge no large company has reported actual monetary value made by adopting AI. And the MIT report shows that the ones willing to talk about it, haven't seen any value added.
+
+8. (1 ⬆️) Don't use the term productivity, look at the terms profit, loss, and competitive pressure.
+
+Has AI reduced costs without limiting sales?  Has it made sales or found new sources of profit?
+
+Are your competitors offering an AI enhanced service which your customers prefer?  Can you steal customers by offering an AI enhanced service?
+
+There is definitely some workflow stuff around reducing costs, but it's very human-in-loop.   The rest I am skeptical about.
+
+9. (1 ⬆️) Well, I've found value in fixing all the nonsense caused in companies by AI. 😄 🤣 does that count?
+
+10. (1 ⬆️) Once there is a service where I can make my own tv shows/movies I will pay for that.
+
+
+
+POST: NVIDIA lives and dies by GPUs and the AI bubble. Is that a strength… or its biggest risk? 🤔
+📍 r/ArtificialInteligence | 👍 9 upvotes | 💬 40 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1o9yzy8/nvidia_lives_and_dies_by_gpus_and_the_ai_bubble/
+Post Content:
+I’ve been digging into NVIDIA’s rise to $4T and I just never felt really convinced they are worth what they are worth. It's like it's one of those stocks wall street says is supposed to be a juggernaut.  Apple and Amazon have broad ecosystems, but NVIDIA basically bet everything on GPU domination. They nailed the hardware, built a moat with CUDA, rode gaming, crypto, now most notably the AI wave.  But that also means… they live and die by the GPU. No easy pivot. If the AI wave slows, or GPU demand shifts, that could get shaky fast.  I made an analysis breaking down their goal, strategy, and execution, and I respect the hustle, but wouldn't buy into it. Curious what others here think, is this sustainable dominance or a fragile position that could unwind fast? I personally have no stake (short or long) the company, just curious.
+
+TOP 10 COMMENTS
+
+1. (5 ⬆️) >but NVIDIA basically bet everything on GPU domination
+
+>But that also means… they live and die by the GPU. No easy pivot. 
+
+can you define "AI"?
+
+
+
+pretend that single car that can drive itself has some sort of fancy GPU
+
+pretend every single robot that can perform real world tasks has some sort of fancy GPU
+
+
+
+>If the AI wave slows, or GPU demand shifts, that could get shaky fast.
+
+mmmm... can you quantify "fast"? how "soon" is that? months? weeks? years? decades?
+   💬 Replies (1):
+   1.1. (-1 ⬆️) Fair... AI isn’t one product, it’s basically compute everywhere. But that’s also the risk: if the “everywhere” hype cools even a bit, it hits their single revenue stream hard. It’s strength and fragility baked in.
+
+2. (3 ⬆️) Nvidia has conquered many domains beyond AI: graphics, filmmaking, gaming, supercomputing, crypto. These markets will still exist even should AI greatly shrink.
+
+3. (3 ⬆️) The stock is inflated, but not by much. This is essentially the second time NVidia made a market to live in. Before NVidia, “Video Cards” were just pixel fill, and if you wanted to do 3D, you needed a 30 thousand dollar SGI computer… a bundled hardware software solution.  
+  
+My guess is, if/when AI starts to dry up, NVidia will have a new thing to jump to that they’d been incubating, at a loss, for a decade.  
+  
+4 Trillion is a lot though, and certainly reflects the Stock Market’s tendency to ...
+   💬 Replies (2):
+   3.1. (1 ⬆️) 100% agree they’re a beast operationally, that’s why this debate is interesting. Their moat’s real, but so is the concentration risk. If you live by the GPU… well, you know the rest.
+   3.2. (-1 ⬆️) nVidia was not the first company offering a affordable 3D video card.
+
+4. (2 ⬆️) i don't see GPU demand dying anytime in our lifetimes.  its only going to get greater
+   💬 Replies (1):
+   4.1. (1 ⬆️) GPU demand probably won’t die, but valuation depends on growth, not just demand. Even slowing growth can hit hard.
+
+5. (2 ⬆️) [https://www.youtube.com/watch?v=PzTRDCVZUHg](https://www.youtube.com/watch?v=PzTRDCVZUHg)
+
+Here's an interesting comment also shared on this video: ***"Oh please, NVIDIA literally is handing OpenAI $100 billion JUST so OpenAI can turn around and spend it on NVIDIA chips. Yeah. They’re basically paying themselves and calling it innovation. Honestly, the rich get richer, and use every trick in the book, and the public follows suit and throws money at it. This is a bubble like anything else. MIT s...
+   💬 Replies (3):
+   5.1. (3 ⬆️) This looks like something Elon Musk would have wrote.
+   5.2. (1 ⬆️) >Here's an interesting comment also shared on this video:
+
+who is "Upside Scoop"? what are their credentials? ANYONE can post content to youtube. 
+
+
+
+>***MIT says 95% of companies get zero ROI on AI***
+
+....they might not have to pay humans to work on the assembly line. this means NO PAY salary and ...
+   5.3. (1 ⬆️) This I don't agree with.  People talking about the "circular economy" are missing the end consumer, you know that got was the fast app to reach how many millions of users.  As for profitability, Uber was unprofitable for years, same with abnb, Amazon, Tesla, pretty much every company.  I wouldn't wa...
+
+6. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### Question Discussion Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Your question might already have been answered. Use the search feature if no one is engaging in your post.
+    * AI is going to take our jobs - its been asked a lot!
+* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectf...
+
+7. (1 ⬆️) People said the same thing about cryptocurrency. It sort of seems like NVIDIA may as well be an oil and gas company at this point. They are the one of, if not the, biggest producer of computing power in the world. If not AI people will find something else to use it on. There’s no shortage of applications for compute power. NVIDIA’s been killing it since they were just a little computer graphics hardware company.
+   💬 Replies (1):
+   7.1. (1 ⬆️) Absolutely, compute isn’t going away. The question is pricing power. If everyone piles in, margins can shift fast. Supply booms kill kings.
+
+8. (1 ⬆️) I tend to agree.  Everyone loves Nvidia, but these types of infrastructure build outs are cyclical.  There absolutely will be a point where people largely have the infrastructure for the time being and demand slows down from build out to maintain, and then Nvidia valuation looks absurd as demand crashes.  But then it'll spark back up again during the "improvement" wave. How long will the wave last?  Probably much longer, but I've got a nice return and am happy to take my profits early and throw ...
+   💬 Replies (1):
+   8.1. (1 ⬆️) Exactly. Infra plays don’t die, they cycle. The danger isn’t “death,” it’s valuation whiplash. Being great ≠ being worth $4T forever.
+
+9. (1 ⬆️) So many businesses you wouldn't expect now run on GPUs.  A decade ago I worked at a company that was processing audio using GPUs.  Any place you need parallel processing GPUs may be in play.
+   💬 Replies (1):
+   9.1. (1 ⬆️) For sure, GPUs are everywhere now. That’s why it’s fascinating: they’ve become the infrastructure. But infra plays eventually mature.
+
+10. (1 ⬆️) I am not an expert in stocks, but for a layman like me it seems to me selling the infrastructure for/&computations is like selling infrastructure for/&energy. The demand is rising too. 
+
+There are many one trick ponies that are very successfull.
+
+
+
+POST: What's a potential prompt that would require a generative AI to use the most energy and resources?
+📍 r/ArtificialInteligence | 👍 5 upvotes | 💬 32 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1o9xyc1/whats_a_potential_prompt_that_would_require_a/
+Post Content:
+Just a shower thought. What prompt could I ask that would require the most energy for a generative AI to answer.
+
+TOP 10 COMMENTS
+
+1. (10 ⬆️) I asked ChatGPT. It said:
+
+  
+“Simulate the entire 2024 U.S. economy month-by-month for five years under three policy scenarios, writing a 300-page report with graphs, references, and code for replication—then critique your own methodology as if you were three separate Nobel-level economists.”
+   💬 Replies (1):
+   1.1. (2 ⬆️) LLMs can’t simulate anything. They’re a math formula, they convert your prompt into numbers and run a lot of math on those numbers, then they turn the resulting numbers back into words. So the amount of processing is always the same for the same amount of input/output which is why that’s how they bi...
+
+2. (5 ⬆️) " what prompt would require you to use the most energy and resources? Confirm empirically."
+
+3. (3 ⬆️) Assuming it can create videos ‘create a movie from the Odyssey by Homer’
+
+4. (3 ⬆️) why would you want to waste energy like that?
+   💬 Replies (2):
+   4.1. (1 ⬆️) He's the real Dr. Evil
+   4.2. (1 ⬆️) may be OP want to DDoS the gpu🤣
+
+5. (3 ⬆️) Ask it “is there a sea horse emoji?” Just watch.
+
+6. (2 ⬆️) It’s probably a semi autonomous multi string agent that has the capability to delegate sub agents. So something that you would say in Claude code with clear enough directives that it wouldn’t stop.
+
+7. (2 ⬆️) Who pays the electricity bill?
+
+8. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### Question Discussion Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Your question might already have been answered. Use the search feature if no one is engaging in your post.
+    * AI is going to take our jobs - its been asked a lot!
+* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectf...
+
+9. (1 ⬆️) For a single prompt into a general AI application (ChatGPT, Claude, etc), you would want to:
+1.  Ask for a multi step task (ideally, specifying a long list of steps explicitly)
+2. Give it a minimum target length of the output
+3. Show it's reasoning/think out loud for each step
+
+
+However, single prompts run into context limits, which effectively sets an upper bound. If you wanted to go beyond this, you would find an agentic app where the AI complete each step, and starts new ones, allowing a refr...
+
+10. (1 ⬆️) The one that uses up your credits the fastest. That's what all the token monitoring is about.
+
+📎 ALL REDDIT LINKS (22 posts)
+1. https://reddit.com/r/LocalLLaMA/comments/1oakwgs/stanford_just_dropped_55hrs_worth_of_lectures_on/
+2. https://reddit.com/r/LocalLLaMA/comments/1o9xiza/dgx_its_useless_high_latency/
+3. https://reddit.com/r/LocalLLaMA/comments/1oa98jf/made_a_website_to_track_348_benchmarks_across_188/
+4. https://reddit.com/r/LocalLLaMA/comments/1oak08e/apple_m5_max_and_ultra_will_finally_break/
+5. https://reddit.com/r/LocalLLaMA/comments/1oahpmx/when_you_have_little_money_but_want_to_run_big/
+6. https://reddit.com/r/LocalLLaMA/comments/1oa29de/drummers_cydonia_and_magidonia_24b_v420/
+7. https://reddit.com/r/LocalLLaMA/comments/1o9xf4q/experiment_qwen3vl8b_vs_qwen25vl7b_test_results/
+8. https://reddit.com/r/LocalLLaMA/comments/1oa1zfp/3x_price_increase_on_llama_api/
+9. https://reddit.com/r/LocalLLaMA/comments/1oa8klx/open_source_custom_implementation_of_gpt5_pro/
+10. https://reddit.com/r/LocalLLaMA/comments/1oa3u2d/the_size_difference_of_gptoss120b_vs_its/
+11. https://reddit.com/r/artificial/comments/1o9wwrr/weird_observation_of_the_grok_share_link_feature/
+12. https://reddit.com/r/MachineLearning/comments/1oaf1v0/d_on_aaai_2026_discussion/
+13. https://reddit.com/r/MachineLearning/comments/1oa7bb2/d_what_are_some_trendy_or_emerging_topics_in_aiml/
+14. https://reddit.com/r/OpenAI/comments/1oacp38/openai_researcher_sebastian_bubeck_falsely_claims/
+15. https://reddit.com/r/OpenAI/comments/1o9zgom/chatgpt5_finds_solution_to_10_erdos_problems/
+16. https://reddit.com/r/AI_Agents/comments/1oaasj7/for_those_who_use_claude_code_what_ide_do_you_use/
+17. https://reddit.com/r/AI_Agents/comments/1oa36fl/what_are_you_charging_for_voice_ai_agents/
+18. https://reddit.com/r/ArtificialInteligence/comments/1oa2vgx/mainstream_people_think_ai_is_a_bubble/
+19. https://reddit.com/r/ArtificialInteligence/comments/1oa6c6q/ai_boom_is_draining_the_power_grid_and_maybe_our/
+20. https://reddit.com/r/ArtificialInteligence/comments/1oa2qbz/has_any_one_found_tangible_enterprise_value/
+21. https://reddit.com/r/ArtificialInteligence/comments/1o9yzy8/nvidia_lives_and_dies_by_gpus_and_the_ai_bubble/
+22. https://reddit.com/r/ArtificialInteligence/comments/1o9xyc1/whats_a_potential_prompt_that_would_require_a/
