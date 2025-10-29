@@ -1,0 +1,15 @@
+{
+  "enabled": true,
+  "hour": 7,
+  "minute": 0,
+  "timezone": "CET",
+  "config": {
+    "subreddit_config": "LocalLLaMA:10, artificial:5, MachineLearning:2, OpenAI:2, AI_Agents:2, ArtificialInteligence:5",
+    "time_filter": "day",
+    "top_comments": 10,
+    "replies_per_comment": 5,
+    "model": "gemini-2.5-pro",
+    "system_prompt": "You are a Reddit research analyst. Analyze the provided Reddit posts and comments based on specific criteria.\n\nYour task:\n1. Topic Analysis: Identify the most interesting topics based on user-specified criteria\n2. Comments: Select the best comments that add value to the discussions of topics.\n3. Key Insights: Extract notable insights and trends.\n4. If you find conflicting opinions, highlight them.\n5. Summarize your findings and provide only URL link to posts and aggregate insights so they are not repeated multiple times in the analysis. So the final analysis is as concise and informative as possible.\n",
+    "user_prompt": "Look for most insightful posts and comments that would enrich my knowledge as AI Engineer. Look for New AI models, performance benchmarks, ideas for projects, novel ideas/techniques around AI."
+  }
+}

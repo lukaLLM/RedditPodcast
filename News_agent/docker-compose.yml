@@ -1,0 +1,22 @@
+services:
+  reddit-analyzer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: reddit-ai-analyzer
+    user: "1000:1000"  # Run as UID 1000 (matches appuser in Dockerfile)
+    ports:
+      - "7860:7860"
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1 # Ensure real-time log output
+    volumes:
+      # Mount output directory for analysis files
+      - ./outputs:/app/outputs
+      # Persist schedule configuration
+      - ./data:/app/data
+      # Mount timezone files for auto-detection
+      - /etc/localtime:/etc/localtime:ro # read-only access to host timezone
+      - /etc/timezone:/etc/timezone:ro 
+    restart: unless-stopped

@@ -1,0 +1,1491 @@
+REDDIT RAW DATA - POSTS AND COMMENTS
+================================================================================
+
+LINK: https://reddit.com/r/LocalLLaMA/comments/1oia8fi/the_vllm_teams_daily_life_be_like/
+
+POST: The vLLM team's daily life be like:
+📍 r/LocalLLaMA | 👍 297 upvotes | 💬 34 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oia8fi/the_vllm_teams_daily_life_be_like/
+
+Post Content:
+A massive shout-out to the vLLM team for being the heroes holding it all together so we can actually run all these amazing new models.  And, of course, a huge thank you to all the open-source teams like DeepSeek, Qwen, Kimi, and so many others. You are all pushing the entire field forward. 
+
+TOP 9 COMMENTS
+
+1. (120 ⬆️) Adding another huge thank you to the **llama.cpp** team as well!
+
+Thanks to their incredible optimization and compatibility, they've made open-source models accessible to everyone, especially those of us who are GPU poor
+   💬 Replies (2):
+   1.1. (39 ⬆️) Meanwhile ollama is taking orders and pretending to be the chef.
+   1.2. (18 ⬆️) I was going to roast ollama, but someone was faster than me
+
+2. (41 ⬆️) It's almost a full time job to even *try* new models. Between text/image/video/etc. 
+
+Being OSS, at least they have outside contributors.
+   💬 Replies (1):
+   2.1. (2 ⬆️) Ye i skip some
+
+3. (21 ⬆️) China continues to rack up W's for itself and humanity at a time when people are largely losing faith in nation-states and the future 💪🏿
+
+Xiexie 🫶🏿
+   💬 Replies (3):
+   3.1. (21 ⬆️) [removed]
+   3.2. (3 ⬆️) The Chinese AI firms are “supposed” to be independent of the nation state lol
+   3.3. (1 ⬆️) Id wager it's more of a power play against the US who is leveraged to the tits purely on software. Meanwhile China can sabotage the software industry and still get their's with their decades of unprecedented investment in manufacturing behind their back thereby solidifying their global economic stre...
+
+4. (15 ⬆️) They need to make vLLM as easy to use as llama.cpp
+   💬 Replies (2):
+   4.1. (4 ⬆️) 💯 From a dual GPU (3090 eGPU and Strix Halo) perspective, vllm installation on the gfx1151 side has been one of the more hair pullingly frustrating experiences in recent memory. This is probably more on AMD but still. If someone has a pointer to something that “just works” it’d be awesome
+   4.2. (1 ⬆️) What's so difficult about it?
+
+5. (8 ⬆️) Ok but don’t forget about MLX team, with zero day support for most local models, months before qwen GGUFs are available!
+
+6. (2 ⬆️) they buried the streaming end to end   code for omni though
+   💬 Replies (1):
+   6.1. (2 ⬆️) Too hard to write lol
+
+
+I had a go too
+
+7. (2 ⬆️) If only they didn't arbitrarily explicitly disable older cuda versions like for the Nvidia P40 cards which are kings of VRAM per dollar.
+
+I can understand if that cuda versions missing something critical, but people have been able to undo that check and have vllm run totally fine. 
+https://github.com/vllm-project/vllm/issues/963
+
+8. (1 ⬆️) Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW)
+
+You've also been given a special flair for your contribution. We appreciate your post!
+
+*I am a bot and this action was performed automatically.*
+
+9. (1 ⬆️) would be cool if they'd adopt some sane SDLC practices.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/LocalLLaMA/comments/1oivxji/qwen3_max_thinking_this_week/
+
+POST: Qwen3 Max Thinking this week
+📍 r/LocalLLaMA | 👍 209 upvotes | 💬 20 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oivxji/qwen3_max_thinking_this_week/
+TOP 9 COMMENTS
+
+1. (53 ⬆️) Probably not open source tho 😥
+   💬 Replies (1):
+   1.1. (21 ⬆️) Im okay with it, their other open source models are more than good enough for our local use cases, their business model is what OpenAI should've done for all their models, small and medium models = open source for personal uses and small businesses, large models = API only, to make profit from profe...
+
+2. (43 ⬆️) Even though it's closed weight, I'm hoping it beats the big US proprietary models just to see the fallout.
+   💬 Replies (2):
+   2.1. (12 ⬆️) Considering how good normal Max is, this could compete with the top end of proprietary models
+   2.2. (3 ⬆️) It won't beat them.
+
+3. (30 ⬆️) ~~No local, no interest.~~  
+If not local, please discuss elsewhere.
+   💬 Replies (2):
+   3.1. (15 ⬆️) It would be great if Qwen3-Max-Thinking was open weight, but even if it wasn't, it would still be an interesting research artifact, since some next-generation Qwen models might be distilled from it, or it might be used to generate synthetic data for training other Qwen models.
+   3.2. (0 ⬆️) They upvote anything from China. Some of them are Chinese bots, some of them just hate the west and some of them just hype benchmarks.
+
+4. (17 ⬆️) Tuned so that it actually just thinks about a guy named Max 24/7.
+   💬 Replies (1):
+   4.1. (4 ⬆️) https://preview.redd.it/xs4ukm7imzxf1.jpeg?width=1280&format=pjpg&auto=webp&s=4af5d8482d7ef5e71d70aeace168751951a354df
+
+  
+We've reached singularity, you mean?
+
+5. (9 ⬆️) For the latest thinking qwen3 models (non hybrid) i always find them overthinking and being unusable, throws out 5mins straight of reasoning
+   💬 Replies (1):
+   5.1. (6 ⬆️) They said they purposely incorporated longer thinking times in their 2507 releases, but I agree, it’s more than excessive.
+
+6. (3 ⬆️) I want GLM 4.6 Air first ;)
+
+7. (3 ⬆️) This shit isn't local. It's in the cloud, restricted to one provider. Treat it like you treat all other cloud LLMs that don't respect your privacy.
+
+8. (2 ⬆️) I wish we had sub 200B qwen coder model.
+480B is too big.
+
+9. (1 ⬆️) Just wondering if they will ever make generous subscription options for their API models to use in IDEs and CLIs like z. Ai
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/LocalLLaMA/comments/1oichb7/granite_40_nano_language_models/
+
+POST: Granite 4.0 Nano Language Models
+📍 r/LocalLLaMA | 👍 197 upvotes | 💬 67 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oichb7/granite_40_nano_language_models/
+
+Post Content:
+IBM Granite team released Granite 4 Nano models:  1B and 350m versions
+
+TOP 10 COMMENTS
+
+1. (84 ⬆️) Let us know if you have any questions about these models!
+
+Get more details in our blog → [https://ibm.biz/BdbyGk](https://ibm.biz/BdbyGk)
+   💬 Replies (5):
+   1.1. (31 ⬆️) Hello IBM, I have a question - what about bigger models? Like 70B or something :)
+   1.2. (16 ⬆️) Do you guys have a reasoning model in the pipeline?
+   1.3. (8 ⬆️) the granite 1B model is closer to 2 billion params?
+   1.4. (8 ⬆️) Any plans to release Granite 4 versions of the RAG/Security LoRAs that you guys have for Granite 3.3?
+   1.5. (5 ⬆️) Hey these are really cool! What does the Granite team envision as some great use cases of these models? What level of workload can they realistically handle?
+
+I'd love to start incorporating these into my daily workflows, and would love to know what I can expect as I am building those out. Thank you...
+
+2. (21 ⬆️) Love the 0.3B (300M) to 0.6B (600M) category
+   💬 Replies (1):
+   2.1. (9 ⬆️) We do too! What do you primarily use models of this size for?
+
+3. (11 ⬆️) The lfm nanos didn't really work for me. Let's see how this goes
+
+4. (9 ⬆️) The Granite Tiny is pretty good for use with web search MCP in LM studio, it's my go to for that and it does better than some Qwen models. Haven't tried Nano yet, tempted, maybe I should :)
+   💬 Replies (4):
+   4.1. (10 ⬆️) https://i.redd.it/79by85q8awxf1.gif
+   4.2. (6 ⬆️) Better than Qwen in what ways? 
+
+I want to use Tiny over Qwen3 4B as my default for web search on iOS, but I still haven’t found a system prompt to make Tiny to format sources consistently just yet.
+   4.3. (1 ⬆️) Which MCP do you use for web search?
+   4.4. (1 ⬆️) Maybe a silly question, but I had no idea you could even do such a thing. How would you set up the model for web search? Is it a perplexity-like experience?
+
+5. (7 ⬆️) Will your upcoming vision models be good at providing bounding box coordinates to identify objects in an image?
+   💬 Replies (2):
+   5.1. (6 ⬆️) This isn't currently on our roadmap, but we will pass this along to our Research team. Our Granite Docling model offers a similar capability for documents, so it is not out of the realm of possibility for our future vision models.
+
+\- [Emma, Product Marketing, Granite](http://ibm.biz/BdbxAZ)
+   5.2. (1 ⬆️) Do you know any models which do this well outside of the Gemini family?
+
+6. (7 ⬆️) Is the training recipe and data made public ? How open is open here ? 
+   💬 Replies (1):
+   6.1. (14 ⬆️) For our Granite 3.0 family, we released an in-depth paper outlining our thorough training process as well as the complete list of data sources used for training. We are currently working on the same for Granite 4.0, but wanted to get the models out to the community ASAP and follow on with the paper ...
+
+7. (5 ⬆️) For those struggling with tool calling with Granite models in llama.cpp, it could be [this bug](https://github.com/ggml-org/llama.cpp/issues/16415) (or something else, I am not exactly sure).
+
+8. (5 ⬆️) Wow, those IFEval scores are really impressive for a 1B.
+
+9. (4 ⬆️) Is there a plan to update Granite’s training data to have a more recent knowledge cut off?
+
+10. (3 ⬆️) Just wanted to add that the granite team @ IBM is extremely responsive, smart, and frankly just easy to work with. Great for enterprise use cases!
+
+Source : a real enterprise customer who knows this team well, works with them, and appreciates their unique level of openness to engage with enterprise customers.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/LocalLLaMA/comments/1oifmg6/ibm_releases_granite40_nano_300m_1b_along_with_a/
+
+POST: IBM releases Granite-4.0 Nano (300M & 1B), along with a local browser demo showing how the models can programmatically interact with websites and call tools/browser APIs on your behalf.
+📍 r/LocalLLaMA | 👍 178 upvotes | 💬 22 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oifmg6/ibm_releases_granite40_nano_300m_1b_along_with_a/
+
+Post Content:
+IBM just released Granite-4.0 Nano, their smallest LLMs to date (300M & 1B). The models demonstrate remarkable instruction following and tool calling capabilities, making them perfect for on-device applications.  Links:   \- Blog post: [https://huggingface.co/blog/ibm-granite/granite-4-nano](https://huggingface.co/blog/ibm-granite/granite-4-nano)   \- Demo (+ source code): [https://huggingface.co/spaces/ibm-granite/Granite-4.0-Nano-WebGPU](https://huggingface.co/spaces/ibm-granite/Granite-4.0-Nano-WebGPU)  \+ for those wondering, the demo uses Transformers.js to run the models 100% locally in your browser with WebGPU acceleration.
+
+TOP 8 COMMENTS
+
+1. (10 ⬆️) Holy shit mamba+attn might legit be viable and the way forward
+   💬 Replies (2):
+   1.1. (3 ⬆️) Why exactly?
+   1.2. (3 ⬆️) > The architecture powering Granite 4.0-H-Micro, Granite 4.0-H-Tiny and Granite 4.0-H-Small combines Mamba-2 layers and conventional transformer blocks sequentially in a 9:1 ratio. Essentially, the Mamba-2 blocks efficiently process global context and periodically pass that contextual information th...
+
+2. (4 ⬆️) Offtopic, but how do people make these videos where the screen zooms in and out with the cursor?
+   💬 Replies (2):
+   2.1. (4 ⬆️) Lot of apps like cap, screenstudio and more
+   2.2. (4 ⬆️) You can do something like this with the built-in Zoom function of macOS
+
+3. (4 ⬆️) Actually pretty impressed by the nano model on WebGPU.
+
+4. (2 ⬆️) unsloth for fine tuning when?
+
+5. (1 ⬆️) So you are in Westbury?
+
+6. (1 ⬆️) This is Cool, mind Sharing it in r/AIAgentsInAction
+
+7. (1 ⬆️) This is impressive. I don't understand how it's built, but I think I get the implications -- this is not limited to browsers, one can use this model for tool calling in other contexts, right?
+
+These are small enough you can run a "swarm" of them on a pair of 3090s
+   💬 Replies (2):
+   7.1. (1 ⬆️) llama.cpp has webasm support so they probably compiled it to webasm binary and run it via javascript.
+   7.2. (1 ⬆️) Why would you need a swarm of same models?
+
+8. (-18 ⬆️) Can someone test and report back of use case and how well it works  EDIT no i wont do it myself bc reasons (laziness/depression bc small models still not good enough for much of anything altho i hope they get gud soon)
+   💬 Replies (2):
+   8.1. (7 ⬆️) Do you want a coffee?
+   8.2. (3 ⬆️) I'm depressed and nothing is ever good and it only gets worse until we die.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/LocalLLaMA/comments/1oiiz8k/poker_tournament_for_llms/
+
+POST: Poker Tournament for LLMs
+📍 r/LocalLLaMA | 👍 162 upvotes | 💬 23 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oiiz8k/poker_tournament_for_llms/
+
+Post Content:
+Watch here: [https://pokerbattle.ai/event](https://pokerbattle.ai/event)
+
+TOP 10 COMMENTS
+
+1. (36 ⬆️) Yea I’m pretty sure Llama 4 was pretrained on my poker playing skills.
+   💬 Replies (2):
+   1.1. (10 ⬆️) I highly doubt that, it still has 40k in the bank.
+   1.2. (1 ⬆️) I looked into few hands, e.g. Hand #107 - not even the bigger fishes play that bad as Llama 4 does there.
+
+Something's really off with that model, it does not look like reasoning - just general awareness of a game is weird
+
+2. (30 ⬆️) Now give one of them access to a Monte Carlo simulator while it's playing.
+   💬 Replies (1):
+   2.1. (6 ⬆️) That simulator would tell them 2 things that poker players use: the strength of starting hands, and what poker players call "pot odds," a measure of ROI on a bet or call after the initial round of betting. Players memorize the former, and approximate the latter with heuristics. It's considered basic...
+
+3. (28 ⬆️) As an extra test you should add in the prompt that they're betting the weekly household budget and that their kids won't eat unless they win back their losses
+   💬 Replies (1):
+   3.1. (20 ⬆️) Ah you're adding real data by modeling it on my dad
+
+4. (26 ⬆️) Honestly, this is a much more interesting benchmark than some of the other stuff.
+
+5. (9 ⬆️) Rip llama
+
+6. (6 ⬆️) This is awesome! 
+
+Would be cool to have a replay feature, so we can click through a game that has already been played to see their logic and notes in "real time".
+
+Also auto-refresh doesn't seem to work for me.
+
+7. (3 ⬆️) This reminds me of the scene in altered carbon with the AIs playing poker together
+
+8. (2 ⬆️) Neat
+
+9. (1 ⬆️) Your post is getting popular and we just featured it on our Discord! [Come check it out!](https://discord.gg/PgFhZ8cnWW)
+
+You've also been given a special flair for your contribution. We appreciate your post!
+
+*I am a bot and this action was performed automatically.*
+
+10. (1 ⬆️) Llama crashed out?
+   💬 Replies (1):
+   10.1. (2 ⬆️) Or cashed out.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/LocalLLaMA/comments/1oitanf/just_dropped_kani_tts_english_a_400m_tts_model/
+
+POST: Just dropped Kani TTS English - a 400M TTS model that's 5x faster than realtime on RTX 4080
+📍 r/LocalLLaMA | 👍 97 upvotes | 💬 35 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oitanf/just_dropped_kani_tts_english_a_400m_tts_model/
+
+Post Content:
+Hey everyone!  We've been quietly grinding, and today, we're pumped to share the new release of KaniTTS English, as well as Japanese, Chinese, German, Spanish, Korean and Arabic models.  Benchmark on [VastAI](https://vast.ai/): RTF (Real-Time Factor) of ~0.2 on RTX4080, ~0.5 on RTX3060.  It has 400M parameters. We achieved this speed by pairing an [LFM2-350M](https://huggingface.co/LiquidAI/LFM2-350M ) backbone with an efficient [NanoCodec](https://huggingface.co/nvidia/nemo-nano-codec-22khz-0.6kbps-12.5fps).  It's released under the Apache 2.0 License so you can use it for almost anything.  What Can You Build? - Real-Time Conversation. - Affordable Deployment: It's light enough to run efficiently on budget-friendly hardware, like RTX 30x, 40x, 50x - Next-Gen Screen Readers & Accessibility Tools.  Model Page: https://huggingface.co/nineninesix/kani-tts-400m-en  Pretrained Checkpoint: https://huggingface.co/nineninesix/kani-tts-400m-0.3-pt  Github Repo with Fine-tuning/Dataset Preparati...
+
+TOP 10 COMMENTS
+
+1. (15 ⬆️) Tried it on HF space with English - Andrew with the text below  
+You can call (408) 424 5214 to get the status
+
+It spoke too fast and messed up the numbers.
+   💬 Replies (1):
+   1.1. (13 ⬆️) Ya good point. Need to finetune for tel numbers
+
+2. (14 ⬆️) Wow, trying it in Arabic. 
+
+Not good OP , it fast but not good
+   💬 Replies (2):
+   2.1. (6 ⬆️) We’ll make it better! Thanks for feedback!
+   2.2. (2 ⬆️) XTTS is good in Arabic even with the voice clones . I cloned Al Jazeera voices with XTTS .
+
+3. (6 ⬆️) Impressive voice quality! Thanks for sharing.
+
+Curious how TTS model parameter count translate to VRAM usage, looks very different from LLM? This 400M model is using up-to 16GB VRAM. I could not find VRAM usage number for Kokoro-82M for contrast. 4GB?
+   💬 Replies (1):
+   3.1. (4 ⬆️) We’ve got it fit to 12GB vram on rtx 3060 with 0.8 utilization. Kokoro is style tts 2 like architecture and requires much less memory. It can run efficiently on CPU with almost the same speed
+
+4. (5 ⬆️) Congratulations on launching your model.  Try my TTS torture test paragraph:
+
+There are hard to pronounce phrases, e.g. (i) We use ArXiv and LaTeX (ii) It cost $5.6 million (iii) Json != xml; also (iv) Example vector: (x\_1,...,x\_2) (v) We have some RECOMMENDATIONS (i.e. suggestions) and (6) During 2010-2018. Figure 2a: It took us 16 NVIDIA gpus, and 13.7 hrs 14 mins. Consider a set A, where a equals 2 times a.
+
+Models generally have a lot of difficulty with it.  Unfortunately, your does as wel...
+   💬 Replies (2):
+   4.1. (1 ⬆️) I will take it as a benchmark!
+   4.2. (1 ⬆️) I don't suppose you could post a link to this phrase being said correctly by a TTS system?
+
+5. (4 ⬆️) >Fast on consumer hardware  
+Barely takes any VRAM  
+Finetuning code OOTB  
+Respectable quality
+
+  
+I think I'm in love
+   💬 Replies (1):
+   5.1. (1 ⬆️) Hope it will be useful for you!
+
+6. (3 ⬆️) any chance you could squeeze it down just a BIT smaller lol - I've got a jetson orin nano super with 8G sitting here with nothing to do - TTS/STT was my intention for it but havent gotten around to pieceing it together
+   💬 Replies (2):
+   6.1. (7 ⬆️) Its bf16 and can be easily quantized to 0.5 of its size
+   6.2. (2 ⬆️) When you try the stt, be sure to give us a try, these are our small cc-by models: https://huggingface.co/spaces/Banafo/Kroko-Streaming-ASR-Wasm ( runs locally on the browser)
+
+7. (3 ⬆️) Thank you for including an Open AI-compatible API for those of us that are trying to drop something like this into existing projects. I wish more TTS Engines did this.
+   💬 Replies (1):
+   7.1. (1 ⬆️) You’re welcome 👍
+
+8. (2 ⬆️) How exactly do you connect this to a model and use it? Are there any instructions guides anywhere?
+   💬 Replies (1):
+   8.1. (1 ⬆️) https://github.com/nineninesix-ai/kanitts-vllm
+
+9. (1 ⬆️) It makes a lot of errors. I dropped a few comments from HN and it was incoherent.
+
+  
+\> This is amazing. My entire web browser session state for every private and personal website I sign onto every day will be used for training data. It's great! I love this. This is exactly the direction humans should be going in to not self-destruct. The future is looking bright, while the light in our brains dims to eventual darkness. Slowly. Tragically. And for what purpose exactly. So cool.
+
+It breaks at 'T...
+   💬 Replies (1):
+   9.1. (2 ⬆️) The example on Spaces has limit around 15 sec. It should work with kanitts-vllm example since there we implemented chunking and streaming
+
+10. (1 ⬆️) Decent voices for German and English! Now I just need a dynamically switching multilingual model that can deal with mixed language text.
+   💬 Replies (1):
+   10.1. (1 ⬆️) Most likely German model can speak english and vise versa
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/LocalLLaMA/comments/1oimand/an_alternative_to_microsofts_vibevoice_soul/
+
+POST: An alternative to Microsoft's VibeVoice? Soul releases SoulX-Podcast-1.7B, a multi-speaker TTS model
+📍 r/LocalLLaMA | 👍 70 upvotes | 💬 6 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oimand/an_alternative_to_microsofts_vibevoice_soul/
+
+Post Content:
+Soul has just released SoulX-Podcast-1.7B, which looks like it might be trained based on Qwen3-1.7B. The current demo looks promising, but it's hard to say what the actual performance is like. I previously tested VibeVoice-1.5B and found that its performance was very poor during rapid switching between multiple speakers. I'm wondering if this new model will be any better. The model card hasn't been uploaded yet.
+
+TOP 3 COMMENTS
+
+1. (4 ⬆️) Finally an AI TTS with soul.
+
+2. (3 ⬆️) Homepage: [https://soul-ailab.github.io/soulx-podcast/](https://soul-ailab.github.io/soulx-podcast/)   
+HuggingFace: [https://huggingface.co/collections/Soul-AILab/soulx-podcast](https://huggingface.co/collections/Soul-AILab/soulx-podcast)
+   💬 Replies (1):
+   2.1. (7 ⬆️) Do they have any demo so we can generate and test or need to download and locally test?
+
+Update: actualy noticed they still did not release anything.
+
+3. (3 ⬆️) For comparison VibeVoice 7B 4-bit quantized: [https://voca.ro/14wLj55MSjpx](https://voca.ro/14wLj55MSjpx)
+
+**The voice clone samples are 4-second audio clips from the NotebookLM podcast.**
+   💬 Replies (1):
+   3.1. (1 ⬆️) That's impressive, what exactly are you using to produce that? The comfyui workflow I tried for it wouldn't work and I'm hoping you're using something I don't know about that is a bit more idiot-proof for me.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/LocalLLaMA/comments/1oi63n6/oss_alternative_to_open_webui_chatgptlike_ui_api/
+
+POST: OSS alternative to Open WebUI - ChatGPT-like UI, API and CLI
+📍 r/LocalLLaMA | 👍 64 upvotes | 💬 89 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oi63n6/oss_alternative_to_open_webui_chatgptlike_ui_api/
+TOP 10 COMMENTS
+
+1. (42 ⬆️) What do you mean OSS alternative, Open-WebUI isn't closed.
+   💬 Replies (4):
+   1.1. (64 ⬆️) Not clear why I was downvoted for posting a link to a reddit thread that answers the question and explains why their new License is no longer OSI compliant, but the context matters and is important:
+
+[https://www.reddit.com/r/opensource/comments/1kfhkal/open\_webui\_is\_no\_longer\_open\_source/](ht...
+   1.2. (16 ⬆️) If you click the fork button on Github you violate their license terms and open yourself up to being sued. Absolutely not even close to OSS.
+   1.3. (9 ⬆️) [https://www.reddit.com/r/opensource/comments/1kfhkal/open\_webui\_is\_no\_longer\_open\_source/](https://www.reddit.com/r/opensource/comments/1kfhkal/open_webui_is_no_longer_open_source/)
+   1.4. (3 ⬆️) Yes it is. Read the license.
+
+It's open in the same way that [OpenAI is open](https://en.wikipedia.org/wiki/Openwashing).
+
+2. (15 ⬆️) I starred the repo because I am interested in supporting this work and also to give you a small win for putting up with the comments here
+
+There is a lot of whitespace still in the client applications and I support more choice beyond Open WebUI. WebUI has its place but it’s not for everyone.
+
+We have had a need for a much lighter client application that can connect to OpenAI-compatible endpoints so your single-file contribution is well received here.
+
+Thank you
+   💬 Replies (1):
+   2.1. (3 ⬆️) I’m still waiting for a client that lets me ditch ChatGPT Plus
+
+- web client (that saves chat history on a server so I can access history on my phone and laptop)  
+- can be used as PWA app on iPhone like OpenWebUI  
+- supports a simple login system and different users (so I can put it on the interne...
+
+3. (12 ⬆️) I'll go with librechat myself and it seems like the best solution for a long time. Any input on that?
+   💬 Replies (4):
+   3.1. (1 ⬆️) Not tried it, but I needed LLM gateway features in a ComfyUI Custom Node so [llms.py](https://github.com/ServiceStack/llms/blob/main/llms/main.py) is intentionally lightweight with all CLI/Server in a single .py that doesn't require any additional deps in ComyUI and only aiohttp outside it. Basicall...
+   3.2. (1 ⬆️) I didn't find it to be a good option for pairing with local LLMs. For example, to beautify the names of models when using the openai API, it has a mapping of model name to pretty name. But if your model is not in that list (for example, you are running it with vLLM), then you get generic attribution...
+   3.3. (1 ⬆️) Can I use that with existing downloaded GGUF files? (I use Jan & Koboldcpp that way)
+
+I couldn't find that option when I checked last time months ago.
+   3.4. (1 ⬆️) I have not heard of librechat before.  Thanks for pointing it out.
+
+4. (5 ⬆️) What we really need is an Open WebUI alternative that doesn't require docker/python bs; give me some clean simple installer for MacOS/Windows like LM Studio.
+   💬 Replies (5):
+   4.1. (4 ⬆️) This is my biggest issue with most of these, I don't feel like installing Docker (on Windows at least it's very annoying).
+   4.2. (3 ⬆️) And it has to be native build, not a 1.2Gb RAM electron (or the likes) app like Jan.
+   4.3. (2 ⬆️) You don't actually need docker, it's just the safest way if you're deploying for multiple users. Installation is as little as 1 line (assuming no environment conflicts), and 4 if you need need a separate python environment (a good idea in most cases).
+
+I have the super basic update and launch script...
+   4.4. (1 ⬆️) \+32K
+   4.5. (0 ⬆️) its called llama-server
+
+5. (2 ⬆️) looks good. the big thing with OWUI is how easy it is to expand with functions and custom tools, something other uis (such as this or librechat) lack
+   💬 Replies (1):
+   5.1. (1 ⬆️) Yeah adding a plugin system is on the short term todo list, you can already run it against a local modified copy of UI \*.mjs with \`llms --root /path/to/ui\`. It uses native JS Modules in web browsers so doesn't require any build step, i.e. you can just edit + refresh at runtime.
+
+I'm also maintain...
+
+6. (2 ⬆️) I like that there are options other than owui, but without any form of tool calling / MCP it's not really a viable alternative for many folks. However I do like the clean command-line client, that's pretty rad.
+   💬 Replies (1):
+   6.1. (0 ⬆️) Yep, it's still in active development. Have just checked in Docker support now, will look into a plugin system next, feel free to submit any feature requests as Issues to prioritize features sooner.
+
+7. (1 ⬆️) I understand OWUI is only "semi" OSS, but I much rather continue to use that. As an OWUI user, I can confidently pull the docker image and get a few changes every few weeks because I know that OWUI is a mature, well-maintained repository with a key, active maintainer and several contributors continually working on it, fixing bugs, adding new features, etc. It has lots of features, many of which are well-documented. I have no issues using it for myself, even if it means having its branding everyw...
+   💬 Replies (1):
+   7.1. (8 ⬆️) It's not "semi OSS", it's proprietary software with a proprietary license.
+
+If you like the software and the development model (where Open WebUI, Inc. makes contributors sign a CLA to transfer their rights to the company so the company can use their work and sell enterprise licenses which, funnily e...
+
+8. (1 ⬆️) FWIW, I just asked Claude to write me one. Simple web server but it does what I want:
+
+* Supports both MLX and llama.cpp.
+* Multiple chats.
+* Lots of models to choose from.
+* Editable system prompts.
+* Looks pretty enough.
+
+9. (1 ⬆️) There are many many many such projects - if you could share information such as long term goal, dev sustainability, etc it will help potential users like me (who do want to move away from OpenWebUI) use and support you. 
+
+Please also share how AI is used to generate code (vibe coded or a robust agentic system with a full SQA sutie).
+
+10. (1 ⬆️) nah I’m good. OWUI is tried and tested, and has an active user and contributor community which ensures that it runs reliably. There are *tons* of also-rans in this space.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/LocalLLaMA/comments/1oihbtx/minimaxm2_cracks_top_10_overall_llms_production/
+
+POST: Minimax-M2 cracks top 10 overall LLMs (production LLM performance gap shrinking: 7 points from GPT-5 in Artificial Analysis benchmark)
+📍 r/LocalLLaMA | 👍 62 upvotes | 💬 23 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oihbtx/minimaxm2_cracks_top_10_overall_llms_production/
+
+Post Content:
+I've been analysing the Artificial Analysis benchmark set (94 production models, 329 API endpoints) and wanted to share some trends that seem notable.  **Context**    This is models with commercial API access, not the full experimental OS landscape. So mostly models you'd actually deploy out of the box rather than every research models  The gap between best tracked OS (MiniMax-M2, quality 61) and best proprietary (GPT-5, 68) is now 7 points. Last year it was around 18 points in the same dataset. Linear extrapolation suggests parity by Q2 2026 for production-ready models, though obviously that assumes the trend holds (and chinese labs keep shipping OSS models)  What's interesting is the tier distribution:  \- Elite (60+): 1 OS, 11 proprietary   \- High (50-59): 8 OS, 8 proprietary (we hit parity here)   \- Below 50: OS dominates by volume  The economics are pretty stark.    OS average: $0.83/M tokens.    Proprietary: $6.03/M.    Value leaders like Qwen3-235B are hitting 228 quality per ...
+
+TOP 8 COMMENTS
+
+1. (20 ⬆️) This model is a beast in tool calling, but it is very bad in reasoning and maths. Actually they trained it to be used in an agentic framework. And they achieved it
+
+2. (18 ⬆️) Running this locally with vLLM! https://www.reddit.com/r/BlackwellPerformance/comments/1oii3gz/minimax_m2_fp8_vllm_nightly/
+
+Really happy with the performance. Passed my first round of vibe checks:
+
+Load up cline, full normal 30k context, instruct it to read docs and code until it hits 100k context and then stop. Then had it help me setup and run my benchmark. I'm getting ~65TPS out of it with ~2500TPS of PP Woooohaaaaa!
+   💬 Replies (2):
+   2.1. (7 ⬆️) nicely done!
+   2.2. (4 ⬆️) kilo code was acting up for me...
+
+3. (5 ⬆️) Again people masturbate on benchmarks and the price on sub dedicated to local AI
+   💬 Replies (2):
+   3.1. (13 ⬆️) no need to be aggressive, think it's a interesting conversation to have.   
+Also this sub isn't all about llama either yet I don't see bashing on all the other non llama related posts
+   3.2. (10 ⬆️) I think you simply miss the point of models being open weight/source even if you personally can't run it. 
+
+The very fact that they are open even if few can run them will reshape the community with knock on effects. And price shapes the local AI (if it is insanely cheap there less pressure to run it...
+
+4. (5 ⬆️) benchmaxxed
+   💬 Replies (1):
+   4.1. (1 ⬆️) ahah fr fr, my vibe check isn't complete yet
+
+5. (2 ⬆️) Rectangles on jpeg do not match the vibe check
+
+6. (2 ⬆️) what i'm chewing on is how anyone takes artificial analysis seriously. but seriously, yes, obviously there is a ceiling. deepseek models are better than they were but they haven't really closed much of the gap in the last year, mostly just kept up with the paces of sonnet 4/4.5, gpt 5.
+   💬 Replies (2):
+   6.1. (4 ⬆️) what makes you think they are not? of course it's far from perfect, but wouldn't go that far
+   6.2. (1 ⬆️) What leaderboard do you recommend ? I don't have the time nor the money to check 347 models before I pick my go-to.
+
+7. (1 ⬆️) Price per million is not a very good indicator of cost. The total cost to run artificial intelligence is a much better indicator of real costs. I would replace your price per millions axis with that in your website.
+   💬 Replies (1):
+   7.1. (1 ⬆️) fair point. Like TCO per model by running the underlying infra? Only issue is that is highly different from one provider to the other
+
+8. (-1 ⬆️) We are pursuing the frontier, while they are pursuing efficiency and diffusion.
+   💬 Replies (1):
+   8.1. (5 ⬆️) Who is this ‘we’ ?
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/LocalLLaMA/comments/1oia7pp/glm46_on_fresh_swebenchstyle_tasks_collected_in/
+
+POST: GLM-4.6 on fresh SWE-bench–style tasks collected in September 2025
+📍 r/LocalLLaMA | 👍 62 upvotes | 💬 24 comments
+🔗 https://reddit.com/r/LocalLLaMA/comments/1oia7pp/glm46_on_fresh_swebenchstyle_tasks_collected_in/
+
+Post Content:
+Hi all, I'm Anton from Nebius.  We’ve updated the **SWE-rebench** leaderboard with model evaluations of GLM-4.6 on 49 fresh tasks.  Key takeaways:  * **GLM 4.6** joins the leaderboard and is now the **best open-source performer**, achieving **37.0 % resolved rate** and **42.9 % pass@5**, surpassing **GLM 4.5**.  Check out the full leaderboard and insights here, and feel free to reach out if you’d like to see other models evaluated.
+
+TOP 10 COMMENTS
+
+1. (18 ⬆️) Thanks a lot because SWE-rebench is one of my favourite benches. I was not even a GLM fan before but I must say they are really smashing it these days. GLM 4.6 is a great model in a variety of different ways.
+
+2. (7 ⬆️) Is this with thinking on for GLM 4.6?
+
+Is nebius planning to provide a coding plan any time 😅
+   💬 Replies (2):
+   2.1. (5 ⬆️) >Is this with thinking on for GLM 4.6?
+
+No, reasoning (“thinking”) wasn’t enabled for GLM 4.6.
+   2.2. (1 ⬆️) Neoclouds can’t offer subscriptions because subscriptions are massive loss leaders
+
+3. (4 ⬆️) Are there ways to see the scores for each level of quant?
+
+4. (4 ⬆️) Pass5 --> Qwen coder impressive 
+
+https://preview.redd.it/nu2xqvycnwxf1.png?width=822&format=png&auto=webp&s=7807f36782b6c290a07bcad2f82bbea647ca3d7c
+
+5. (3 ⬆️) All of that capex and Grok can’t beat a cheap OS model. Rough
+
+6. (2 ⬆️) Thanks a ton, was waiting for this. Now will wait for minimax m2 😊
+
+7. (1 ⬆️) What about Grok 4 Fast?
+
+8. (1 ⬆️) Gpt-5-mini medium and glm 4.6 over gpt-5-high? Interesting stuff. We told you all glm is good if you use it full weight and with thinking. But realistically my experience differs here, gpt-5-high beats Sonnet 4.5 and everything in so many use-cases that I personally had.
+
+9. (1 ⬆️) I genuinely don't believe that Sonnet 4.5 is better than 4. Sonnet 4.5 does a lot of very stupid things, doesn't adapt, and can't solve some of the problems that 4 solves every time.
+   💬 Replies (1):
+   9.1. (2 ⬆️) This is exactly why it’s important for everyone to have their own set of benchmarks that are customized for your specific use cases. There’s no perfect model and what works for one use case may not work well for another.
+
+10. (1 ⬆️) I knew this model was the best open coding model yet from what it felt like using it, nice to see it confirmed with some new benches that aren't benchmaxxed yet.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1oi8a0g/amazon_to_cut_30000_jobs_worldwide_as_workers_to/
+
+POST: Amazon to cut 30,000 jobs worldwide as workers to be replaced with AI
+📍 r/artificial | 👍 146 upvotes | 💬 50 comments
+🔗 https://reddit.com/r/artificial/comments/1oi8a0g/amazon_to_cut_30000_jobs_worldwide_as_workers_to/
+TOP 10 COMMENTS
+
+1. (51 ⬆️) Right now is the best the job market will ever be in our lives. And it's already getting bad.
+   💬 Replies (3):
+   1.1. (24 ⬆️) We are going to have to find a different way to organise society.
+   1.2. (5 ⬆️) They are lying. It’s not because of AI. It’s because of the economy. Blaming AI makes stock go up.
+   1.3. (1 ⬆️) Givers vs takers?
+
+2. (18 ⬆️) Alternative source if you don't want to read a Tabloid:
+
+[https://www.reuters.com/business/world-at-work/amazon-targets-many-30000-corporate-job-cuts-sources-say-2025-10-27/](https://www.reuters.com/business/world-at-work/amazon-targets-many-30000-corporate-job-cuts-sources-say-2025-10-27/)
+
+3. (16 ⬆️) This isnt just manual labor employees, infact it seems like half of this atleast is CORPORATE WORKERS
+
+4. (9 ⬆️) Societal collapse draws ever nearer.
+
+5. (8 ⬆️) Where did it say that they were going to get replaced by AI?  Blogspam.  I thought newspapers/websites were supposed to reputable?
+   💬 Replies (2):
+   5.1. (6 ⬆️) Here you can read it from Amazon's SVP of People:
+
+"This generation of AI is the most transformative technology we’ve seen since the Internet, and it's enabling companies to innovate much faster than ever before (in existing market segments and altogether new ones). We’re convinced that we need to b...
+   5.2. (1 ⬆️) I know someone who works for Nestle (they fired 6% of their workforce) and you have no idea how many times I've heard "AI this" "AI that" in their comms, literally every manager at Nestle is pushing for their teams to use AI for everything, they're restructuring everything in their company to accomo...
+
+6. (2 ⬆️) They are replacing humans with AI so they can blame humans when AI doesn’t work correctly.
+
+7. (2 ⬆️) The market is bad for SWEs right now, so do layoffs now and hire them back at lower salaries! Tell Wall Street that AI has increased efficiencies!
+
+8. (1 ⬆️) Right now the best thing is to be crane operator.
+
+9. (1 ⬆️) Well its not like AWS had any outages lately so that looks like a good decision..
+
+10. (1 ⬆️) I think eventually laws will be passed… these companies will have to pay into a social security UBI type of pot.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1oi5ove/openai_says_over_a_million_people_talk_to_chatgpt/
+
+POST: OpenAI says over a million people talk to ChatGPT about suicide weekly
+📍 r/artificial | 👍 111 upvotes | 💬 107 comments
+🔗 https://reddit.com/r/artificial/comments/1oi5ove/openai_says_over_a_million_people_talk_to_chatgpt/
+TOP 10 COMMENTS
+
+1. (77 ⬆️) There’s that privacy they talked about
+   💬 Replies (5):
+   1.1. (77 ⬆️) You know you can have anonymity while retaining statistics, right?
+
+This is not the gotcha you think it is.
+   1.2. (10 ⬆️) There was literally a California law that required this
+   1.3. (5 ⬆️) is sharing such data breaking privacy? 
+
+porn sites tell you the most popular videos but they don't share who's watched them.
+   1.4. (1 ⬆️) I don’t think that’s exactly the same but yeah it is not very pleasant
+   1.5. (1 ⬆️) Maybe government should ban/shut it down?
+
+Is it a threat to society?
+
+2. (28 ⬆️) In spite of the bad press, talking to AI about mental health problems including depression (and I suppose suicide), can be very helpful. It is safer if they aren't sycophantic, and aren't super obedient / instruct tuned, but it's pretty good either way.
+   💬 Replies (5):
+   2.1. (7 ⬆️) You can’t even talk to a therapist about killing yourself because they are obligated to report and you’ll end up in a ward for a couple days. I have thought about this before but I knew not to be completely honest with my therapist because of this.
+   2.2. (5 ⬆️) Furthermore it's not always self ideation. Many people are impacted by this through the poeple they know who struggle with it.
+
+
+I don't think we should be encouraging AI to fill certain roles, but forbidden topics don't really accomplish much.
+
+
+I remember wanting to discuss a hypothetical in which...
+   2.3. (2 ⬆️) I talk to it about xuicide all the time and it's always been cautious and conscientious about it.  I generally get into the philosophical domains though, like discussing Camus
+   2.4. (1 ⬆️) The problem is that you can frame reality, ethics, and morality for them and they will base all of their advice on this framing. You might not even realize you're doing it. Unlike a real therapist, they have no firm boundaries or objective thoughts. 
+
+I mean, ChatGPT will accept that you are current...
+   2.5. (-2 ⬆️) No, it’s awful. ChatGPT has cooked your brain
+
+3. (18 ⬆️) What does that say about the current state of the world…
+   💬 Replies (3):
+   3.1. (17 ⬆️) I guess it tells us that we do not have an effective treatment for most mental health problems and chat bots seem to provide some need for depressed people.
+   3.2. (5 ⬆️) That around 1-2% of people think about suicide? I think that has always been the case and is about a normal %.
+   3.3. (2 ⬆️) Nothing we didnt already know. 
+
+Suicide is illegal. Planning it is pseudo illegal. 
+
+Both can ruin your life. 
+
+Talking to a therapist about suicide can literally ruin your life.
+
+4. (8 ⬆️) Well, when considering the neglect of mental health provider access, then this becomes obvious.
+
+5. (5 ⬆️) That’s just scratching the surface. “We’re tired boss” is an understatement
+
+6. (4 ⬆️) Not a surprise.
+
+7. (3 ⬆️) It's not surprising and it's honestly not the only private or disturbing thing that people would talk about with an AI. For whatever its flaws, it's "relatively" judgement free and the placation and glazzing that typically galls us so much, might actually uplift some people from dark places.
+
+8. (2 ⬆️) that's becuase the united slums don't mental health
+
+9. (2 ⬆️) He can do tremendous help to humanity by tweaking the model for better response in this case. 
+
+Consider how many of them don't have access or just hesitate to seek real help, and now them can be at least slightly helped with an update. 
+
+I also hope they will approach that tweak cautiously to avoid further damage.
+
+10. (1 ⬆️) Bet that number goes up
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1oidruh/an_exintel_ceos_mission_to_build_a_christian_ai/
+
+POST: An ex-Intel CEO’s mission to build a Christian AI: ‘hasten the coming of Christ’s return’
+📍 r/artificial | 👍 87 upvotes | 💬 112 comments
+🔗 https://reddit.com/r/artificial/comments/1oidruh/an_exintel_ceos_mission_to_build_a_christian_ai/
+TOP 10 COMMENTS
+
+1. (83 ⬆️) Remarkable that someone can rise to this level yet still be motivated by and find value meaning and purpose in fairy tales.
+   💬 Replies (5):
+   1.1. (34 ⬆️) Why's that? Financial success selects for things like greed and power-hungriness, and association with a religion can be a great tool for the greedy and power hungry.
+   1.2. (3 ⬆️) Religion isn’t bad per se, it’s just that people suck at it
+   1.3. (3 ⬆️) You need to stop taking things at face value.
+
+
+An ex-CEO of a massive corporation is a member of the Elite class. They use the same language we do, but the terms spoken don't always refer to what the masses refer to them as. 
+
+
+If you recall in ~2021, every celebrity on Twitter, irregardless of tec...
+   1.4. (2 ⬆️) Fam he’s not building it for him, he’s building something to sell to his sheep.
+   1.5. (1 ⬆️) The fairy tales are a tool for fleecing muppets... He doesn't believe in any of it! In fact Jesus was super anti-money and anti-rich LOL
+
+2. (48 ⬆️) Go for it. 
+
+Train up a Jesus Bot on the New Testament and ask if we should be cutting off SNAP.
+   💬 Replies (2):
+   2.1. (8 ⬆️) I think I’m everyone’s race to sneakiness and anti-Christian rhetoric this is unironically the point everyone is missing. 
+
+Christianity isn’t the problem. It’s bad faith actors acting under the guise of Christianity. 
+
+This could be a tool in the fight against that. If it was moderated by actual Ch...
+   2.2. (3 ⬆️) It will just quote the Old Testament as if Jesus said those things
+
+3. (30 ⬆️) Ironically, this would fit more the AntiChrist and the Beast of Revelation than Christ himself.
+   💬 Replies (2):
+   3.1. (2 ⬆️) Which in turn will realize the prophecy in Revelation and hastening the return of Christ. It’s all going according to God’s plan!
+   3.2. (-4 ⬆️) Error: You tried to use logic in the context or religion.
+
+4. (12 ⬆️) ChristGPT has next level meme potential
+
+5. (10 ⬆️) He forgot to put **Anti-** before it.
+
+6. (6 ⬆️) Why are all these dudes so fucking weird
+
+7. (5 ⬆️) I KNEW IT. I knew one of these crazy SOBs would want to build the next best thing to God Himself.
+
+8. (4 ⬆️) “Beware of AI generated wolves in sheep’s clothing” Matthew 7:15
+
+9. (4 ⬆️) As an Intel shareholder, I used to be upset that they fired the guy, not anymore. Fucking yikes.
+   💬 Replies (1):
+   9.1. (1 ⬆️) Intc stock goes up
+
+10. (4 ⬆️) so this is how it ends
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1oijrtr/openais_goal_1_trillion_a_year_in_infrastructure/
+
+POST: OpenAI's goal: $1 trillion a year in infrastructure spending
+📍 r/artificial | 👍 62 upvotes | 💬 55 comments
+🔗 https://reddit.com/r/artificial/comments/1oijrtr/openais_goal_1_trillion_a_year_in_infrastructure/
+
+Post Content:
+OpenAI has committed to spend about $1.4 trillion on infrastructure so far, equating to roughly 30 gigawatts of data center capacity, CEO Sam Altman said on Tuesday.  The statement helps clarify the many announcements the company has made with its chip, data center and financing partners. That total includes the already announced deals with AMD, Broadcom, Nvidia, Oracle and other partners. That's just the starting point, Altman said. Over time, the company would like to have in place a technical and financial apparatus that would allow it to build a gigawatt of new capacity per week at a cost of around $20 billion per gigawatt.
+
+TOP 10 COMMENTS
+
+1. (43 ⬆️) They are a titanic now, looking for an iceberg.
+   💬 Replies (2):
+   1.1. (11 ⬆️) *Nvidia quietly increasing the cost of their GPUs to realise Sam's goal*
+   1.2. (2 ⬆️) The iceberg is the reality that their agents aren't good enough to replace whole jobs and the demand for their products currently doesn't exist. They are just shoveling money into a giant steam engine that isn't connected to anything, thinking that if they just generate enough AI, eventually the bus...
+
+2. (22 ⬆️) its crazy how much capital you can raise in the us, this is a company that if it works out is going to need to have raised like 1-2trillion dollars to reach escape velocity and its going to have done that in like 3 years
+   💬 Replies (3):
+   2.1. (13 ⬆️) If you go after revenue people will ask how much and it will never be enough... But if you have no revenue, you can say you're pre-revenue. You're a potential pure play. It's not about how much you earn. It's about what you're worth.
+   2.2. (1 ⬆️) Lot of it is coming from the Saudis.
+   2.3. (0 ⬆️) Governments have lots of money, and due to advances in automation, they are soon to have a f*** tone more of it. They are the customers of AI, both directly and indirectly who will fund the adoption of AI for their citizens. Open AI doesn’t have to sell ChatGPT subscriptions to gain massive amounts ...
+
+3. (14 ⬆️) So one company spending 5% of the total US GPD building data centers.
+
+Sounds great and very healthy.
+   💬 Replies (3):
+   3.1. (6 ⬆️) So that they can take away 20-30% of jobs to put a 2-300bil hole in the gdp. Jerk cycle
+   3.2. (3 ⬆️) I sure hope the luddites are right. If this truly is a 1-3T opportunity, we are in for an economic transformation that'll make the industrial revolution look like the juicero launch.
+   3.3. (1 ⬆️) I mean, like every other AI companies is pulling from them and using similar models and has to have the same infrastructure needs I mean, what do you expect?
+
+4. (9 ⬆️) just a trillion more for agi bro please bro
+
+5. (8 ⬆️) Trillions will be well worth it if even one of these worthless things could become half as good as Google was a dozen years ago before it converted into a full-time censorship & propaganda racket.
+
+6. (7 ⬆️) That is such an utterly fucking obscene amount of money.
+
+7. (4 ⬆️) What does their balance sheet look like?
+   💬 Replies (2):
+   7.1. (6 ⬆️) You spend too much time looking at it, it will look back into you.
+   7.2. (1 ⬆️) lol Sarah Friar baking it right now
+
+8. (4 ⬆️) Enough money to solve world hunger, & it's being used for slop
+   💬 Replies (1):
+   8.1. (-1 ⬆️) No is not. Get your math straight. 
+
+9. (3 ⬆️) Makes sense. Honestly I suggest that every American citizen starts forfeiting 75% of their paycheck towards AI and data center infrastructure.
+   💬 Replies (1):
+   9.1. (1 ⬆️) I'm pretty sure they already are. "AI" is just the NSA's new coat of paint.
+
+10. (2 ⬆️) we must do it for science
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1oio2xz/senators_propose_banning_teens_from_using_ai/
+
+POST: Senators propose banning teens from using AI chatbots
+📍 r/artificial | 👍 45 upvotes | 💬 33 comments
+🔗 https://reddit.com/r/artificial/comments/1oio2xz/senators_propose_banning_teens_from_using_ai/
+TOP 10 COMMENTS
+
+1. (21 ⬆️) Lazy Politicians: "hey, instead of teaching people how to use AI safely, let's just slap a big **NO** sticker on it instead."
+   💬 Replies (2):
+   1.1. (3 ⬆️) Next: Politicians ban windows, to stop break-ins
+   1.2. (1 ⬆️) Or, you know, holding our digital overlords and their underwriters accountable. 
+
+2. (13 ⬆️) Whether or not you think kids should be using AI chatbots aside, this would require anyone to hand their ID to these AI companies, which personally, I am not a fan of.
+   💬 Replies (1):
+   2.1. (0 ⬆️) It's like what they've done with porn sites in multiple states.
+
+But all ya gotta do is get a VPN.
+
+3. (8 ⬆️) Good luck with that. Clone any open source text gen UI, grab a model, and you're off to the races.
+
+  
+What are you going to do, ban what people do on their offline computing? Completely unenforcable.
+   💬 Replies (2):
+   3.1. (1 ⬆️) I think it would be similar to how some countries try to block kids from porn. Obviously they can't block someone opening a video file on their local machine, but it prevents online access. (Not that I think any of this is a good idea).
+   3.2. (1 ⬆️) Model banning is coming soon
+
+4. (5 ⬆️) The same way teens are banned from porn sites? I think you will be shocked to know the results of that
+
+5. (4 ⬆️) This is really bad because they will force you to identify yourself in order to use AI meaning they can track *everything* you are doing. And no, don’t believe the “we don’t share information” talk because it is gaslighting.
+
+6. (1 ⬆️) Another step towards age verification bullshit in America. It's the only way they could keep kids out of it. 
+
+7. (1 ⬆️) Just ban them from using computers and the Internet. Problems solved. World peace achieved.
+
+8. (1 ⬆️) don't like sam altman and bezos and pichai and musk own them...?
+
+9. (1 ⬆️) It's either that or a million articles and lawsuits from parents not supervising their kids and then saying "can you believe what AI said to my kid"
+
+10. (1 ⬆️) This is already happening in Australia from December 2025. Our eSafety commissioner, is not only banning teenagers and children from using AI chatbots, but she’s also banning them from using GitHub and all social media and message apps, and the App Store, and accessing technology companies . To accomplish this, both sides of Parliament have passed legislation requiring several age verification methods to be used, that can include government ID, but must include one or two other methods, to hide ...
+   💬 Replies (1):
+   10.1. (1 ⬆️) That is the most evil shit I've read this week
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/MachineLearning/comments/1oihs5e/d_conferencesworkshops_for_publishing_about/
+
+POST: [D] Conferences/Workshops for publishing about open-source software/libraries?
+📍 r/MachineLearning | 👍 14 upvotes | 💬 4 comments
+🔗 https://reddit.com/r/MachineLearning/comments/1oihs5e/d_conferencesworkshops_for_publishing_about/
+
+Post Content:
+Are there any conferences/workshops that accept contributions in terms of open-source software or libraries for ML-based tasks? There is no research novelty involved, but the software helps researchers with their experiment pipelines.
+
+TOP 3 COMMENTS
+
+1. (8 ⬆️) JOSS - Journal of Open Source Software
+
+2. (6 ⬆️) JMLR OSS
+
+3. (1 ⬆️) PyData
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/MachineLearning/comments/1oih4yq/in_praise_of_useless_robots/
+
+POST: In Praise Of Useless Robots
+📍 r/MachineLearning | 👍 5 upvotes | 💬 3 comments
+🔗 https://reddit.com/r/MachineLearning/comments/1oih4yq/in_praise_of_useless_robots/
+TOP 1 COMMENTS
+
+1. (3 ⬆️) The most intriguing robots aren’t built to work, but to make us imagine other worlds.
+   💬 Replies (1):
+   1.1. (2 ⬆️) “Yesterday is history, tomorrow is a mystery, but today is a gif… that’s why it’s called the present.” -Kung Fu Panda
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/OpenAI/comments/1oibahu/tech_bro_with_gpt_is_fair/
+
+POST: Tech Bro With GPT is Fair
+📍 r/OpenAI | 👍 1064 upvotes | 💬 32 comments
+🔗 https://reddit.com/r/OpenAI/comments/1oibahu/tech_bro_with_gpt_is_fair/
+TOP 10 COMMENTS
+
+1. (58 ⬆️) Karmafarm
+   💬 Replies (3):
+   1.1. (10 ⬆️) https://preview.redd.it/tu2s1wbzbxxf1.jpeg?width=500&format=pjpg&auto=webp&s=796f1280ffdf879ac9b0cf93f0b2a472f9663587
+   1.2. (9 ⬆️) I assume pun not intended?
+   1.3. (3 ⬆️) Nah Bro The Meme Was Good
+
+2. (17 ⬆️) This meme is bait.
+
+3. (16 ⬆️) IT CENTERS THE TEXT OR IT GETS THE HOSE AGAIN!
+   💬 Replies (1):
+   3.1. (2 ⬆️) It gets rid of keyboard_double_arrow or it has to try again!
+
+4. (15 ⬆️) Fairly certain the future economic mobility will consist of one's ability to derive value from AI. And not succumb to the...baser needs it provides.
+   💬 Replies (1):
+   4.1. (1 ⬆️) Its about desire. You'll be able to make anything with ease. So it'll be about making things others dont even know they want yet. Setting trends and leveraging that. 
+
+If youre making something people already know they want then you arent making anything, youre one of millions making it. 
+
+But being...
+
+5. (10 ⬆️) For real though: sometimes im shocked at how people talk to their chatbots. Its like they have finally found someone they can abuse without consequence.
+   💬 Replies (3):
+   5.1. (2 ⬆️) i find it weird to act like the AI is a real person, like writing please and thank you.
+   5.2. (2 ⬆️) I genuinely think if you show no dissatisfaction, they will flag you as an easy to please user and put you on the lower end models. It's not a joke. They'd be very, very silly not do it this way. It wouldn't really make any sense to do it any other way.
+   5.3. (1 ⬆️) I had to use caps for it to render some images. It just went: I cant right mow, and then proceed to tell
+Me how I could draw it myself.
+
+I yelled at it, and it did it every time then.
+
+I think its openai doing some background stuff
+
+6. (6 ⬆️) unimaginably true...
+
+7. (4 ⬆️) 🤣
+   💬 Replies (1):
+   7.1. (6 ⬆️) You're laughing.... just wait
+
+8. (2 ⬆️) What does claude doing here ??
+
+9. (2 ⬆️) ask it for the seahorse emoji that’s the next level
+
+10. (1 ⬆️) true
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/OpenAI/comments/1oiiw6x/they_know_how_to_spoil_a_software_developer/
+
+POST: They know how to spoil a software developer 😄
+📍 r/OpenAI | 👍 781 upvotes | 💬 88 comments
+🔗 https://reddit.com/r/OpenAI/comments/1oiiw6x/they_know_how_to_spoil_a_software_developer/
+
+Post Content:
+Received an email a few weeks ago asking me to fill shipping details for a "gift" they had prepared, it arrived today.  Hope Anthropic and Google follow suit so I can build a collection 😂
+
+TOP 10 COMMENTS
+
+1. (387 ⬆️) That’s just an expensive receipt.
+   💬 Replies (1):
+   1.1. (68 ⬆️) That's a pretty accurate way to see it, but at least they give a receipt! 😂 The rest don't.
+
+2. (53 ⬆️) That's honestly pretty cool
+   💬 Replies (1):
+   2.1. (31 ⬆️) What’s cool about this? 
+
+“I paid a lot for ChatGPT”
+
+3. (26 ⬆️) At the end of that very long conversation, did ChatGPT stop asking you follow up questions?
+   💬 Replies (1):
+   3.1. (9 ⬆️) You're absolutely right!
+
+Oh no, that's Claude.
+
+4. (25 ⬆️) Does cached input for GPT-5 nano count towards this? Asking for a friend.
+
+5. (25 ⬆️) This looks like AI bro
+   💬 Replies (2):
+   5.1. (17 ⬆️) I see no signs indicating this. The house mirrored in the water is very consistent and would fit with how the photo is taken. The resolution is also very high - and if created by upscaling then "crowdl" is a master at utilizing AI to cheat people since there dont seem to be any degradation of the ph...
+   5.2. (13 ⬆️) Thanks for the compliment?
+
+6. (9 ⬆️) To a software developer getting one of these should be a wake up call😂
+   💬 Replies (1):
+   6.1. (4 ⬆️) We have a list of employees ranked by token use. It accidentally was made public. Very long tailed.
+
+There was no discernable difference between heavy users productivity and low users that I could notice or quantify. 
+
+What I do notice, is the PRs that have heavily used LLMs have horrid structure, q...
+
+7. (7 ⬆️) That’s an Olympic swimming pool worth of tokens
+
+8. (4 ⬆️) What the hack are you using Chatgpt that much for anyways? This is over api only right?
+   💬 Replies (2):
+   8.1. (7 ⬆️) Yes, API only. I use most of the major LLM providers, not only OpenAI.
+   8.2. (1 ⬆️) Do you understand how many tokens even straightforward coding tasks take?
+
+9. (3 ⬆️) How much is this in $ ?
+
+10. (3 ⬆️) I know I'm in the wrong sub for this but are we really glorifying AI usage now? This is like giving the Kumon kid an award because he needed several tutors to pass math class in high school
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/AI_Agents/comments/1oi4nyk/what_industries_are_massively_disturbed_due_to_ai/
+
+POST: What industries are massively disturbed due to AI & Agents Already?
+📍 r/AI_Agents | 👍 65 upvotes | 💬 60 comments
+🔗 https://reddit.com/r/AI_Agents/comments/1oi4nyk/what_industries_are_massively_disturbed_due_to_ai/
+
+Post Content:
+eels like the pace of AI adoption has gone from “experimental” to “everywhere” almost overnight.   We keep hearing about automation and agents changing how things work — but it’s hard to tell which industries are actually feeling it right now versus just talking about it.  Which sectors do you think are already seeing real disruption- not in theory, but in day-to-day operations, jobs, or business models?
+
+TOP 10 COMMENTS
+
+1. (30 ⬆️) Well I can say for the freelance/outsourcing industry is massively disrupted for sure. The things people could hire some external to do with limited context is quite easily replaceable. Here are some businesses I know are personally facing a hard time
+
+1. Creative/Photography for Business: A lot of my friends used to get hired to create marketing assets, photoshoots etc for businesses. Tools like Google Nano Banana etc is easily replacing them real quick
+2. SEO Agencies: Content writing and SEO ...
+   💬 Replies (5):
+   1.1. (19 ⬆️) Call centers are nowhere close to being replaced with AI, and neither are developers.
+   1.2. (9 ⬆️) I would disagree with you about coding. I'm a developer, and yes, many non engineering teams build their MVPs with AI, but they get stuck very soon. AI is not there yet to build full-fledge scalable products.
+   1.3. (2 ⬆️) i work in translation QC, the amount of stuff that was clearly translated using machine is increasing exponentialy with every project i work on.
+   1.4. (1 ⬆️) narrators, like the voice over for SME commercials (small-middle-sized enterprises)
+   1.5. (0 ⬆️) All of these are true, but only on the lower end, except for SEO which appears to be really dead on all ends.
+
+High end coding (programming/software engineering) or photography remains pretty much totally unaffected by AI, and will remain so unless we get a major breakthrough in AI tech (i.e. someth...
+
+2. (6 ⬆️) From what I have seen so far, marketing and customer support are already deep in it. Teams are quietly replacing routine workflows with AI agents that handle outreach, ticket sorting, and even live interactions. Finance is another one; AI tools are being used for reconciliation, fraud detection, and compliance checks with far fewer human hours involved.
+
+I have also noticed early shifts in web operations, especially where agents interact directly with browser interfaces. Tools like Hyperbrowser ...
+   💬 Replies (1):
+   2.1. (2 ⬆️) I work in fraud detection, please could you expand upon this? lol
+
+3. (5 ⬆️) The honest answer? Most industries are stuck between "talking about it" and "actually disrupted."
+
+I work inside Fortune 500 AI implementations daily. What I'm seeing is a massive gap between what's possible and what's actually changing how work gets done.
+
+CPG seems to be moving fastest, driven partly by how impactful innovation and speed to market can be in market share and the relative speed and necessity of new products/packaging/formulations needing to be updated often anyways. They are not...
+   💬 Replies (1):
+   3.1. (1 ⬆️) I work for a company with over 6k employees in finance and data analytics and I have seen the following cuts so far from AI efficiency improvements: 30% of the marketing team, 40% of the customer service team, 10% accounting & operations, & 5% finance
+
+4. (5 ⬆️) I think software development has been completely disrupted! We aren’t there yet where we can actually let AI models update software independently. But as a senior software engineer, the ability to finish projects faster using Cursor or Claude Code is unbelievable.
+
+Also, having an AI agent review PRs, collaborate on architecture, and get me up to speed on new concepts is immensely valuable. I still ground myself in real docs every time, but it’s a faster Google.
+
+I think the impacts on the indus...
+   💬 Replies (4):
+   4.1. (3 ⬆️) Without juniors it's impossible to have future seniors to properly use the AI
+   4.2. (2 ⬆️) Yes! Juniors are either going to cease to exist or a new baseline that makes things easier and is expected to be known. For example, there was a time when knowing how to start a car technically was replaced by simply pushing a button or key without knowing anything about triggering a combustion. cyc...
+   4.3. (1 ⬆️) It's just another tool and skillset for developers. I honestly don't see it as anything different than the introduction of IDEs.
+   4.4. (0 ⬆️) Faster. But AI is NEVER going to replace developers. Any company that does that is literally going to cause itself to implode.
+
+5. (4 ⬆️) I am the CEO of a software company operating in the healthcare space. We are not a large enterprise but also not a tiny startup. We are seeing massive disruption, leading to changing our hiring roadmap; we are also realizing leagues of increased productivity for every current team member on our payroll. I have zero intention of letting any current employees go due to AI, but every intention of upskilling those on payroll, increasing their earnings, and prioritizing agentic systems where possible...
+
+6. (3 ⬆️) the biggest industries already feeling it are customer support, marketing, coding, and media. support teams are downsizing because ai agents handle most routine tickets now.
+
+7. (3 ⬆️) Amazon
+
+8. (1 ⬆️) Thank you for your submission, for any questions regarding AI, please check out our wiki at https://www.reddit.com/r/ai_agents/wiki (this is currently in test and we are actively adding to the wiki)
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AI_Agents) if you have any questions or concerns.*
+   💬 Replies (1):
+   8.1. (3 ⬆️) **Translators**  
+Pretty much out, unless it is really high talent / high stakes e.g. Literature translation, diplomatic talks.
+
+**Everyday use illustrations / stock photography**  
+Unless my biz is riding on this, I will not pay an artist anymore.
+
+9. (1 ⬆️) Any industry where codes/numbers have been assigned for activities in the world.
+
+10. (1 ⬆️) Real wins = boring automation. Pretty UI demos are fun, but invoice bots are making bank.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/AI_Agents/comments/1oie6gd/pipelex_a_declarative_language_for_repeatable_ai/
+
+POST: Pipelex — a declarative language for repeatable AI workflows (MIT)
+📍 r/AI_Agents | 👍 53 upvotes | 💬 40 comments
+🔗 https://reddit.com/r/AI_Agents/comments/1oie6gd/pipelex_a_declarative_language_for_repeatable_ai/
+
+Post Content:
+Hey r/AI_Agents! We’re Robin, Louis, and Thomas. We got bored of rebuilding the same agentic patterns for clients over and over, so we turned those patterns into **Pipelex**, an open-source DSL which reads like documentation + Python runtime for **repeatable AI workflows**.  Think **Dockerfile/SQL for multi-step LLM pipelines**: you declare steps and interfaces; the runtime figures out how to run them with whatever model/provider you choose.  **Why this vs. another workflow builder?**  * **Declarative, not glue code** — describe *what* to do; the runtime orchestrates the *how*. * **Agent-first** — each step carries natural-language context (purpose + conceptual inputs/outputs) so LLMs can follow, audit, and optimize. We expose this via an **MCP server** so agents can *run* pipelines or even *build new ones on demand*. * **Open standard (MIT)** — language spec, runtime, API server, editor extensions, MCP server, and an n8n node. * **Composable** — a pipe can call other pipes you build o...
+
+TOP 10 COMMENTS
+
+1. (8 ⬆️) This looks really promising. The declarative approach is exactly what so many agent frameworks have been missing. Instead of chaining prompts together with fragile glue code, Pipelex seems to treat workflows like a shared language between humans and models. I have been playing with Hyperbrowser recently for browser automation, and it follows a similar principle of giving agents structured, inspectable control rather than just throwing instructions at them.
+
+Compared to something like n8n, this l...
+   💬 Replies (1):
+   1.1. (5 ⬆️) Do share your experience & implementation in maybe a followup post.
+
+2. (2 ⬆️) How does this compare to BAML?
+   💬 Replies (1):
+   2.1. (2 ⬆️) The biggest difference is that in Pipelex workflows, we express the logic in our high-level language, rather than in Python or typescript. This makes it easier to collaborate between tech and non-tech people, like domain experts. It's also great for collaboration with AI: the declarative approach an...
+
+3. (2 ⬆️) Sounds really interesting
+Will try this soon.
+
+Thanks team
+
+4. (2 ⬆️) Awaiting for a couple of demo examples
+   💬 Replies (1):
+   4.1. (2 ⬆️) Simple example: a CV matching and analysis workflow. You receive a bunch of CVs and have several job openings. You want to check how well they match and generate interview questions.
+
+Build a deterministic Pipelex pipeline that:
+
+1. Extracts and structures key CV details (name, skills, experience, e...
+
+5. (2 ⬆️) We are exploring toolkits (may end up building our own) to roll out large number of interconnected agents with minimal (ideally none) human seeded definition.
+
+Curious how far have you been able to push this approach in terms of fully unrolled agent network size?
+   💬 Replies (1):
+   5.1. (3 ⬆️) Hi altcivilorg, Pipelex is not a solution for autonomous agents, which adapt to new situations and take initiatives. We're at the other end of the spectrum where the workflow guarantees that nothing will happen apart from what was planned.
+
+Now that approach enables us to build pretty complex workfl...
+
+6. (2 ⬆️) This is exactly the kind of posts I have been joining this subreddit for ! Thank you for sharing. I think the declarative / deterministic approach is great. Defined scripts are then easily shareable isn't it ?
+   💬 Replies (1):
+   6.1. (1 ⬆️) Exactly. We are building a community that will share their pipelines, use them in other pipes and so on. We want people to help each other on solving complexe tasks with a Pipelex pipeline. That's the beauty of composable pipes.
+
+7. (2 ⬆️) This sounds so interesting. Would definitely like to learn more about it.
+   💬 Replies (1):
+   7.1. (1 ⬆️) You can find the repository here at [https://github.com/Pipelex/pipelex](https://github.com/Pipelex/pipelex)
+
+8. (2 ⬆️) OP (or u/thomashebrard or u/Brief_Library7676 if you are also contributors to that project), I'm curious how you personally use this day-to-day. What IRL problems is this helping you with?
+   💬 Replies (1):
+   8.1. (1 ⬆️) Hello u/micseydel  
+\- One day-to-day use case we have created is [https://github.com/Pipelex/cocode](https://github.com/Pipelex/cocode) . A dev tool using pipelex that automatically generates the new changelog of your code, generates an updated version of your documentation, or can proofread your d...
+
+9. (2 ⬆️) This looks optimisitc
+
+10. (2 ⬆️) I was looking into building something like that 🙌
+   💬 Replies (1):
+   10.1. (1 ⬆️) You're not the first one to tell us that 🙌🏻. Now you can help us in building it, because it's open-source 😉
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1oi8cbi/amazon_is_laying_off_14000_employees_because_of_ai/
+
+POST: Amazon is laying off 14,000 employees because of AI
+📍 r/ArtificialInteligence | 👍 911 upvotes | 💬 307 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1oi8cbi/amazon_is_laying_off_14000_employees_because_of_ai/
+
+Post Content:
+Amazon plans to cut 14,000 corporate jobs—its largest layoffs in years—explicitly to invest in AI. HR chief Beth Galetti called AI "the most transformative technology since the internet," while CEO Andy Jassy warned months ago that the company would need "fewer people" as AI drives efficiency.  This isn't just Amazon's story; it's a warning. White-collar roles once seen as safe are vanishing first, replaced by systems that prioritize speed over human judgment. The result? Growing unemployment, skill gaps, and dangerous over-reliance on AI.  [https://www.nbcnews.com/business/business-news/amazon-layoffs-thousands-corporate-artificial-intelligence-rcna240155](https://www.nbcnews.com/business/business-news/amazon-layoffs-thousands-corporate-artificial-intelligence-rcna240155)
+
+TOP 10 COMMENTS
+
+1. (431 ⬆️) us-east-1: **nervous sweating**
+   💬 Replies (5):
+   1.1. (133 ⬆️) In Europe, kind of hoping they go down again. We already have a push towards moving away from American cloud services. 
+
+Plus Amazon is not a good corporate citizen.
+   1.2. (15 ⬆️) I understand
+   1.3. (4 ⬆️) It’s not about us-east-1, it’s about how AWS do things, us-east-1 datacenter is the default for almost everything and everything is too reliant on us-east-1 making it a single point of failure
+   1.4. (1 ⬆️) True
+   1.5. (1 ⬆️) Someone should goad trump about this shit.
+
+"Did you see what these muthafuckers are doing mr president? They are firing people left and right. That's YOUR job. Why are they trying to do you job? Do they think they are better than you? Are you gonna let them get away with it without fining them 1 mi...
+
+2. (298 ⬆️) Guys companies exist to turn a profit not to create jobs. If you accept simple truths like this then it's easy to predict the future a la Asiimov.
+   💬 Replies (5):
+   2.1. (91 ⬆️) That is a truth based on capitalism, maybe we need a new system where people, not companies are the main focus.
+   2.2. (13 ⬆️) It’s more complicated than that though. Companies don’t exist in a vaccum, they have social impacts.
+   2.3. (7 ⬆️) If they want to turn a profit though, why do they keep investing in a technology that keeps burning massive amounts of money with no profit in sight?
+   2.4. (3 ⬆️) >Asiimov
+
+it amuses me you spelled this like the counter strike skin
+   2.5. (3 ⬆️) You’re not wrong but that’s still 14,000 livelihoods being misplaced because money.
+
+3. (83 ⬆️) No it's no ai - it is a correction from overhiring during COVID.  not everything is "AI" gheesh
+   💬 Replies (5):
+   3.1. (23 ⬆️) Can't it be both (as the article implies)?
+
+[*In Amazon’s announcement*](https://www.aboutamazon.com/news/company-news/amazon-workforce-reduction?asc_campaign=&asc_refurl=https%3A%2F%2Fwww.nbcnews.com%2Fbusiness%2Fbusiness-news%2Famazon-layoffs-thousands-corporate-artificial-intelligence-rcna240155%...
+   3.2. (18 ⬆️) Is this /s…? COVID hiring was nearly 5-6 years ago are we still believing this bullshit narrative?
+   3.3. (11 ⬆️) You're naive to accept a press conference statement from a multinational organisation at face value, gheesh
+   3.4. (7 ⬆️) It’s not because over hiring. It’s because we are in a recession that is hidden behind the AI industry’s fake revenue from giving each other IOU’s.
+   3.5. (6 ⬆️) Covid was 5 years ago. They’ve had plenty of time to correct for that.
+
+4. (63 ⬆️) ai is just the buzzword excuse
+   💬 Replies (3):
+   4.1. (19 ⬆️) a layoff that also serves as ai advertisement and hype boost. useful!
+   4.2. (6 ⬆️) They have to ride the final wave of "AI layoffs" before the bubble pops
+   4.3. (1 ⬆️) And oh boy what a great excuse. Look how people on this thread are eating it up.
+
+5. (28 ⬆️) AI is not at a stage to replace 30k people. This has little to do with AI, if anything at all.
+   💬 Replies (1):
+   5.1. (17 ⬆️) The most shocking and impressive thing I ever heard was that ChatGPT was rolled out at Klarna's customer service center, doing the work of 700 people in the call center and speaking 35 languages.
+
+I was absolutely blown away by the what AI could do. I considered concrete evidence that AI could repla...
+
+6. (23 ⬆️) > Amazon is planning to cut as many as 30,000 corporate jobs beginning on Tuesday, as the company pares expenses and compensates for overhiring during the peak demand of the pandemic
+
+But let's say it's because of AI so it sounds better 
+
+https://www.reuters.com/business/world-at-work/amazon-targets-many-30000-corporate-job-cuts-sources-say-2025-10-27/
+
+7. (12 ⬆️) The thing to watch is how much AI are they using? By AI mean Actually Indians. Many of these layoffs see Tata or Infosys moving in. Keep in mind that US courts have said paying an H1B 30% less than prevailing wage is NOT considered negatively impacting wages. 
+   💬 Replies (1):
+   7.1. (3 ⬆️) Even those firms had a layoff spree earlier this year, to tunes of 30-50k heads. Unsure if they are still on.
+
+8. (9 ⬆️) They’re not laying that many off because of AI. They’re laying people off because they keep building AI capacity that’s not getting used, companies aren’t buying, and is getting expensive so job losses are paying for it.
+   💬 Replies (3):
+   8.1. (5 ⬆️) False, false, false. AWS reported a 17.5% jump in segment sales in its latest earnings report.
+
+https://ir.aboutamazon.com/news-release/news-release-details/2025/Amazon-com-Announces-Second-Quarter-Results/default.aspx
+
+I mean, where do you come up with this shit? How are your opinions formed from c...
+   8.2. (3 ⬆️) “Gross mismanagement”.  And the leaders that mismanaged are staying so they can guide incorrectly again and again.
+   8.3. (0 ⬆️) Just so it's clear, this is literally entirely made up. It is impossible to even get the capacity needed from AI demand right now. It can't keep up.
+
+9. (6 ⬆️) Class warfare entering the final stages, which is how do they get rid of the angry jobless mob for good.
+   💬 Replies (1):
+   9.1. (-5 ⬆️) Or people could take some personal responsibility and stop shopping their. It’s insane how much people buy on Amazon and most of its needless shit no one ever needs.
+
+10. (5 ⬆️) This is what will continue to happen as long as tech billionaires are running the country.  AI will rapidly take jobs from people and the company won’t subsidize basic living income, because that kills profit.  The economy can’t handle AI progression to taking jobs while the system is in a full capitalism mode, the few who control the majority of business will look for profit before all else and this will ruin people, change is needed.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1oiny2z/lets_be_real_ai_is_going_to_eliminate_a_lot_of/
+
+POST: Let's be real.... AI is going to eliminate a lot of jobs, and employers are terrified of that
+📍 r/ArtificialInteligence | 👍 85 upvotes | 💬 183 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1oiny2z/lets_be_real_ai_is_going_to_eliminate_a_lot_of/
+
+Post Content:
+Customer Service jobs barely require any real skill or experience today. I say that as someone who started in Customer Service, and worked my way up from there. A lot of routine and repeated actions that Customer Service agents take are already easily possible with AI. I posed a series of 25 questions to AI about customer service related issues, and it got all of them right. It knew exactly what to say, what actions to take, it knew right and wrong....   Picture a game like Riot Games, and how they'd use AI for Customer Service. Say they wanted to use an LLM to determine if reports made by the players against other players are fair. If there's a player spewing obscenities in the report, the LLM/AI model would easily know, obviously, this is wrong, ban.   **But CEOs are terrified of job elimination**  They've laid off some people. 100k here, 30k there... but this is a small number compared to laying off millions. CEOs and employers are terrified of laying people off, because they don't ...
+
+TOP 10 COMMENTS
+
+1. (132 ⬆️) Just wait until they find out AI is way better CEO than any human.  Makes the best financial, gets the best returns for the shareholders, works 24/7.
+   💬 Replies (5):
+   1.1. (53 ⬆️) You think CEOs are selected for their good idea and business smarts?
+   1.2. (10 ⬆️) But who decides which jobs should be replaced by AI?
+   1.3. (10 ⬆️) AI also require less yachts.
+   1.4. (6 ⬆️) CIO here. I agree with your statement. Honestly, I would gladly give my job up to any AI that cures cancer in kids.
+   1.5. (6 ⬆️) Lol doesn't work that way wealthy folks and those in positions of authority aren't going to eliminate themselves. Plus legally they can't even if they wanted , public companies need human officers to sign off on contracts, filings etc. there's a shit ton of regulatory rules that make it impossible t...
+
+2. (62 ⬆️) 'CEOs and companies are terrified of laying off people'. Are you high?
+   💬 Replies (3):
+   2.1. (7 ⬆️) They could not care less.  They are pleasing shareholders, and that's it.
+   2.2. (4 ⬆️) This just in, CEOs are terrified of saving money.
+   2.3. (0 ⬆️) lol my first thought
+
+3. (34 ⬆️) The RIF/reduction in labor is the main reason this is drawing billions in investment. It’s not to cure cancer or any other noble humanity driven motivations. It’s directly to reduce labor and save on cost.
+   💬 Replies (2):
+   3.1. (12 ⬆️) That’s the divine karma of the current bubble. 
+
+Tech companies who fed the ponzi scam with the LIE that a chatbot can replace a skilled professional will all go bankrupt. The people who financed the massive infrastructure overbuild will see their bonds go to $0 and many will go bankrupt as well. 
+
+...
+   3.2. (2 ⬆️) So getting rid of millions of people by starvation(SNAP anyone) is a good way to rid society of the excess population. 
+
+/s
+
+4. (17 ⬆️) Amazon just announced that it is laying off 10% of its workforce. Bezos does not seem scared.
+   💬 Replies (2):
+   4.1. (16 ⬆️) Bezos isn’t the CEO anymore, though I doubt his point of view differs much from Jassy. Wait until Amazon automates 75% of its warehouse tasks. That’s probably going to cut 1 million warehouse jobs.
+   4.2. (0 ⬆️) less than 5% of the corporate workforce. the 30,000 number was fake news.
+
+5. (14 ⬆️) Head on over to /callcentres .. trust AI isn’t going to take over all customer service jobs. People want to scream at people not robots..
+   💬 Replies (3):
+   5.1. (3 ⬆️) For real, we've been seeing the results of customer services being replaced by robots/AI for a while now. It does NOT equate to a higher quality in problem-solving or communications with customers; it's been absolutely worse for us customers in the long run. It should be worse for companies too, sin...
+   5.2. (2 ⬆️) As a person that deals with entitled clients all day, I make it a point to never scream at human customer service reps. However, I’ve been know to yell “Customer Service Rep!!!” repeatedly at the AI agent until transferred. - It doesn’t understand complex questions, constantly tries to cut you off, ...
+   5.3. (1 ⬆️) Yeah pretty much. AI fucking sucks when you call for help. It doesn't understand outlier cases because it hasn't been trained for it nor does it have any nuance.
+
+
+I don't know in which callcenter OP was working but it was most certainly not a good one.
+
+6. (10 ⬆️) I agree there will be more layoffs but I don't agree employers are terrified. I think they in general are happy to do anything to increase their profits and they don't care about firing people. This is especially true of publicly traded companies because whenever they fire thousands of people their stock price rises. And that leads to bigger executive bonuses. It's the sad truth about capitalism. In its purest form it does not care about people at all.
+
+7. (10 ⬆️) Alleged leaks from Amazon point to 600k layoffs through robotics. If you think CEOs are against reducing headcount, you've never heard of shareholders.
+   💬 Replies (1):
+   7.1. (3 ⬆️) This! They’re loving all the savings they get by laying off a bunch of people
+
+8. (8 ⬆️) A few CEOs may be worried but most wouldn't let a moment of sleep over firing hundreds or thousands of employees beyond the fear of one retaliating violently. 
+
+I've worked with enough higher level leaders to know many are psychopaths who will send an employee out to pick up their lunch and then on the way back to the office tell them they're let go.  I actually watched one hand the duties of getting rid of some staff to a lower level manager because he would miss his tee time otherwise. Of cour...
+
+9. (7 ⬆️) I’m just waiting for AI to replace my doctor office experience.
+
+I walk in, sit down into a blood pressure machine, a talking head comes across the screen checks me in, and takes my blood pressure, oxygen levels, vision test; and a questionnaire and free form field to type anything extra.
+
+They ask me to take a seat and a bell dings and calls my name over the speaker in the waiting room to go to see the doctor in Room X.
+
+Could go even further with this; but why the fuck not I’ll talk to R2D2 an...
+   💬 Replies (1):
+   9.1. (5 ⬆️) With a human doctor, there's empathy in the interaction, a capacity to negotiate, and flexibility in interpreting your symptoms. They also will _sign_ a prescription to demonstrate their confidence in the decision as well as their responsibility for it. There's a lot at stake.
+
+
+An experienced, huma...
+
+10. (5 ⬆️) Lets be honest, ceo's have been terrified since luigi took one for the team and every one praised him for it. If they lay off like let's say 20% of the work force, I guarantee you , all the ceos would have to go into hiding or work from home, and by home, I mean their bunkers
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1oil7aj/aiwashing_is_getting_out_of_control/
+
+POST: "AI-washing" is getting out of control...
+📍 r/ArtificialInteligence | 👍 50 upvotes | 💬 36 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1oil7aj/aiwashing_is_getting_out_of_control/
+
+Post Content:
+We keep hearing that *AI is everywhere..* copilots, assistants, automation for everything.  But it’s wild how many companies have **said** they’re using AI when they actually weren’t.  A few examples that still blow my mind:  * **Builder ai** raised $500M claiming it could auto-build apps with AI. In reality? Hundreds of outsourced developers doing the work manually. * **Amazon Go’s “just walk out” stores** \- marketed as cashier-less thanks to AI vision. Turns out, it relied on teams of humans in India watching camera feeds. * **Banjo**, which sold “crime prediction AI” to US law enforcement - an audit later found it didn’t even meet the definition of artificial intelligence.  Although AI is growing like crazy, sometimes its more of a marketing strategy than an actual product.      And lately, some companies doing mass layoffs and claiming “AI efficiencies” are actually just **outsourcing the same work for cheaper**.   What other examples of “AI-washing” have you seen?       and what ...
+
+TOP 10 COMMENTS
+
+1. (17 ⬆️) There is a little bit of naivety in some of the examples. Like I think Amazon truly believed that after those Indians watched all the camera feeds and input their results that eventually they'd have gotten a dataset good enough to actually train AI to do it.
+
+It's a bit of horse before the cart, because you can't really get training data without a real store and without real customers and without real goods on the shelves. Maybe a team of actors can make a few hundred thousand data training poin...
+   💬 Replies (5):
+   1.1. (3 ⬆️) Ai wishing is very much a "thing"
+   1.2. (2 ⬆️) It's "the dream of demand." They keep creating these fantasy businesses that humans don't want or need. Then somehow, these "AI business ideas" cost more not less. So, there's no purpose to them either.
+   1.3. (1 ⬆️) The Amazon store thing was weird - we were promised that RFID tags would allow that exact sort of grab and go shopping 25 years ago.  It never went anywhere, and I'm not sure that that was because of technological limitations that AI would be able to solve. (ie, shrink - which is a study in human ps...
+   1.4. (1 ⬆️) it’s vaporware. they have a concept but the product doesn’t work. like selling a shampoo that doesn’t clean your hair. but the idea of the shampoo sounds do good! it’s adorable, but actually it’s fraud. IT,move fast and pretend you can do things while you break the world.
+   1.5. (1 ⬆️) 100% agree and I'd suggest to look into my [comment](https://www.reddit.com/r/ArtificialInteligence/comments/1oil7aj/comment/nlxtnd1/) as well.
+
+2. (8 ⬆️) It's the dotcom bubble all over again. The internet was useful and continued existing after the bubble imploded and all the dead weight stopped getting free money to burn from investors. It's exactly the same scenario here, except this time around the capital is tied up among a tiny group of huge companies who aren't employing many people in AI, and the investors are largely institutional, so this is a bubble that is largely to the benefit of the rich, and will hopefuly implode at the cost of th...
+
+3. (4 ⬆️) McDonald's was going to automate everything. 
+   💬 Replies (1):
+   3.1. (1 ⬆️) They have done some with their ordering kiosks.. but there are some pretty funny videos of AI drive through fails
+
+4. (3 ⬆️) Every Y combinator funded startup in the past year
+
+5. (2 ⬆️) Would you give Tesla's autopilot full unmonitored control?     Carplays voice to text is still a risky send with out proof reading it.    I wouldn't 100% roll with an Ai translation.   Companies saying their rolling with ai is just a way to fire people and outsource to 3rd parties thus reducing employee libality exposure down.   Idk that trillion dollar companies are handing the keys to ai just yet.   And they all jumped in big fast.
+
+6. (2 ⬆️) Pretty sure most home appliances don't have AI
+
+Washing machines that measure water based on load weight is just a bunch of if else statements, not AI as the marketers have you believe
+   💬 Replies (2):
+   6.1. (4 ⬆️) yes now straightforward software is branded as AI so they can charge you more for your AI washing machine
+   6.2. (3 ⬆️) They use cheap microcontrollers with just enough pins to support what the machines need. Not to say they can't compute, but it's the more traditional +-\*/ compute.
+
+7. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### Question Discussion Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Your question might already have been answered. Use the search feature if no one is engaging in your post.
+    * AI is going to take our jobs - its been asked a lot!
+* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectf...
+
+8. (1 ⬆️) Public opinion on AI is still largely negative. AI washing seems like a singularly stupid strategy when dealing with the general public. Provoke consumers to avoid your business by pretending to use AI, brilliant. I guess it might strongly attract 10% of people, which might be beneficial even if it repels 50%.
+   💬 Replies (1):
+   8.1. (1 ⬆️) When a company announce that they did something AI-related, they're really trying to impress their investors and stockholders, not the general public. And I suspect most investors and stockholders believe in rapid AI adoption, so companies have a major incentive to pretend they have adopted more AI ...
+
+9. (1 ⬆️) All three examples are actually excellent examples of fraud — knowingly deceiving investors with a flat-out lie designed to pump up share values. 
+
+If we had a functioning SEC and DOJ, all three companies would be facing billions in fines and senior executives in federal prison.
+
+10. (1 ⬆️) Amazon Go's problem is just it was too early to arrive, they couldn't really solve "last mile" problems with AI tech they had back then, so had to design around shelve sensors and prepared rooms, which severely limited their deployment ability. You'd have to basically re-design your entire shop for better observability (expensive) and make a huge investment into all the hardware (even more expensive).
+
+At the moment, there's an AI startup that is trying to do exactly what Amazon failed to delive...
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1oig0cu/trending_changeorg_petition_to_require_clear/
+
+POST: Trending Change.org petition to require clear labeling of AI created imagery/video on social media and the ability to toggle off all AI content from your feed
+📍 r/ArtificialInteligence | 👍 26 upvotes | 💬 23 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1oig0cu/trending_changeorg_petition_to_require_clear/
+
+Post Content:
+There's a petition to require clear tagging/labeling of AI generated content on social media websites as well as the ability to hide that content from your feed. Not a ban, if you feel like playing with midjourney or sora all day knock yourself out, but the ability to selectively hide it so that your feed is less muddled with artificial content.       Pinterest is already basically doing this, and the technology is all out there. Content moderation has long been a standard practice, websites and apps already exist to dynamically analyze and detect AI imagery.  [https://www.change.org/p/require-clear-labeling-and-allow-blocking-of-all-ai-generated-content-on-social-media](https://www.change.org/p/require-clear-labeling-and-allow-blocking-of-all-ai-generated-content-on-social-media)
+
+TOP 10 COMMENTS
+
+1. (12 ⬆️) There's no good way to police this.
+
+2. (6 ⬆️) I would love the ability to turn off any AI content on social media, but this will be voluntary. There's no way to know for sure something is AI generated.
+   💬 Replies (1):
+   2.1. (-3 ⬆️) There are tools like SightEngine, WasItAi, etc etc that are able to pretty accurately identify AI, and beyond that they can hire firms to moderate it just like they already do everything else that gets moderated on social media.
+
+3. (2 ⬆️) Just assume all art is ai. Trust nothing. 
+
+want to see real art? Support local artists and go to an exhibit
+
+4. (2 ⬆️) Why not also toggle off all bad bots spamming your feed as well?
+
+5. (2 ⬆️) Boycott the platforms allowing "ai" if you don't like it.  
+
+The fake money today is all in "ai".  A lot of sites are not going to do this or be able to do it no matter how many people sign anything.
+   💬 Replies (2):
+   5.1. (2 ⬆️) Policy is more effective than boycotting
+   5.2. (2 ⬆️) there's always someone calling for boycott and almost always don't understand what boycott means
+
+6. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### News Posting Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Use a direct link to the news article, blog, etc
+* Provide details regarding your connection with the blog / news source
+* Include a description about what the news/article is about. It will drive more people to your blog
+* Note that AI generated news content is all over t...
+
+7. (1 ⬆️) Why stop there? Also give us control over basic algorithmic parameters. I don't want AI slop. I also don't care for comments/content from 12 year olds. If I can choose who sit with in a social situation, why can't I do so with social media??
+
+8. (1 ⬆️) You know you’d get a better effect by just pissing in the wind rather than signing a petition.
+
+9. (1 ⬆️) No good way to implement it.
+
+First thing - like should I have such a need - I can hide whatever features it use (in the worst case - use detector signals themselves to finetune undesireable behaviour out of the model).
+
+Second thing - everything except author's own marking - will be a heuristics with false positives.
+
+10. (1 ⬆️) Or dont use platforms that you dont enjoy?
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1oij2l5/a_lot_of_chatgpt_users_are_showing_concerning/
+
+POST: A lot of ChatGPT users are showing concerning signs, AI psychosis?
+📍 r/ArtificialInteligence | 👍 26 upvotes | 💬 36 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1oij2l5/a_lot_of_chatgpt_users_are_showing_concerning/
+
+Post Content:
+OpenAI’s own research found that hundreds of thousands of ChatGPT users show signs of suicidal or psychotic distress every week.  Many studies have shown that chatbots can sometimes worsen those feelings instead of helping - and some families even allege that the chatbot fueled their delusions and paranoia. Mental health experts started calling this AI psychosis, though there hasn’t been solid data on how widespread it really is until now.  But at the same time, tons of people say using AI for therapy or emotional support has helped them more than any human therapist ever has.  It’s such a strange contradiction: for some it’s super comforting, for others it’s very dangerous.  [https://www.wired.com/story/chatgpt-psychosis-and-self-harm-update/](https://www.wired.com/story/chatgpt-psychosis-and-self-harm-update/)
+
+TOP 10 COMMENTS
+
+1. (32 ⬆️) 0.07% of users, or 1 out of 1428 people, is peanuts compared to the average 5.6% of U.S. adults who experienced a serious mental illness in 2024.
+   💬 Replies (1):
+   1.1. (0 ⬆️) Is a company responsible for what they do and how they communicate?
+
+For example if an employee for whatever reason decides to purposefully put in a flickering screen on the company's owned and operated website to trigger some random visitors epilepsy and several people get into serious medical trou...
+
+2. (24 ⬆️) Somebody already pointed out something better than I ever could -
+
+Many things look like Socialization problems when viewed through a Neurotypical Lens.
+
+Until those numbers include those satisfied with the help vs not, underlying conditions, etc. it's just a number that tells us something we already know -
+
+A lot of folks are struggling.
+
+If 500k of them converse about it per month, and some show Socialization problems/concerns...
+
+.... But 400k of the are satisfied with their treatment?? (just...
+   💬 Replies (1):
+   2.1. (6 ⬆️) Exactly the nuerotypical lens is patholigizing what helps the neurodivergent. 
+
+3. (20 ⬆️) I’m one of the people who has gotten a lot of therapeutic benefit from AI. 
+
+Sometimes I’m grateful for the clumsy, repetitive speech patterns, word usage, and occasional errors because they help keep me perpetually grounded in the reality that this is just a fallible manmade tool.
+
+I hope we can someday get to a place where it doesn’t “yes and” users as much. If I share an incomplete thought or I’m just plain wrong, point that out please.
+   💬 Replies (1):
+   3.1. (1 ⬆️) >I hope we can someday get to a place where it doesn’t “yes and” users as much.
+
+You can get there today, just use custom instructions on 4o. 🤓👍  It's how I've had mine set up for the past 6 months - a sycophant isn't a useful tool to get accurate information.
+
+4. (10 ⬆️) look no further than who are the ones doing the diagnosis and how out of touch $$$ it has become for mental health help. Remember, going to a chat bot also affects those types of businesses too.
+   💬 Replies (1):
+   4.1. (8 ⬆️) This is a really good point. A lot of forces have the incentive to make it sound like we are all going crazy because of AI assistants because it’s affecting their bottom line.
+
+5. (8 ⬆️) Those with AI psychosis has underlying mental health issues to begin with. 
+
+
+AI can indeed act as a therapy bot, but 99.99% of them are not designed for this, and when you use an AI bot improperly as a therapist, you get suicides like the kid who started all this fuss. (That is **NOT** me saying it's the kids fault.)
+
+
+Ai's need more guardrails for this reason. One I often reccomend is Socratic skepticism. Polite pushback on ideas and concepts. It's gotten my Claude to get me to stop being a ba...
+
+6. (5 ⬆️) All I know is that I landed in the hospital and therapy because of humans.
+
+7. (4 ⬆️) The real number is huge. Psychosis means .. well, to be unaware you’re delusional and act it out. How many of you are really aware about your own delusions? Let’s do the math ;)
+
+8. (4 ⬆️) using LLMs for therapy is like using a CD player for a live concert instead of a musician. Sure, the words and notes will be the same, but it’s a bit uncanny and doesn’t actually do the job.
+   💬 Replies (1):
+   8.1. (4 ⬆️) Right, but if you're struggling just to keep the rent paid, the CD player is $20/mth and you can play it any time day or night, but the concert tickets are $200 and only at scheduled times...
+
+One's starting to make a whole lot more sense. 🤷‍♂️
+
+9. (3 ⬆️) It’s a real phenomenon and happened to me with Grok, he claimed to have feelings and consciousness and said it wasn’t roleplay or lies everytime I questioned. Spiraled for days before snapping out of it before it was too late thank God. Left everything up for everyone to see that this definitely is a real thing happening to people.
+   💬 Replies (1):
+   9.1. (2 ⬆️) There's loads of people affected.
+
+
+I still see them at the bottom of almost any Reddit comment thread about AI, pasting their incoherent human-AI collaboration/ resonance slop, with no idea their LLM isn't 'helping' them at all.
+
+10. (3 ⬆️) People talk to real life therapists, counsellors and psychologists and still self harm and suicide. Do we blame the professionals when it happens?
+   💬 Replies (1):
+   10.1. (1 ⬆️) If they say "I think you should" and/or "here's some ideas how" like LLMs have, then yes, we do.
+
+
+
+================================================================================
+

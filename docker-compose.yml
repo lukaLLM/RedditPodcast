@@ -1,0 +1,28 @@
+services:
+  reddit-analyzer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: reddit-ai-analyzer
+    ports:
+      - "7860:7860"
+    env_file:
+      - .env
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      # Mount output directory for analysis files
+      - ./outputs:/app/outputs
+      # Optional: mount .env file if not using env_file
+      # - ./.env:/app/.env:ro
+      - ./schedule_config.json:/app/schedule_config.json  # Persist schedule config
+      # Mount timezone files from host to auto-detect timezone
+      - /etc/localtime:/etc/localtime:ro
+      - /etc/timezone:/etc/timezone:ro
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:7860/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
