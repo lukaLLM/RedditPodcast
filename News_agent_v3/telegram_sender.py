@@ -56,6 +56,43 @@ async def send_telegram_message(message: str, parse_mode: str = "Markdown") -> b
             return False
 
 
+async def send_telegram_audio(file_path: str, caption: str = "") -> bool:
+    """
+    Send an audio file to Telegram.
+    
+    Args:
+        file_path: Path to audio file to send
+        caption: Optional caption text
+        
+    Returns:
+        bool: Success status
+    """
+    try:
+        bot_token = os.getenv("TELEGRAM_BOT_TOKEN")
+        chat_id = os.getenv("TELEGRAM_CHAT_ID")
+        
+        if not bot_token or not chat_id:
+            print("❌ Telegram credentials not configured")
+            return False
+        
+        bot = Bot(token=bot_token)
+        
+        with open(file_path, 'rb') as f:
+            await bot.send_audio(
+                chat_id=chat_id,
+                audio=f,
+                caption=caption,
+                title="Reddit AI Analysis Audio"
+            )
+        
+        print(f"✅ Audio sent to Telegram: {file_path}")
+        return True
+        
+    except Exception as e:
+        print(f"❌ Error sending Telegram audio: {e}")
+        return False
+
+
 async def send_telegram_document(file_path: str, caption: str = "") -> bool:
     """
     Send a document to Telegram.
@@ -96,16 +133,18 @@ async def send_analysis_results(
     analysis_file: str,
     subreddit_config: dict,
     time_filter: str,
-    num_posts: int
+    num_posts: int,
+    audio_file: str = None
 ) -> bool:
     """
-    Send analysis results to Telegram (message + file).
+    Send analysis results to Telegram (message + file + optional audio).
     
     Args:
         analysis_file: Path to analysis text file
         subreddit_config: Dict of analyzed subreddits
         time_filter: Time filter used
         num_posts: Number of posts analyzed
+        audio_file: Optional path to TTS audio file
         
     Returns:
         bool: Success status
@@ -115,6 +154,10 @@ async def send_analysis_results(
     message += f"📊 *Analyzed:* {num_posts} posts\n"
     message += f"📁 *Subreddits:* {', '.join(subreddit_config.keys())}\n"
     message += f"⏰ *Time Filter:* {time_filter}\n\n"
+    
+    if audio_file:
+        message += f"🎙️ *Audio narration included*\n\n"
+    
     message += f"📄 *Full analysis file attached below*"
     
     # Send message
@@ -126,7 +169,15 @@ async def send_analysis_results(
         caption="📄 Full AI Analysis Report"
     )
     
-    return msg_success and file_success
+    # Send audio if provided
+    audio_success = True
+    if audio_file:
+        audio_success = await send_telegram_audio(
+            audio_file,
+            caption="🎙️ Audio Narration of Analysis"
+        )
+    
+    return msg_success and file_success and audio_success
 
 
 async def send_error_notification(error_message: str) -> bool:

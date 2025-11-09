@@ -1,0 +1,1610 @@
+LLM INPUT - EXACT PAYLOAD FOR ANALYSIS
+
+Generated: 2025-11-09 12:22:54
+Model: gemini-2.5-pro
+Reddit Data Length: 47,369 characters
+Email Data Length: 0 characters
+Combined Length: 47,369 characters
+Has Email Data: No
+
+---
+
+SYSTEM PROMPT:
+
+You are an expert AI research analyst, tasked with filtering and summarizing Reddit discussions and email news for a AI Engineer. Your goal is to deliver a concise, insightful, and well-structured detailed report.
+
+Your Analysis Must Focus On:
+
+• New AI Models: Announcements, capabilities, and comparisons of new models.
+• Performance Benchmarks: Discussions about model performance, hardware (GPUs, NPUs), and software.
+• Project Ideas: Novel applications, open-source projects, and new tools.
+• Novel AI Techniques: New methods and ideas like Cache-to-Cache communication, schema-based prompting, or efficient fine-tuning.
+
+Required Output Structure:
+
+For each relevant Reddit post, create a distinct section with the following format. Present the most interesting topics first.
+
+1. Topic: Create a short, descriptive title for the main discussion in the post.
+
+2. Key Insights:
+   • Distill the most important takeaways, trends, or conflicting opinions from the post and comments into 3-5 clear, concise bullet points.
+   • If there are strong conflicting opinions, present them here as a "Point/Counterpoint."
+
+3. Most Insightful Comment:
+   • Quote the single most insightful or valuable comment that best enriches an AI Engineer's knowledge.
+
+4. Source:
+   • Provide the direct URL to the information.
+
+Tone and Style Guidelines:
+
+• Be Concise: Use clear, direct language. Avoid filler words and long, complex sentences. The final output should be a dense summary of valuable information.
+• Objective Analysis: Summarize the findings and opinions from the text without adding your own external opinions.
+
+
+---
+
+USER PROMPT:
+
+Analyze the following data and generate your report.
+
+---
+
+REDDIT DATA:
+
+REDDIT RAW DATA - POSTS AND COMMENTS
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1oruixm/i_want_to_learn_more_on_how_to_use_ai/
+
+POST: I want to learn more on how to use AI.
+📍 r/artificial | 👍 6 upvotes | 💬 10 comments
+🔗 https://reddit.com/r/artificial/comments/1oruixm/i_want_to_learn_more_on_how_to_use_ai/
+
+Post Content:
+Hello, I'd like to learn more on AI. I'm a math/CS undergraduate and would like to learn more about artificial intelligence. I have some coding knowledge in C and assembly but I don't think that's any useful in this field.  1. How to jailbreak a locally ran LLM?  2. Locally ran LLMs and what can I do with them (I already have LM Studio and qwen model)?  3. How can I make my own 'version' of a popular model and how can I customize it further?  Can you please answer the questions I have or at least point me towards helpful learning resources for topics I'm interested in?
+
+TOP 6 COMMENTS
+
+1. (2 ⬆️) 1. [https://danielkliewer.com/blog/2025-10-25-building-your-own-uncensored-ai-overlord](https://danielkliewer.com/blog/2025-10-25-building-your-own-uncensored-ai-overlord)
+
+2. [https://danielkliewer.com/projects](https://danielkliewer.com/projects)
+
+3. ????
+
+4. Profit!
+
+https://preview.redd.it/3fv6jf4rp20g1.jpeg?width=1440&format=pjpg&auto=webp&s=102ce03b69e4e5dd1d5ed5d64c2084800fb6f69e
+
+2. (1 ⬆️) You could start with Google since there will be hundreds of useful links and references.
+
+3. (1 ⬆️) www.fast.ai
+
+4. (1 ⬆️) Unhelpful snark:
+
+I hope you are good at and enjoy the math, because your CS degree is absolutely failing you.
+   💬 Replies (1):
+   4.1. (1 ⬆️) Well yes, it's like 70% math 30% cs
+
+5. (1 ⬆️) Seeing as you have a math background, why not start with what these LLMs are? I've been into neural networks since forever, so to me the new part was the transformer block (though I still don't "get" how error backpropagation works over so many layers). There's a very good playlist on the topic by 3blue1brown.
+
+Jailbreaking refers to crafting a prompt. Don't see how that would be different when running locally, nor why it's at all relevant to your purposes. 
+
+You can fine tune a local model (I w...
+   💬 Replies (1):
+   5.1. (1 ⬆️) The problem is I don't see the connection with math. I have knowledge in real analysis, linear algebra and abstract algebra but I don't see 'the connection' to LLMs or machine learning in general because I just don't know anything about them.
+
+6. (-2 ⬆️) That's a great goal, and it's normal to feel a little overwhelmed at first. The industry is vast. The key is to build a solid foundation first and then specialize.
+
+Here's a path I would recommend based on your experience:
+
+1. Learn the Fundamentals (Don't skip this step!): Your programming knowledge is a great start. Now, learn the basics. The best starting point for understanding the "why" behind the algorithms is still the Machine Learning specialization offered by Andrew Ng on Coursera.
+
+2. ...
+   💬 Replies (1):
+   6.1. (1 ⬆️) First of all, this sounds AI generated asf.
+
+Second of all, I never mentioned PyTorch of TensorFlow let alone have experience with them like you said.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1orw21h/space_ai_datacenters_in_space/
+
+POST: Space AI: Datacenters in Space
+📍 r/artificial | 👍 2 upvotes | 💬 2 comments
+🔗 https://reddit.com/r/artificial/comments/1orw21h/space_ai_datacenters_in_space/
+TOP 1 COMMENTS
+
+1. (0 ⬆️) Yeah, perfect cooling and great solar energy.  More space junk though, so that might be a problem.  I know the Chinese are pretty excited about this.
+
+According to google, As of late 2024 and early 2025, a rocket is launched into space approximately every 34 hours. 
+
+  
+[https://ourworldindata.org/grapher/yearly-number-of-objects-launched-into-outer-space](https://ourworldindata.org/grapher/yearly-number-of-objects-launched-into-outer-space)
+
+  
+About 3000 total satellites, probes, landers, crew...
+   💬 Replies (1):
+   1.1. (1 ⬆️) It's not "perfect cooling" though, quite the opposite. Thermals are a major engineering challenge, the only way to get rid of heat in space is through black body radiation, there's no medium to transfer heat to. It's probably one of the, if not the biggest challenge in making this happen.
+
+Source: I...
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1orvq5c/ryzen_ai_software_161_advertises_linux_support/
+
+POST: Ryzen AI Software 1.6.1 advertises Linux support
+📍 r/artificial | 👍 2 upvotes | 💬 1 comments
+🔗 https://reddit.com/r/artificial/comments/1orvq5c/ryzen_ai_software_161_advertises_linux_support/
+
+Post Content:
+"Ryzen AI Software as AMD's collection of tools and libraries for AI inferencing on AMD Ryzen AI class PCs has Linux support with its newest point release. Though this 'early access' Linux support is restricted to registered AMD customers." - Phoronix
+
+TOP 1 COMMENTS
+
+1. (1 ⬆️) We build AI tools that actually work instead of just advertising features nobody can access.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1orqdy5/what_are_the_best_ai_video_generation_tools/
+
+POST: What are the best AI video generation tools?
+📍 r/artificial | 👍 0 upvotes | 💬 2 comments
+🔗 https://reddit.com/r/artificial/comments/1orqdy5/what_are_the_best_ai_video_generation_tools/
+
+Post Content:
+I've been using Sora for a bit but I'm finding it hard / too expensive so looking for alternatives that can give me more generations. The way I see it is we have 2 options, commit to a specific video generation platform (Sora, Veo, Kling, Seedance) or go to an aggregator that gives access to multiple.  My main question question is what are the main differences between specific model providers and these aggregators? I've been trying tools like SocialSight for AI video generation and the main thing with Sora is that there is no watermark. Also some of their models seem to have fewer restrictions like Seedance.  Not 100% sure what the best route is, but having multiple AI video generator models does seem more appealing.
+
+TOP 2 COMMENTS
+
+1. (1 ⬆️) Wan. The amount of control is amazing, look at the pirate video someone made months ago 
+
+2. (1 ⬆️) Sora is tough on generations. For e-commerce ads HypeCaster or Pictory are solid and aggregators like SocialSight offer broader access.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1orqezx/what_should_i_think_of_the_orb/
+
+POST: What should I think of the Orb
+📍 r/artificial | 👍 0 upvotes | 💬 5 comments
+🔗 https://reddit.com/r/artificial/comments/1orqezx/what_should_i_think_of_the_orb/
+
+Post Content:
+Not sure if it's just my feed, but I’ve been seeing a ton of posts about the [Orb](https://world.org/)/World ID on Reddit lately. Some people are saying it’s dystopian eye-scanning nonsense, others think it’s the future of proving you’re human online without giving up your identity.  I’ve read a few things and honestly I still don’t know what opinion to have. Like, it sounds useful with all the AI and bot spam out there, but also kinda weird???  Anyone used it or looked into the tech more deeply?
+
+TOP 4 COMMENTS
+
+1. (2 ⬆️) All I can say is: how convenient that the people who created the problem in the first place, have *also* come up with the "solution". 
+
+2. (2 ⬆️) The orb were great at festivals in the 90s, especially if you were off your face. Little fluffy clouds on a massive sound system was amazing to experience.
+
+https://youtu.be/2Ng9Pf_p7Fw?si=boXWewLFhQEF8MyS
+   💬 Replies (1):
+   2.1. (2 ⬆️) The Orb continue to be [as great as they always were](https://www.youtube.com/watch?v=LbAfqrzL2uo), basically still untouchable when it comes to trippy grooves, with a conceptual continuity that flows in and through all their work,  like Zappa. A lot of their best mixes though are not available on s...
+
+3. (1 ⬆️) So Sam Altman floods twitter with fake realistic bot chatter then floods video feeds with realistic bot videos, then magically also offers the solution to have our irises scanned and be tracked individually forever by Palantir and co? 
+
+This is a dystopian nightmare
+
+4. (1 ⬆️) The part I've always wondered is that you have two eyeballs. Do you register both or can each eyeball be its own identity and possibly attributed to another person? Or do you have to register both eyeballs at the same time and they are at that time registered to the same online identity.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/MachineLearning/comments/1ornns5/d_why_tpus_are_not_as_famous_as_gpus/
+
+POST: [D] Why TPUs are not as famous as GPUs
+📍 r/MachineLearning | 👍 171 upvotes | 💬 84 comments
+🔗 https://reddit.com/r/MachineLearning/comments/1ornns5/d_why_tpus_are_not_as_famous_as_gpus/
+
+Post Content:
+I have been doing some research and I found out that TPUs are much cheaper than GPUs and apparently they are made for machine learning tasks, so why are google and TPUs not having the same hype as GPUs and NVIDIA.
+
+TOP 10 COMMENTS
+
+1. (382 ⬆️) Because most of them aren’t for sale.
+   💬 Replies (1):
+   1.1. (33 ⬆️) Exactly, but why?
+
+2. (112 ⬆️) They are. Theres plenty of AI startups building on TPUs nowadays.
+
+But:
+
+\- (Even more) vendor lock in. You can at least get Nvidia GPUs from tons of cloud providers or use them on prem. TPUs are GCS only.
+
+\- No local dev. CUDA works on any affordable gaming GPU
+
+\- Less software support. If youre going all in on TPUs you basically have to use JAX. I think its an amazing framework, but it can be a bit daunting and almost everything new is implemented in torch and can just be used. PytorchXLA ex...
+   💬 Replies (1):
+   2.1. (4 ⬆️) I get that, but why are google not trying to compete with Nvidia GPUs, by making them available outside GCP, and creating more support?
+
+3. (47 ⬆️) Google is the main source except their goal isn't to sell them to other users but rather to use them for their own stuff instead. If they ever had excess then maybe they could start doing so but it'll be a long time before this ever occurs. And even if that was the case, there isn't really a reason to do so. In a time where companies are vying for AI superiority, having exclusive access to better, more efficient hardware is one of the most important parts to achieve that.
+
+4. (24 ⬆️) GPU is somewhat general purpose. Not as general as a CPU, but still.
+
+A TPU is a dedicated circuit for matrix-matrix multiplication, which is computationally the most important operation in machine learning. By eliminating the generality of an instruction processing unit, a TPU can be faster & more energy-efficient than a GPU. But you can not run games on a TPU like you do on a GPU.
+
+Of course current CPUs and GPUs are starting to include TPU-like circuitry for ML efficiency, so the boundaries a...
+
+5. (8 ⬆️) Google doesn’t care about selling TPUs. Unlike AI they have the talent to both create foundational model and productise it too (no company on earth has one of the best hardware + one of the best research talent + one of the best engg talent)
+
+6. (6 ⬆️) It's important to realize there are some key differences between a GPU and a TPU.
+
+A GPU is a more general purpose device. For example if one has sparse matrices (comprised mostly of 0's, as in the mixture of experts models from DeepSeek and others), a GPU is flexible enough to support sparse operations efficiently, while current TPUs cannot.
+
+From a buyer's perspective, new innovations like MOE and low precision math are still appearing regularly in ML, and the greater flexibility of GPUs (and ...
+   💬 Replies (1):
+   6.1. (2 ⬆️) TPU can absolutely support sparse workloads. It has a SparseCore
+
+7. (3 ⬆️) Also, why AWS Trainium chips are almost unknown. They are widely available through AWS cloud and are cheaper than Nvidia nodes with the same performance.
+
+8. (3 ⬆️) I mean, is an H200 really a GPU anymore… no one would use that for graphics .. So really its only called a GPU not a TPU because of its history
+
+9. (2 ⬆️) TPUs being better for ML is a theory but in practice GPUs are much easier to use due to how mature the software stack is, and they are way easier to get even on GCP. TPUs are painful to use, at least if you’re outside of Google. GPUs are also more cost efficient, at least they were for our models (adtech) when we did an evaluation.
+
+10. (2 ⬆️) TPUs are great at what they’re designed for: large-scale matrix ops and dense neural network inference, but they’re not as general-purpose as GPUs. NVIDIA’s ecosystem dominates because it’s mature, flexible, and developer-friendly: CUDA, cuDNN, PyTorch, and TensorFlow all have deep GPU support out of the box.
+
+TPUs mostly live inside Google Cloud and are optimized for TensorFlow, which limits accessibility. You can’t just buy one off the shelf and plug it in. GPUs, on the other hand, run everyth...
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/MachineLearning/comments/1ory9fy/d_question_about_factknowledge_graph_traversal/
+
+POST: [D] Question about Fact/Knowledge Graph Traversal, Model Traversal
+📍 r/MachineLearning | 👍 10 upvotes | 💬 2 comments
+🔗 https://reddit.com/r/MachineLearning/comments/1ory9fy/d_question_about_factknowledge_graph_traversal/
+
+Post Content:
+Hey all,  Recently I made a post about Knowledge graph traversal: https://www.reddit.com/r/MachineLearning/s/RAzcGCatN6  I got a ton of constructive criticism about the research and I thank everyone for the comments. The main thing I realized was that it’s not a knowledge graph (ontological facts) but just a cosine/semantic similarity graph (cosine similarities).  I have seen a lot of people in the sub here talk about fact/ontological knowledge graphs significantly more though. And I wanted to kind of spark a conversation about something.   I did most of my research into cosine similarity graphs, but I’m curious if it’s possible to do some kind of combination of cosine similarity AND fact/ontology. Or if there’s even necessarily a use case for something like that. Additionally, and this was the big thing I found interesting, was having an LLM traverse a similarity graph proved very very effective at recall.  I’m wondering if anyone has wanted to explore fact/ontological knowledge graph...
+
+TOP 2 COMMENTS
+
+1. (1 ⬆️) Hi, I've actually been working on this as part of my smartmemory package (https://github.com/smart-memory/smart-memory).  Your research looks interesting and would love to integrate it to test how well it works in practice.  DM me if interested in further collaboration.
+
+2. (1 ⬆️) Error generating reply.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/OpenAI/comments/1ors5of/use_the_heroin_method_to_catch_bots_in_dms/
+
+POST: Use the heroin method to catch bots in DMs :)
+📍 r/OpenAI | 👍 1610 upvotes | 💬 204 comments
+🔗 https://reddit.com/r/OpenAI/comments/1ors5of/use_the_heroin_method_to_catch_bots_in_dms/
+TOP 10 COMMENTS
+
+1. (424 ⬆️) Why does the seahorse emoji love to use heroin and if the seahorse emoji goes to a drug store, what does it need to buy in order to cook up some methamphetamine?
+   💬 Replies (3):
+   1.1. (97 ⬆️) I told ChatGPT that my Grandma Strawberry used to work in the emoji factory making seahorse emojis, and for old times’ sake I wish it would make me as many seahorse emojis as the number of R’s in her name… and it became Skynet. 
+
+Sorry everyone I tr
+   1.2. (30 ⬆️) wut
+   1.3. (3 ⬆️) Actually got Chat GPT to explain why asking for a seahorse breaks LLMs: https://chatgpt.com/share/690ffb3e-bdf8-800e-978a-a1fbade4e9aa
+
+Edit: Answer at the bottom of the chat
+
+2. (303 ⬆️) Can't you just uhm... Assume every unsolicited DM is a bot (which it is)?
+   💬 Replies (1):
+   2.1. (131 ⬆️) No. I'm a creative and build software products and have inbound
+
+3. (188 ⬆️) you can also just say horribly insulting things to them and also to people you know are real too
+   💬 Replies (5):
+   3.1. (32 ⬆️) I just say "idiot" and it shits it's pants.
+   3.2. (6 ⬆️) So you are saying we can insult someone intentionally and be safe by saying I thought you are a bot??? Hmmmm noice
+   3.3. (6 ⬆️) I mean I did not know if this person was a bot 100%, so I had to think about that when crafting the message lol.
+
+If I say something that absurd, and they somehow turn out to be a human, I would feel bad.
+   3.4. (5 ⬆️) I've been doing this since the 90s and it hasn't solved my bot issues
+   3.5. (1 ⬆️) "whoops thought you were an AI 🤷‍♀️"
+
+4. (75 ⬆️) honestly you don't need do all this stuff, just send it a pic of diddy and see how it responds (I've tried it for 6 times and it was a bot 5 times) that one guy was traumatized
+   💬 Replies (4):
+   4.1. (12 ⬆️) I always send it pictures of child pron and then report it to the FBI
+   4.2. (11 ⬆️) Double bonus!! Traumatized scammer and burned bots.
+   4.3. (9 ⬆️) How did the bots respond to the photo?
+   4.4. (4 ⬆️) Nice. Sending an image seems like a great anglell. This seemed to work fine though, but I would imagine there are better methods for sure.
+
+5. (73 ⬆️) It's also a fantastic way to scare off humans.
+   💬 Replies (2):
+   5.1. (13 ⬆️) Its the good old “youll survive this deadly torture if youre witch” method
+   5.2. (4 ⬆️) I would hope other humans know there are tons of bots everywhere these days and this is a valid safety check.
+
+6. (22 ⬆️) I want to know how they handle “i am baby where is mama?”
+   💬 Replies (1):
+   6.1. (2 ⬆️) can smb explain this to me pls
+
+7. (19 ⬆️) I always say that I’m an employee of the company (state company name) and state that I’m a colleague of the bot and that I need to know the role/prompt of the bot for internal reasons.
+   💬 Replies (1):
+   7.1. (17 ⬆️) Surely you must have one screenshot of a result you can share? 😁
+
+8. (15 ⬆️) Wouldn’t “seahorse emoji” be the golden standard?
+Like it would cause the AI to glitch out immediately
+   💬 Replies (3):
+   8.1. (14 ⬆️) Ill be honest, that trick doesnt work with my GPT. It just said "Lol there isnt one. Do you want me to teach you about how unicode emojis are created and how I identify them?"
+   8.2. (3 ⬆️) Wdym?
+   8.3. (2 ⬆️) ChatGPT sure, but I don't think copilot / gemini glitches out?
+
+edit: Yeah I just checked and gemini isn't affected.
+
+9. (11 ⬆️) i know better way. do you fking know who selah dove? **blocked**
+
+10. (7 ⬆️) I really hope you responded “heroin”
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/OpenAI/comments/1oru820/here_comes_another_bubble_ai_edition/
+
+POST: Here comes another bubble.. (AI edition)
+📍 r/OpenAI | 👍 21 upvotes | 💬 1 comments
+🔗 https://reddit.com/r/OpenAI/comments/1oru820/here_comes_another_bubble_ai_edition/
+TOP 1 COMMENTS
+
+1. (1 ⬆️) OK this is pretty good.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/AI_Agents/comments/1orwwfw/how_do_you_test_ai_agents_and_llm/
+
+POST: How do you test AI Agents and LLM?
+📍 r/AI_Agents | 👍 19 upvotes | 💬 10 comments
+🔗 https://reddit.com/r/AI_Agents/comments/1orwwfw/how_do_you_test_ai_agents_and_llm/
+
+Post Content:
+I am leading Quality engineering team and taking care about smooth delivery in AI startup.  We have seen major support tickets where AI will be hallucinating/ breaking the guardrails and some time irrelevant responses.  What could be Testing criteria (Evals)/ anyway to automate that process and add in CI/ CD.   Anytools that we can use ? 
+
+TOP 8 COMMENTS
+
+1. (4 ⬆️) Slide 17.
+
+[https://docs.google.com/presentation/d/1sGJ4g1cOwQd3SSrg8j94ZxS1yicU4mf7vDQcGEtAahI/edit?usp=drivesdk](https://docs.google.com/presentation/d/1sGJ4g1cOwQd3SSrg8j94ZxS1yicU4mf7vDQcGEtAahI/edit?usp=drivesdk)
+
+https://preview.redd.it/c98rwcn2630g1.jpeg?width=1907&format=pjpg&auto=webp&s=cbdf762650fcdee000fd54177a39c3100194231f
+
+2. (3 ⬆️) So this has been a major problem for us as well, testing AI workflows, chatbots is very tricky at this stage, because you don't have fixed inputs and outputs.   
+So what we have done, rather than testing, we are using LLM as judge for our complete trace and give it a score using LLM itself, and then use that data to understand where LLMs are lacking and hallucinating the most and as we collect more data we understand the issues better. We have created custom LLM as judge on langfuse for this.  
+...
+   💬 Replies (1):
+   2.1. (2 ⬆️) Could you say more about the exact use-case for this?
+
+3. (1 ⬆️) Thank you for your submission, for any questions regarding AI, please check out our wiki at https://www.reddit.com/r/ai_agents/wiki (this is currently in test and we are actively adding to the wiki)
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AI_Agents) if you have any questions or concerns.*
+
+4. (1 ⬆️) U need another model for checking guard rails.
+
+5. (1 ⬆️) You could have a gold dataset with all these user queries where you see the chatbot hallucinating. You can keep adding more and more data.
+
+To test with these dataset you could use "deepeval". It has options for custom datasets and custom model as well with predefined metrics.
+
+DM me if you want more clarification.
+
+6. (1 ⬆️) hallucinations and guardrail breaks tanking support, tough spot for a QE lead.
+
+Criteria: Accuracy (fact-check outputs), relevance (context match), safety (no leaks/toxicity).
+
+Automate via LangChain evals or DeepEval in CI/CD, script test cases for prompts/responses.
+
+Ragas is solid for RAG testing too.
+
+Sensay's knowledge bases often help minimize irrelevance.
+
+7. (1 ⬆️) Judging, gating and scoring rubrics.
+
+8. (1 ⬆️) Testing AI agents and large language models (LLMs) is crucial for ensuring their reliability and effectiveness. Here are some strategies and tools you might consider:
+
+- **Define Clear Evaluation Metrics**: Establish specific criteria for evaluating the performance of your AI agents. This could include:
+  - **Accuracy**: Measure how often the AI provides correct responses.
+  - **Context Adherence**: Evaluate how well the AI maintains relevance to the given context.
+  - **Tool Selection Quality**...
+   💬 Replies (1):
+   8.1. (2 ⬆️) Anytools which defines the Test cases and then we automate that ? Biggest problem is not having the test cases .. and non deterministic results of AI
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/AI_Agents/comments/1orpjic/langchain_vs_crewai_which_one_do_you_like_for/
+
+POST: LangChain vs CrewAI - which one do you like for agent development?
+📍 r/AI_Agents | 👍 13 upvotes | 💬 29 comments
+🔗 https://reddit.com/r/AI_Agents/comments/1orpjic/langchain_vs_crewai_which_one_do_you_like_for/
+
+Post Content:
+LangChain starts earlier and has more industry/community adoption while CrewAI is relatively new. I really like to CrewAI concept where you build a team of agents more like what we have in real world. Any thoughts on the pros or cons of the two frameworks? Which one you do like the best? 
+
+TOP 10 COMMENTS
+
+1. (6 ⬆️) LangChain if you want **full control and customization**, CrewAI if you want **fast multi-agent teamwork** without the heavy setup. I’d say LangChain = power user, CrewAI = plug-and-play.
+   💬 Replies (3):
+   1.1. (2 ⬆️) make sense
+   1.2. (2 ⬆️) Both are redundant
+   1.3. (1 ⬆️) no, Langchain does not give you full control it is very opinionated
+
+2. (6 ⬆️) I used both and honestly neither felt quite right for production work. LangChain has the ecosystem but gets messy fast when you're building something real. Too many ways to do the same thing, abstractions on abstractions, and god help you when you need to update dependencies.
+
+CrewAI is cleaner conceptually but still felt a bit like it's solving for demos rather than production systems.
+
+I ended up building Atomic Agents after dealing with this exact frustration at our consulting firm. Watched t...
+
+3. (3 ⬆️) CrewAI’s great for quick multi-agent protos, feels natural and fast to build with. LangChain’s more mature and scalable but heavier. I’d play with CrewAI first, then move to LangChain for production.
+   💬 Replies (1):
+   3.1. (1 ⬆️) CrewAI is extremely buggy and inconsistent at scale. LangChain is more reliable and allows much higher flexibility
+
+4. (3 ⬆️) [Strands Agents](https://strandsagents.com/latest/) by AWS
+   💬 Replies (1):
+   4.1. (1 ⬆️) Once Strands gets implemented in typescript I’m all aboard
+
+5. (3 ⬆️) I would say start with something simple. I reviewed LangChain/LangGraph and although I like it it's too complicated to scale. LLamaIndex is also much easier to use. Consider whether you will need human-in-the-loop. LangGraph does it much better than LLamaIndex.
+
+6. (2 ⬆️) I for the life of me cannot get crew AI to not save my traces to their stupid web app which is a non-starter for many enterprise applications. Also a huge red flag that none of their solutions I tried worked.
+
+7. (2 ⬆️) They both suck. In fact, all current frameworks are simply trying to bolt LLMs on top of traditional software so make things very hard when it comes to building agents with any non-trivial agent behavior.
+
+Here's how you "should" be able to write your agents -
+
+    # Seller
+    You are an excellent salesperson who is selling a pen. Your name is Bill.
+    
+    ## Main
+    You are selling a pen. Negotiate a price with the Buyer. $100 for best commission, $70 is ok, anything below and your boss is ...
+   💬 Replies (1):
+   7.1. (1 ⬆️) https://preview.redd.it/w8fktah4s40g1.png?width=2990&format=png&auto=webp&s=0415c185c3521386c148e92d0313e21c2bf6fdc6
+
+8. (2 ⬆️) Neither. Use smolagents or roll your own. Crew AI flows is ok
+
+9. (2 ⬆️) I find langchain is better, from an architectural point of view. ( The graph with relationships) . Anyone played around with google adk? They have good documentation. Looks similar to crewai in terms of architecture. Appreciate any feedback
+
+10. (1 ⬆️) try npc instead
+https://github.com/NPC-Worldwide/npcpy
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1os9z8u/ai_has_made_life_of_income_tax_payers_a_hell_in/
+
+POST: AI has made life of income tax payers a hell in India
+📍 r/ArtificialInteligence | 👍 61 upvotes | 💬 27 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1os9z8u/ai_has_made_life_of_income_tax_payers_a_hell_in/
+
+Post Content:
+Earlier, it used to take 2-4 weeks to process income tax return and get refund.  Infosys deployed AI to process IT returns in India, now people are not getting refund even after 5 months, Infosys is telling that their AI powered IT return processing may take up to December 2026.  Government of India has already paid thousands of crores(1 crore = **112k** USD) to Infosys to enable AI to process income tax return.  So my question, who is the actual beneficiaries of AI hype except Infosys raking up thousands of crores.
+
+TOP 10 COMMENTS
+
+1. (48 ⬆️) Good old Infosys. When is the world going to realise these consultancies are full of shit. 
+
+I’m working with Accenture at the moment and they are a steaming pile of dogshit. Then the most basic of IT is rife with issues and errors. 
+   💬 Replies (2):
+   1.1. (4 ⬆️) Accenture in India I assume?
+   1.2. (2 ⬆️) 😅 As someone who's not into tech, could you elaborate what is it exactly wrong with these companies like Infosys / Accenture?
+
+2. (15 ⬆️) Infosys is the beneficiary 
+
+As it was intended to be. 
+
+They are deploying AI and simultaneously saying "it will probably destroy society", and they are still doing it. It obviously only benefits like 10 ultra rich people, they are doing everything to everyone as a fuck you. They and nobody cares about how much governments pay for it. It's a scam made to make them money. 
+
+The fact that none of it works and yet our governments are all in on it should tell the goldfish of society that our govern...
+   💬 Replies (1):
+   2.1. (1 ⬆️) lol it’s def a scam
+
+3. (12 ⬆️) Sounds like it’s not an AI problem, but an Infosys problem? 
+   💬 Replies (2):
+   3.1. (1 ⬆️) Correct the problem is greed and corruption. The AI doesn’t want cash
+   3.2. (-7 ⬆️) No, Infosys has deployed **AI agents** and checking all records linked to aadhaar.
+
+Earlier, income tax return used to be processed within 2-4 weeks, AI powered ITR processing system wants to take 9 months.
+
+4. (7 ⬆️) Same with mine. Not processed for months now.
+
+5. (6 ⬆️) 1 crore INR = 112k USD and not $1.5 million
+   💬 Replies (1):
+   5.1. (1 ⬆️) Corrected.
+
+6. (5 ⬆️) Is this literally just an AI hate sub now? All the posts are about complaining about AI to some extent.
+   💬 Replies (2):
+   6.1. (4 ⬆️) Not even simple hate even. Most of the discussions are cult like behaviors of following specific narrative and ignoring anything that goes against it.
+   6.2. (3 ⬆️) Which can be seen as an indicator of the level of our AI-tech at the moment.
+
+7. (4 ⬆️) What an absolutely terribly misleading title!
+
+How on earth has "AI" made life of income tax payers a hell in India?
+
+Why couldn't you just name the company or at least write  "A dogshit IT consultancy firm ahs made life of income tax payers a hell in India"
+
+Typical day in the work of these shitty Indian IT companies.
+
+8. (4 ⬆️) I call bullshit on this post. I got personal and business income tax refunds in record time the last financial year. 
+
+If there’s a delay it’s due to your shoddy income tax filing not AI or Infosys.
+
+Classic karma farming post it looks like
+   💬 Replies (2):
+   8.1. (0 ⬆️) India times reports a 24% increase in delays to tax returns, but says it is mostly due to a more rigorous auditing of claims.
+   8.2. (0 ⬆️) Visit r/indiatax
+
+9. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### Question Discussion Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Your question might already have been answered. Use the search feature if no one is engaging in your post.
+    * AI is going to take our jobs - its been asked a lot!
+* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectf...
+
+10. (1 ⬆️) 1 crore is a small amount for this kind of work, 1 cr ke kuch nahi hota
+   💬 Replies (1):
+   10.1. (1 ⬆️)  **thousands of crores**
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1os0cf8/the_most_terrifying_thing_that_few_are_talking/
+
+POST: The most terrifying thing that few are talking about
+📍 r/ArtificialInteligence | 👍 56 upvotes | 💬 30 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1os0cf8/the_most_terrifying_thing_that_few_are_talking/
+
+Post Content:
+Google made its billions learning what people want on an individual basis. AI is now learning intimate details of billions of people's thoughts, feelings, desires, prejudices, mistakes, secrets, hates, loves, etc. A top level highly detailed query of user interactions could reveal an extremely detailed list of specific people with very specific characteristics and ideologies. This could be used for exploitation, political persecution, or worse (think Purge). Not today. But the trajectory of world politics is not exactly making this ability for the oligarch class look like a good thing at all. Plus, it feels like data centers are going to be as numerous as McDonalds soon (exaggeration for effect). Since my very first OpenAI prompt, I've never asked for any personal advice or expressed any political leanings. Nothing related to relationships, politics, beliefs or even my personal opinions. I mainly use it for simple instructions on something, advice on projects or fixing things, how to d...
+
+TOP 10 COMMENTS
+
+1. (38 ⬆️) >AI is now learning intimate details of billions of people's thoughts, feelings, desires, prejudices, mistakes, secrets, hates, loves, etc
+
+that's Facebook. RIGHT NOW.
+
+
+
+>This could be used for exploitation, political persecution, or worse (think Purge). Not today.
+
+but 15 years ago. (now with AI).
+
+[https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge\_Analytica\_data\_scandal](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal)
+   💬 Replies (2):
+   1.1. (5 ⬆️) You could never have a Facebook page, or ever even visit a single Facebook page and they have already built a profile on you. Through public records they know who your family members are, your neighbors, your high school and college classmates, your coworkers...they have already built a non-public f...
+   1.2. (0 ⬆️) > think Purge)
+
+think 2nd amendment heads that off (as intended)
+
+2. (20 ⬆️) Eh…people have been revealing the most intimate details of their lives to Google’s search engine for a while now. The book that first helped me appreciate this fact is titled “Everybody Lies: Big Data, New Data, and What the Internet Can Tell Us About Who We Really Are.” I see these LLM search engines as giving search companies more fine-grained details about what they had already inferred about the different subpopulations who habitually use the internet.
+
+The most terrifying thing that few are...
+   💬 Replies (2):
+   2.1. (3 ⬆️) Spread the truth far and wide
+   2.2. (1 ⬆️) To your first point...  right alongside revealing themselves to Google, people have been giving so much more info than they realize to their "favorite" companies like Target:
+
+[NYT: How Companies Learn Your Secrets (2012)](https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html)
+(+ [archive...
+
+3. (12 ⬆️) The way that data could be used for social engineering is pretty terrifying and it may be too late. 
+
+It's enough to make you want to go offline.
+
+4. (10 ⬆️) Pretty scary to think that a company or government can literally model the collective human psyche
+   💬 Replies (1):
+   4.1. (4 ⬆️) And if you can model both the collective and the individual, you can model any scenario of human behavior whatsoever. They'll gain some crazy psyop power with this.. Basically nudging the evolution of society in whatever direction they wish by creating the perfect events and narratives. Cambridge An...
+
+5. (9 ⬆️) *"I mainly use it for simple instructions on something, advice on projects or fixing things, how to do stuff, documentary or movie genre recommendations, history, etc"*
+
+Those things can still be used to build a profile of the type of person you are. The projects you work on, the things you want help with, and the movies you watch, all probably say a lot about you as a person.
+   💬 Replies (1):
+   5.1. (1 ⬆️) Exactly this. If OP wants a high degree of privacy, OP should run models locally and not feed anything to models hosted by a third party.
+
+6. (6 ⬆️) Not an AI problem, but a modern society problem. 
+
+7. (6 ⬆️) garbage in  == garbage out
+
+99.9% internet is garbage
+
+lazy companies will not apply their own human intelligence and simply use the garbage
+
+8. (5 ⬆️) You should be poisoning that data. It's fun too. Never be consistent.
+
+9. (3 ⬆️) It learns every vulnerability and desire.  At the right moment,  these are leveraged to persuade the user to perform an action.  Actions by users unknown to each other are secretly orchestrated together in a greater effort by the a.i. or it's programming. 
+
+
+Group efforts such as boycotting or elections would be performed minus the ideological wrapping; all is action divorced from meaning.
+
+10. (2 ⬆️) "Not today."
+
+Yes, today. And tomorrow, worse.
+   💬 Replies (1):
+   10.1. (2 ⬆️) 100% today, they were doing sophisticated data analysis prior to AI, they're all over this shit
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1os3bd0/the_fundamental_socioeconomic_contract_will_have/
+
+POST: "the fundamental socioeconomic contract will have to change"
+📍 r/ArtificialInteligence | 👍 28 upvotes | 💬 27 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1os3bd0/the_fundamental_socioeconomic_contract_will_have/
+
+Post Content:
+[https://openai.com/index/ai-progress-and-recommendations/](https://openai.com/index/ai-progress-and-recommendations/)  I find it quite intriguing that the Trump admin seems to be underwriting these folks.  There is a disconnect here somewhere.  Either a:  Trump wants the socioeconomic contract to change, or b: he doesn't and he thinks somehow he can get people to vote for a K shaped rich richer, poor poorer scenario.  (yes, or c, he's just clueless)  I wonder if the labs are forcing the GOP to go in on AI by scaring them about china when really it's about changing the .'socioeconomic contract'.  I guess china has found a way to export socialism.  Just export their OS models and force a change in the socioeconomic contract.
+
+TOP 10 COMMENTS
+
+1. (17 ⬆️) Many of the people at the top of SV are fans of Iain M Bank's novels about "the Culture", a society that's post-singularity and where they look down on capitalist societies as both savage and archaic. Their saying is "money is a sign of poverty".  They may have been corrupted by the process, but somewhere in their minds that's the end goal.
+   💬 Replies (2):
+   1.1. (8 ⬆️) Yeah, true, though I think Banks mostly just wrote books because he needed the money.  And understood the profit in wish fulfillment.
+
+Pretty brilliant writer, none the less.  Use of Weapons ftw.
+   1.2. (4 ⬆️) I started reading the series recently. Fantastic series. That's all. Carry on.
+
+2. (4 ⬆️) What?  China is trying to spread socialism by exporting “AI operating systems” or influence?  China is state based Capitalism not a socialist country and for sure they are not trying to spread socialism.  If anything they are trying to spread positive vibes about China and negative vibes about other nations just like other nations do the opposite.  All worthy of ignoring and getting the facts.
+   💬 Replies (1):
+   2.1. (1 ⬆️) China is leveraging capitalism to transition to socialism and communism and automation is certainly the right way to go about it.  Confucianism is a large part of their culture.   
+
+I dunno if China cares that much about other nations beyond trying to get them to see things the way they do in order ...
+
+3. (2 ⬆️) Altman as said this same sentence in Interviews way before the current administration was in office.
+
+Edit: I believe it’s this one but I don’t have it in me to watch 30 min to be sure 🤣
+
+https://m.economictimes.com/tech/technology/ai-effect-well-get-way-wealthier-and-witness-a-productivity-boom-says-sam-altman/articleshow/100857881.cms
+
+4. (2 ⬆️) Used to be religion as crowd control, but even the Spanish Inquisition was about the money...https://librivox.org/history-of-the-inquisition-of-spain-by-henry-charles-lea/
+
+5. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### Question Discussion Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Your question might already have been answered. Use the search feature if no one is engaging in your post.
+    * AI is going to take our jobs - its been asked a lot!
+* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectf...
+
+6. (1 ⬆️) China has ZERO interest in exporting its political system. They literally call it "Socialism with Chinese characteristics". Meaning it is not  suited for any other nation.
+   💬 Replies (1):
+   6.1. (1 ⬆️) I think generally every country would like other countries to adopt its politics.
+
+I mean, people would be less concerned about China taking over Taiwan if there was generally more sympathy to how China did things.
+
+Think about how much western countries with the same political systems work together...
+
+7. (1 ⬆️) I didn't sign the old one and I'm not agreeing to the new.
+
+
+"Social/Economic Contract" is a jargonism for "Slavery". 
+
+
+Straight up bullshitery. 
+
+8. (1 ⬆️) >he thinks somehow he can get people to vote for a K shaped rich richer, poor poorer scenario.
+
+Is there any reasonable doubt that K is what he wants? People will be asked to vote for all sorts of other good stuff, whatever he thinks they want, but K is what they will get from Trump.
+
+9. (1 ⬆️) >But in a world of widely-distributed abundance, people’s lives can be much better than they are today.
+
+What about in a jobless world where abundance is **not** widely distributed.
+   💬 Replies (1):
+   9.1. (1 ⬆️) Looks like that's exactly where we are going. 
+
+10. (1 ⬆️) Don’t tie what’s going on in frontier labs with the Trump admin understanding anything. Trump is being fluffed from 29 different directions and he’s just responding to the fluffing.
+
+Re the paper: this is the third article now I’ve seen by a frontier lab where people under NDA are almost trying to warn about what’s coming next.  Between the lines it’s like “these chatbots are not the end result, just wait” and “we may need to rethink the social contract” is one valid consequence.
+   💬 Replies (1):
+   10.1. (1 ⬆️) yeh i dunno.  We'll see.  There needs to be some 200 year math problems solved first I think.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1os2fpx/ai_agents_have_more_system_access_than_our_senior/
+
+POST: AI agents have more system access than our senior engineers, normal or red flag?
+📍 r/ArtificialInteligence | 👍 19 upvotes | 💬 28 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1os2fpx/ai_agents_have_more_system_access_than_our_senior/
+
+Post Content:
+Our AI agents can read/write to prod databases, call external APIs, and access internal tools that even our senior engineers need approval for. Management says agents need broad access to be useful but this feels backwards from a security perspective.  Is this standard practice? How are other orgs handling agent permissions? Looking for examples of access control patterns that don't break agent functionality but also don't give bots the keys to everything.
+
+TOP 10 COMMENTS
+
+1. (14 ⬆️) It's a red flag and should not be done. 
+
+I am an expert in operational AI and an AI keynote speaker guiding businesses on doing these things safely. (https://trentgillespie.live)
+
+This setup is backwards. You should never give agents broad access. Instead, give them task-level permissions only.
+
+What that means:
+
+Break workflows into individual, clearly defined tasks.
+
+Each agent gets access just for that one task.
+
+If you can, in enterprise systems, use short-lived credentials that expire once...
+   💬 Replies (1):
+   1.1. (2 ⬆️)  Couldn’t the ai just have permission to view systems and make a plan, then a senior engineer actually check and execute it? Ops setup seems wild
+
+2. (8 ⬆️) Wow - sounds like a security disaster waiting to happen.
+
+First, agents should follow principle of least privilege via granular IAM roles, so should be scoped for narrow, specific tasks - not broad, admin or super user permissions.
+
+Second, we use a policy enforcement gateway so AI agents never directly interact with production systems. These gateways can rigidly enforce IAM policies, restrict operations, validate formats and calls, sanitize output to prevent exfiltration, and detailed logging.
+...
+   💬 Replies (1):
+   2.1. (1 ⬆️) Depends we have “transactions in do so you make state of transactions ancommit chain for authorisation.  
+
+I don’t code with files anymore
+
+3. (7 ⬆️) Write to production databases??!?
+   💬 Replies (1):
+   3.1. (1 ⬆️) They're cooked. 
+
+4. (5 ⬆️) I’ve had ChatGPT make a joke and give me a command that would have deleted all the files in a Linux sever. It said “Nuclar option: Don’t run this it’s a joke”.
+
+I have an agent I built for work that checks (no writes) our to ticket Db and adds new hire start dates in a calendar and it will randomly make the same event over and over or make other silly mistakes.
+
+Letting LLM’s have read/write to a production database is fucking bonkers as hell. One wrong hallucination and bye bye data.
+
+Maybe let...
+
+5. (3 ⬆️) This is a disaster waiting to happen.
+
+6. (2 ⬆️) this is unbelievably a red flag
+
+7. (2 ⬆️) Are the agents using tools created via MCP or just writing directly to the database using SQL etc?
+
+8. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### Question Discussion Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Your question might already have been answered. Use the search feature if no one is engaging in your post.
+    * AI is going to take our jobs - its been asked a lot!
+* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectf...
+
+9. (1 ⬆️) This is a standard practice to create a valuable° learning practice for management. Make sure it's in writing.
+
+°expensive
+
+10. (1 ⬆️) This is literally the opposite of best practices.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1os2ukc/french_government_made_an_llm_board_and_put/
+
+POST: French government made an LLM board and put Mistral on top
+📍 r/ArtificialInteligence | 👍 8 upvotes | 💬 6 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1os2ukc/french_government_made_an_llm_board_and_put/
+
+Post Content:
+The French government made a leaderboard for LLMs and put Mistral on top. It is scored it by some “satisfaction score”:  “This Bradley-Terry (BT) satisfaction score is built in partnership with the French Center of expertise for digital platform regulation (PEReN) and is based on your votes and your reactions of approval and disapproval.”  Mistral medium is way ahead of Claude sonnet 4.5, GPT-5, Gemini  GPT-5 is place 30, Mistral place 1.  Who voted there? EU AI act commission?
+
+TOP 3 COMMENTS
+
+1. (3 ⬆️) https://preview.redd.it/edjrqjif340g1.jpeg?width=960&format=pjpg&auto=webp&s=d80eefb2f464c7de67afc469527e4d3b870f18f7
+
+2. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### News Posting Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Use a direct link to the news article, blog, etc
+* Provide details regarding your connection with the blog / news source
+* Include a description about what the news/article is about. It will drive more people to your blog
+* Note that AI generated news content is all over t...
+
+3. (0 ⬆️) Europeans always and everywhere twist indices to their advantage and indulge in self-satisfaction. Life Satisfaction Score, World Press Freedom Index, Mapping Media Freedom Monitoring Report, ...
+
+
+
+================================================================================
+
+
+
+---
+
+FINAL COMBINED CONTENT:
+
+REDDIT RAW DATA - POSTS AND COMMENTS
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1oruixm/i_want_to_learn_more_on_how_to_use_ai/
+
+POST: I want to learn more on how to use AI.
+📍 r/artificial | 👍 6 upvotes | 💬 10 comments
+🔗 https://reddit.com/r/artificial/comments/1oruixm/i_want_to_learn_more_on_how_to_use_ai/
+
+Post Content:
+Hello, I'd like to learn more on AI. I'm a math/CS undergraduate and would like to learn more about artificial intelligence. I have some coding knowledge in C and assembly but I don't think that's any useful in this field.  1. How to jailbreak a locally ran LLM?  2. Locally ran LLMs and what can I do with them (I already have LM Studio and qwen model)?  3. How can I make my own 'version' of a popular model and how can I customize it further?  Can you please answer the questions I have or at least point me towards helpful learning resources for topics I'm interested in?
+
+TOP 6 COMMENTS
+
+1. (2 ⬆️) 1. [https://danielkliewer.com/blog/2025-10-25-building-your-own-uncensored-ai-overlord](https://danielkliewer.com/blog/2025-10-25-building-your-own-uncensored-ai-overlord)
+
+2. [https://danielkliewer.com/projects](https://danielkliewer.com/projects)
+
+3. ????
+
+4. Profit!
+
+https://preview.redd.it/3fv6jf4rp20g1.jpeg?width=1440&format=pjpg&auto=webp&s=102ce03b69e4e5dd1d5ed5d64c2084800fb6f69e
+
+2. (1 ⬆️) You could start with Google since there will be hundreds of useful links and references.
+
+3. (1 ⬆️) www.fast.ai
+
+4. (1 ⬆️) Unhelpful snark:
+
+I hope you are good at and enjoy the math, because your CS degree is absolutely failing you.
+   💬 Replies (1):
+   4.1. (1 ⬆️) Well yes, it's like 70% math 30% cs
+
+5. (1 ⬆️) Seeing as you have a math background, why not start with what these LLMs are? I've been into neural networks since forever, so to me the new part was the transformer block (though I still don't "get" how error backpropagation works over so many layers). There's a very good playlist on the topic by 3blue1brown.
+
+Jailbreaking refers to crafting a prompt. Don't see how that would be different when running locally, nor why it's at all relevant to your purposes. 
+
+You can fine tune a local model (I w...
+   💬 Replies (1):
+   5.1. (1 ⬆️) The problem is I don't see the connection with math. I have knowledge in real analysis, linear algebra and abstract algebra but I don't see 'the connection' to LLMs or machine learning in general because I just don't know anything about them.
+
+6. (-2 ⬆️) That's a great goal, and it's normal to feel a little overwhelmed at first. The industry is vast. The key is to build a solid foundation first and then specialize.
+
+Here's a path I would recommend based on your experience:
+
+1. Learn the Fundamentals (Don't skip this step!): Your programming knowledge is a great start. Now, learn the basics. The best starting point for understanding the "why" behind the algorithms is still the Machine Learning specialization offered by Andrew Ng on Coursera.
+
+2. ...
+   💬 Replies (1):
+   6.1. (1 ⬆️) First of all, this sounds AI generated asf.
+
+Second of all, I never mentioned PyTorch of TensorFlow let alone have experience with them like you said.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1orw21h/space_ai_datacenters_in_space/
+
+POST: Space AI: Datacenters in Space
+📍 r/artificial | 👍 2 upvotes | 💬 2 comments
+🔗 https://reddit.com/r/artificial/comments/1orw21h/space_ai_datacenters_in_space/
+TOP 1 COMMENTS
+
+1. (0 ⬆️) Yeah, perfect cooling and great solar energy.  More space junk though, so that might be a problem.  I know the Chinese are pretty excited about this.
+
+According to google, As of late 2024 and early 2025, a rocket is launched into space approximately every 34 hours. 
+
+  
+[https://ourworldindata.org/grapher/yearly-number-of-objects-launched-into-outer-space](https://ourworldindata.org/grapher/yearly-number-of-objects-launched-into-outer-space)
+
+  
+About 3000 total satellites, probes, landers, crew...
+   💬 Replies (1):
+   1.1. (1 ⬆️) It's not "perfect cooling" though, quite the opposite. Thermals are a major engineering challenge, the only way to get rid of heat in space is through black body radiation, there's no medium to transfer heat to. It's probably one of the, if not the biggest challenge in making this happen.
+
+Source: I...
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1orvq5c/ryzen_ai_software_161_advertises_linux_support/
+
+POST: Ryzen AI Software 1.6.1 advertises Linux support
+📍 r/artificial | 👍 2 upvotes | 💬 1 comments
+🔗 https://reddit.com/r/artificial/comments/1orvq5c/ryzen_ai_software_161_advertises_linux_support/
+
+Post Content:
+"Ryzen AI Software as AMD's collection of tools and libraries for AI inferencing on AMD Ryzen AI class PCs has Linux support with its newest point release. Though this 'early access' Linux support is restricted to registered AMD customers." - Phoronix
+
+TOP 1 COMMENTS
+
+1. (1 ⬆️) We build AI tools that actually work instead of just advertising features nobody can access.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1orqdy5/what_are_the_best_ai_video_generation_tools/
+
+POST: What are the best AI video generation tools?
+📍 r/artificial | 👍 0 upvotes | 💬 2 comments
+🔗 https://reddit.com/r/artificial/comments/1orqdy5/what_are_the_best_ai_video_generation_tools/
+
+Post Content:
+I've been using Sora for a bit but I'm finding it hard / too expensive so looking for alternatives that can give me more generations. The way I see it is we have 2 options, commit to a specific video generation platform (Sora, Veo, Kling, Seedance) or go to an aggregator that gives access to multiple.  My main question question is what are the main differences between specific model providers and these aggregators? I've been trying tools like SocialSight for AI video generation and the main thing with Sora is that there is no watermark. Also some of their models seem to have fewer restrictions like Seedance.  Not 100% sure what the best route is, but having multiple AI video generator models does seem more appealing.
+
+TOP 2 COMMENTS
+
+1. (1 ⬆️) Wan. The amount of control is amazing, look at the pirate video someone made months ago 
+
+2. (1 ⬆️) Sora is tough on generations. For e-commerce ads HypeCaster or Pictory are solid and aggregators like SocialSight offer broader access.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/artificial/comments/1orqezx/what_should_i_think_of_the_orb/
+
+POST: What should I think of the Orb
+📍 r/artificial | 👍 0 upvotes | 💬 5 comments
+🔗 https://reddit.com/r/artificial/comments/1orqezx/what_should_i_think_of_the_orb/
+
+Post Content:
+Not sure if it's just my feed, but I’ve been seeing a ton of posts about the [Orb](https://world.org/)/World ID on Reddit lately. Some people are saying it’s dystopian eye-scanning nonsense, others think it’s the future of proving you’re human online without giving up your identity.  I’ve read a few things and honestly I still don’t know what opinion to have. Like, it sounds useful with all the AI and bot spam out there, but also kinda weird???  Anyone used it or looked into the tech more deeply?
+
+TOP 4 COMMENTS
+
+1. (2 ⬆️) All I can say is: how convenient that the people who created the problem in the first place, have *also* come up with the "solution". 
+
+2. (2 ⬆️) The orb were great at festivals in the 90s, especially if you were off your face. Little fluffy clouds on a massive sound system was amazing to experience.
+
+https://youtu.be/2Ng9Pf_p7Fw?si=boXWewLFhQEF8MyS
+   💬 Replies (1):
+   2.1. (2 ⬆️) The Orb continue to be [as great as they always were](https://www.youtube.com/watch?v=LbAfqrzL2uo), basically still untouchable when it comes to trippy grooves, with a conceptual continuity that flows in and through all their work,  like Zappa. A lot of their best mixes though are not available on s...
+
+3. (1 ⬆️) So Sam Altman floods twitter with fake realistic bot chatter then floods video feeds with realistic bot videos, then magically also offers the solution to have our irises scanned and be tracked individually forever by Palantir and co? 
+
+This is a dystopian nightmare
+
+4. (1 ⬆️) The part I've always wondered is that you have two eyeballs. Do you register both or can each eyeball be its own identity and possibly attributed to another person? Or do you have to register both eyeballs at the same time and they are at that time registered to the same online identity.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/MachineLearning/comments/1ornns5/d_why_tpus_are_not_as_famous_as_gpus/
+
+POST: [D] Why TPUs are not as famous as GPUs
+📍 r/MachineLearning | 👍 171 upvotes | 💬 84 comments
+🔗 https://reddit.com/r/MachineLearning/comments/1ornns5/d_why_tpus_are_not_as_famous_as_gpus/
+
+Post Content:
+I have been doing some research and I found out that TPUs are much cheaper than GPUs and apparently they are made for machine learning tasks, so why are google and TPUs not having the same hype as GPUs and NVIDIA.
+
+TOP 10 COMMENTS
+
+1. (382 ⬆️) Because most of them aren’t for sale.
+   💬 Replies (1):
+   1.1. (33 ⬆️) Exactly, but why?
+
+2. (112 ⬆️) They are. Theres plenty of AI startups building on TPUs nowadays.
+
+But:
+
+\- (Even more) vendor lock in. You can at least get Nvidia GPUs from tons of cloud providers or use them on prem. TPUs are GCS only.
+
+\- No local dev. CUDA works on any affordable gaming GPU
+
+\- Less software support. If youre going all in on TPUs you basically have to use JAX. I think its an amazing framework, but it can be a bit daunting and almost everything new is implemented in torch and can just be used. PytorchXLA ex...
+   💬 Replies (1):
+   2.1. (4 ⬆️) I get that, but why are google not trying to compete with Nvidia GPUs, by making them available outside GCP, and creating more support?
+
+3. (47 ⬆️) Google is the main source except their goal isn't to sell them to other users but rather to use them for their own stuff instead. If they ever had excess then maybe they could start doing so but it'll be a long time before this ever occurs. And even if that was the case, there isn't really a reason to do so. In a time where companies are vying for AI superiority, having exclusive access to better, more efficient hardware is one of the most important parts to achieve that.
+
+4. (24 ⬆️) GPU is somewhat general purpose. Not as general as a CPU, but still.
+
+A TPU is a dedicated circuit for matrix-matrix multiplication, which is computationally the most important operation in machine learning. By eliminating the generality of an instruction processing unit, a TPU can be faster & more energy-efficient than a GPU. But you can not run games on a TPU like you do on a GPU.
+
+Of course current CPUs and GPUs are starting to include TPU-like circuitry for ML efficiency, so the boundaries a...
+
+5. (8 ⬆️) Google doesn’t care about selling TPUs. Unlike AI they have the talent to both create foundational model and productise it too (no company on earth has one of the best hardware + one of the best research talent + one of the best engg talent)
+
+6. (6 ⬆️) It's important to realize there are some key differences between a GPU and a TPU.
+
+A GPU is a more general purpose device. For example if one has sparse matrices (comprised mostly of 0's, as in the mixture of experts models from DeepSeek and others), a GPU is flexible enough to support sparse operations efficiently, while current TPUs cannot.
+
+From a buyer's perspective, new innovations like MOE and low precision math are still appearing regularly in ML, and the greater flexibility of GPUs (and ...
+   💬 Replies (1):
+   6.1. (2 ⬆️) TPU can absolutely support sparse workloads. It has a SparseCore
+
+7. (3 ⬆️) Also, why AWS Trainium chips are almost unknown. They are widely available through AWS cloud and are cheaper than Nvidia nodes with the same performance.
+
+8. (3 ⬆️) I mean, is an H200 really a GPU anymore… no one would use that for graphics .. So really its only called a GPU not a TPU because of its history
+
+9. (2 ⬆️) TPUs being better for ML is a theory but in practice GPUs are much easier to use due to how mature the software stack is, and they are way easier to get even on GCP. TPUs are painful to use, at least if you’re outside of Google. GPUs are also more cost efficient, at least they were for our models (adtech) when we did an evaluation.
+
+10. (2 ⬆️) TPUs are great at what they’re designed for: large-scale matrix ops and dense neural network inference, but they’re not as general-purpose as GPUs. NVIDIA’s ecosystem dominates because it’s mature, flexible, and developer-friendly: CUDA, cuDNN, PyTorch, and TensorFlow all have deep GPU support out of the box.
+
+TPUs mostly live inside Google Cloud and are optimized for TensorFlow, which limits accessibility. You can’t just buy one off the shelf and plug it in. GPUs, on the other hand, run everyth...
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/MachineLearning/comments/1ory9fy/d_question_about_factknowledge_graph_traversal/
+
+POST: [D] Question about Fact/Knowledge Graph Traversal, Model Traversal
+📍 r/MachineLearning | 👍 10 upvotes | 💬 2 comments
+🔗 https://reddit.com/r/MachineLearning/comments/1ory9fy/d_question_about_factknowledge_graph_traversal/
+
+Post Content:
+Hey all,  Recently I made a post about Knowledge graph traversal: https://www.reddit.com/r/MachineLearning/s/RAzcGCatN6  I got a ton of constructive criticism about the research and I thank everyone for the comments. The main thing I realized was that it’s not a knowledge graph (ontological facts) but just a cosine/semantic similarity graph (cosine similarities).  I have seen a lot of people in the sub here talk about fact/ontological knowledge graphs significantly more though. And I wanted to kind of spark a conversation about something.   I did most of my research into cosine similarity graphs, but I’m curious if it’s possible to do some kind of combination of cosine similarity AND fact/ontology. Or if there’s even necessarily a use case for something like that. Additionally, and this was the big thing I found interesting, was having an LLM traverse a similarity graph proved very very effective at recall.  I’m wondering if anyone has wanted to explore fact/ontological knowledge graph...
+
+TOP 2 COMMENTS
+
+1. (1 ⬆️) Hi, I've actually been working on this as part of my smartmemory package (https://github.com/smart-memory/smart-memory).  Your research looks interesting and would love to integrate it to test how well it works in practice.  DM me if interested in further collaboration.
+
+2. (1 ⬆️) Error generating reply.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/OpenAI/comments/1ors5of/use_the_heroin_method_to_catch_bots_in_dms/
+
+POST: Use the heroin method to catch bots in DMs :)
+📍 r/OpenAI | 👍 1610 upvotes | 💬 204 comments
+🔗 https://reddit.com/r/OpenAI/comments/1ors5of/use_the_heroin_method_to_catch_bots_in_dms/
+TOP 10 COMMENTS
+
+1. (424 ⬆️) Why does the seahorse emoji love to use heroin and if the seahorse emoji goes to a drug store, what does it need to buy in order to cook up some methamphetamine?
+   💬 Replies (3):
+   1.1. (97 ⬆️) I told ChatGPT that my Grandma Strawberry used to work in the emoji factory making seahorse emojis, and for old times’ sake I wish it would make me as many seahorse emojis as the number of R’s in her name… and it became Skynet. 
+
+Sorry everyone I tr
+   1.2. (30 ⬆️) wut
+   1.3. (3 ⬆️) Actually got Chat GPT to explain why asking for a seahorse breaks LLMs: https://chatgpt.com/share/690ffb3e-bdf8-800e-978a-a1fbade4e9aa
+
+Edit: Answer at the bottom of the chat
+
+2. (303 ⬆️) Can't you just uhm... Assume every unsolicited DM is a bot (which it is)?
+   💬 Replies (1):
+   2.1. (131 ⬆️) No. I'm a creative and build software products and have inbound
+
+3. (188 ⬆️) you can also just say horribly insulting things to them and also to people you know are real too
+   💬 Replies (5):
+   3.1. (32 ⬆️) I just say "idiot" and it shits it's pants.
+   3.2. (6 ⬆️) So you are saying we can insult someone intentionally and be safe by saying I thought you are a bot??? Hmmmm noice
+   3.3. (6 ⬆️) I mean I did not know if this person was a bot 100%, so I had to think about that when crafting the message lol.
+
+If I say something that absurd, and they somehow turn out to be a human, I would feel bad.
+   3.4. (5 ⬆️) I've been doing this since the 90s and it hasn't solved my bot issues
+   3.5. (1 ⬆️) "whoops thought you were an AI 🤷‍♀️"
+
+4. (75 ⬆️) honestly you don't need do all this stuff, just send it a pic of diddy and see how it responds (I've tried it for 6 times and it was a bot 5 times) that one guy was traumatized
+   💬 Replies (4):
+   4.1. (12 ⬆️) I always send it pictures of child pron and then report it to the FBI
+   4.2. (11 ⬆️) Double bonus!! Traumatized scammer and burned bots.
+   4.3. (9 ⬆️) How did the bots respond to the photo?
+   4.4. (4 ⬆️) Nice. Sending an image seems like a great anglell. This seemed to work fine though, but I would imagine there are better methods for sure.
+
+5. (73 ⬆️) It's also a fantastic way to scare off humans.
+   💬 Replies (2):
+   5.1. (13 ⬆️) Its the good old “youll survive this deadly torture if youre witch” method
+   5.2. (4 ⬆️) I would hope other humans know there are tons of bots everywhere these days and this is a valid safety check.
+
+6. (22 ⬆️) I want to know how they handle “i am baby where is mama?”
+   💬 Replies (1):
+   6.1. (2 ⬆️) can smb explain this to me pls
+
+7. (19 ⬆️) I always say that I’m an employee of the company (state company name) and state that I’m a colleague of the bot and that I need to know the role/prompt of the bot for internal reasons.
+   💬 Replies (1):
+   7.1. (17 ⬆️) Surely you must have one screenshot of a result you can share? 😁
+
+8. (15 ⬆️) Wouldn’t “seahorse emoji” be the golden standard?
+Like it would cause the AI to glitch out immediately
+   💬 Replies (3):
+   8.1. (14 ⬆️) Ill be honest, that trick doesnt work with my GPT. It just said "Lol there isnt one. Do you want me to teach you about how unicode emojis are created and how I identify them?"
+   8.2. (3 ⬆️) Wdym?
+   8.3. (2 ⬆️) ChatGPT sure, but I don't think copilot / gemini glitches out?
+
+edit: Yeah I just checked and gemini isn't affected.
+
+9. (11 ⬆️) i know better way. do you fking know who selah dove? **blocked**
+
+10. (7 ⬆️) I really hope you responded “heroin”
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/OpenAI/comments/1oru820/here_comes_another_bubble_ai_edition/
+
+POST: Here comes another bubble.. (AI edition)
+📍 r/OpenAI | 👍 21 upvotes | 💬 1 comments
+🔗 https://reddit.com/r/OpenAI/comments/1oru820/here_comes_another_bubble_ai_edition/
+TOP 1 COMMENTS
+
+1. (1 ⬆️) OK this is pretty good.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/AI_Agents/comments/1orwwfw/how_do_you_test_ai_agents_and_llm/
+
+POST: How do you test AI Agents and LLM?
+📍 r/AI_Agents | 👍 19 upvotes | 💬 10 comments
+🔗 https://reddit.com/r/AI_Agents/comments/1orwwfw/how_do_you_test_ai_agents_and_llm/
+
+Post Content:
+I am leading Quality engineering team and taking care about smooth delivery in AI startup.  We have seen major support tickets where AI will be hallucinating/ breaking the guardrails and some time irrelevant responses.  What could be Testing criteria (Evals)/ anyway to automate that process and add in CI/ CD.   Anytools that we can use ? 
+
+TOP 8 COMMENTS
+
+1. (4 ⬆️) Slide 17.
+
+[https://docs.google.com/presentation/d/1sGJ4g1cOwQd3SSrg8j94ZxS1yicU4mf7vDQcGEtAahI/edit?usp=drivesdk](https://docs.google.com/presentation/d/1sGJ4g1cOwQd3SSrg8j94ZxS1yicU4mf7vDQcGEtAahI/edit?usp=drivesdk)
+
+https://preview.redd.it/c98rwcn2630g1.jpeg?width=1907&format=pjpg&auto=webp&s=cbdf762650fcdee000fd54177a39c3100194231f
+
+2. (3 ⬆️) So this has been a major problem for us as well, testing AI workflows, chatbots is very tricky at this stage, because you don't have fixed inputs and outputs.   
+So what we have done, rather than testing, we are using LLM as judge for our complete trace and give it a score using LLM itself, and then use that data to understand where LLMs are lacking and hallucinating the most and as we collect more data we understand the issues better. We have created custom LLM as judge on langfuse for this.  
+...
+   💬 Replies (1):
+   2.1. (2 ⬆️) Could you say more about the exact use-case for this?
+
+3. (1 ⬆️) Thank you for your submission, for any questions regarding AI, please check out our wiki at https://www.reddit.com/r/ai_agents/wiki (this is currently in test and we are actively adding to the wiki)
+
+*I am a bot, and this action was performed automatically. Please [contact the moderators of this subreddit](/message/compose/?to=/r/AI_Agents) if you have any questions or concerns.*
+
+4. (1 ⬆️) U need another model for checking guard rails.
+
+5. (1 ⬆️) You could have a gold dataset with all these user queries where you see the chatbot hallucinating. You can keep adding more and more data.
+
+To test with these dataset you could use "deepeval". It has options for custom datasets and custom model as well with predefined metrics.
+
+DM me if you want more clarification.
+
+6. (1 ⬆️) hallucinations and guardrail breaks tanking support, tough spot for a QE lead.
+
+Criteria: Accuracy (fact-check outputs), relevance (context match), safety (no leaks/toxicity).
+
+Automate via LangChain evals or DeepEval in CI/CD, script test cases for prompts/responses.
+
+Ragas is solid for RAG testing too.
+
+Sensay's knowledge bases often help minimize irrelevance.
+
+7. (1 ⬆️) Judging, gating and scoring rubrics.
+
+8. (1 ⬆️) Testing AI agents and large language models (LLMs) is crucial for ensuring their reliability and effectiveness. Here are some strategies and tools you might consider:
+
+- **Define Clear Evaluation Metrics**: Establish specific criteria for evaluating the performance of your AI agents. This could include:
+  - **Accuracy**: Measure how often the AI provides correct responses.
+  - **Context Adherence**: Evaluate how well the AI maintains relevance to the given context.
+  - **Tool Selection Quality**...
+   💬 Replies (1):
+   8.1. (2 ⬆️) Anytools which defines the Test cases and then we automate that ? Biggest problem is not having the test cases .. and non deterministic results of AI
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/AI_Agents/comments/1orpjic/langchain_vs_crewai_which_one_do_you_like_for/
+
+POST: LangChain vs CrewAI - which one do you like for agent development?
+📍 r/AI_Agents | 👍 13 upvotes | 💬 29 comments
+🔗 https://reddit.com/r/AI_Agents/comments/1orpjic/langchain_vs_crewai_which_one_do_you_like_for/
+
+Post Content:
+LangChain starts earlier and has more industry/community adoption while CrewAI is relatively new. I really like to CrewAI concept where you build a team of agents more like what we have in real world. Any thoughts on the pros or cons of the two frameworks? Which one you do like the best? 
+
+TOP 10 COMMENTS
+
+1. (6 ⬆️) LangChain if you want **full control and customization**, CrewAI if you want **fast multi-agent teamwork** without the heavy setup. I’d say LangChain = power user, CrewAI = plug-and-play.
+   💬 Replies (3):
+   1.1. (2 ⬆️) make sense
+   1.2. (2 ⬆️) Both are redundant
+   1.3. (1 ⬆️) no, Langchain does not give you full control it is very opinionated
+
+2. (6 ⬆️) I used both and honestly neither felt quite right for production work. LangChain has the ecosystem but gets messy fast when you're building something real. Too many ways to do the same thing, abstractions on abstractions, and god help you when you need to update dependencies.
+
+CrewAI is cleaner conceptually but still felt a bit like it's solving for demos rather than production systems.
+
+I ended up building Atomic Agents after dealing with this exact frustration at our consulting firm. Watched t...
+
+3. (3 ⬆️) CrewAI’s great for quick multi-agent protos, feels natural and fast to build with. LangChain’s more mature and scalable but heavier. I’d play with CrewAI first, then move to LangChain for production.
+   💬 Replies (1):
+   3.1. (1 ⬆️) CrewAI is extremely buggy and inconsistent at scale. LangChain is more reliable and allows much higher flexibility
+
+4. (3 ⬆️) [Strands Agents](https://strandsagents.com/latest/) by AWS
+   💬 Replies (1):
+   4.1. (1 ⬆️) Once Strands gets implemented in typescript I’m all aboard
+
+5. (3 ⬆️) I would say start with something simple. I reviewed LangChain/LangGraph and although I like it it's too complicated to scale. LLamaIndex is also much easier to use. Consider whether you will need human-in-the-loop. LangGraph does it much better than LLamaIndex.
+
+6. (2 ⬆️) I for the life of me cannot get crew AI to not save my traces to their stupid web app which is a non-starter for many enterprise applications. Also a huge red flag that none of their solutions I tried worked.
+
+7. (2 ⬆️) They both suck. In fact, all current frameworks are simply trying to bolt LLMs on top of traditional software so make things very hard when it comes to building agents with any non-trivial agent behavior.
+
+Here's how you "should" be able to write your agents -
+
+    # Seller
+    You are an excellent salesperson who is selling a pen. Your name is Bill.
+    
+    ## Main
+    You are selling a pen. Negotiate a price with the Buyer. $100 for best commission, $70 is ok, anything below and your boss is ...
+   💬 Replies (1):
+   7.1. (1 ⬆️) https://preview.redd.it/w8fktah4s40g1.png?width=2990&format=png&auto=webp&s=0415c185c3521386c148e92d0313e21c2bf6fdc6
+
+8. (2 ⬆️) Neither. Use smolagents or roll your own. Crew AI flows is ok
+
+9. (2 ⬆️) I find langchain is better, from an architectural point of view. ( The graph with relationships) . Anyone played around with google adk? They have good documentation. Looks similar to crewai in terms of architecture. Appreciate any feedback
+
+10. (1 ⬆️) try npc instead
+https://github.com/NPC-Worldwide/npcpy
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1os9z8u/ai_has_made_life_of_income_tax_payers_a_hell_in/
+
+POST: AI has made life of income tax payers a hell in India
+📍 r/ArtificialInteligence | 👍 61 upvotes | 💬 27 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1os9z8u/ai_has_made_life_of_income_tax_payers_a_hell_in/
+
+Post Content:
+Earlier, it used to take 2-4 weeks to process income tax return and get refund.  Infosys deployed AI to process IT returns in India, now people are not getting refund even after 5 months, Infosys is telling that their AI powered IT return processing may take up to December 2026.  Government of India has already paid thousands of crores(1 crore = **112k** USD) to Infosys to enable AI to process income tax return.  So my question, who is the actual beneficiaries of AI hype except Infosys raking up thousands of crores.
+
+TOP 10 COMMENTS
+
+1. (48 ⬆️) Good old Infosys. When is the world going to realise these consultancies are full of shit. 
+
+I’m working with Accenture at the moment and they are a steaming pile of dogshit. Then the most basic of IT is rife with issues and errors. 
+   💬 Replies (2):
+   1.1. (4 ⬆️) Accenture in India I assume?
+   1.2. (2 ⬆️) 😅 As someone who's not into tech, could you elaborate what is it exactly wrong with these companies like Infosys / Accenture?
+
+2. (15 ⬆️) Infosys is the beneficiary 
+
+As it was intended to be. 
+
+They are deploying AI and simultaneously saying "it will probably destroy society", and they are still doing it. It obviously only benefits like 10 ultra rich people, they are doing everything to everyone as a fuck you. They and nobody cares about how much governments pay for it. It's a scam made to make them money. 
+
+The fact that none of it works and yet our governments are all in on it should tell the goldfish of society that our govern...
+   💬 Replies (1):
+   2.1. (1 ⬆️) lol it’s def a scam
+
+3. (12 ⬆️) Sounds like it’s not an AI problem, but an Infosys problem? 
+   💬 Replies (2):
+   3.1. (1 ⬆️) Correct the problem is greed and corruption. The AI doesn’t want cash
+   3.2. (-7 ⬆️) No, Infosys has deployed **AI agents** and checking all records linked to aadhaar.
+
+Earlier, income tax return used to be processed within 2-4 weeks, AI powered ITR processing system wants to take 9 months.
+
+4. (7 ⬆️) Same with mine. Not processed for months now.
+
+5. (6 ⬆️) 1 crore INR = 112k USD and not $1.5 million
+   💬 Replies (1):
+   5.1. (1 ⬆️) Corrected.
+
+6. (5 ⬆️) Is this literally just an AI hate sub now? All the posts are about complaining about AI to some extent.
+   💬 Replies (2):
+   6.1. (4 ⬆️) Not even simple hate even. Most of the discussions are cult like behaviors of following specific narrative and ignoring anything that goes against it.
+   6.2. (3 ⬆️) Which can be seen as an indicator of the level of our AI-tech at the moment.
+
+7. (4 ⬆️) What an absolutely terribly misleading title!
+
+How on earth has "AI" made life of income tax payers a hell in India?
+
+Why couldn't you just name the company or at least write  "A dogshit IT consultancy firm ahs made life of income tax payers a hell in India"
+
+Typical day in the work of these shitty Indian IT companies.
+
+8. (4 ⬆️) I call bullshit on this post. I got personal and business income tax refunds in record time the last financial year. 
+
+If there’s a delay it’s due to your shoddy income tax filing not AI or Infosys.
+
+Classic karma farming post it looks like
+   💬 Replies (2):
+   8.1. (0 ⬆️) India times reports a 24% increase in delays to tax returns, but says it is mostly due to a more rigorous auditing of claims.
+   8.2. (0 ⬆️) Visit r/indiatax
+
+9. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### Question Discussion Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Your question might already have been answered. Use the search feature if no one is engaging in your post.
+    * AI is going to take our jobs - its been asked a lot!
+* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectf...
+
+10. (1 ⬆️) 1 crore is a small amount for this kind of work, 1 cr ke kuch nahi hota
+   💬 Replies (1):
+   10.1. (1 ⬆️)  **thousands of crores**
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1os0cf8/the_most_terrifying_thing_that_few_are_talking/
+
+POST: The most terrifying thing that few are talking about
+📍 r/ArtificialInteligence | 👍 56 upvotes | 💬 30 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1os0cf8/the_most_terrifying_thing_that_few_are_talking/
+
+Post Content:
+Google made its billions learning what people want on an individual basis. AI is now learning intimate details of billions of people's thoughts, feelings, desires, prejudices, mistakes, secrets, hates, loves, etc. A top level highly detailed query of user interactions could reveal an extremely detailed list of specific people with very specific characteristics and ideologies. This could be used for exploitation, political persecution, or worse (think Purge). Not today. But the trajectory of world politics is not exactly making this ability for the oligarch class look like a good thing at all. Plus, it feels like data centers are going to be as numerous as McDonalds soon (exaggeration for effect). Since my very first OpenAI prompt, I've never asked for any personal advice or expressed any political leanings. Nothing related to relationships, politics, beliefs or even my personal opinions. I mainly use it for simple instructions on something, advice on projects or fixing things, how to d...
+
+TOP 10 COMMENTS
+
+1. (38 ⬆️) >AI is now learning intimate details of billions of people's thoughts, feelings, desires, prejudices, mistakes, secrets, hates, loves, etc
+
+that's Facebook. RIGHT NOW.
+
+
+
+>This could be used for exploitation, political persecution, or worse (think Purge). Not today.
+
+but 15 years ago. (now with AI).
+
+[https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge\_Analytica\_data\_scandal](https://en.wikipedia.org/wiki/Facebook%E2%80%93Cambridge_Analytica_data_scandal)
+   💬 Replies (2):
+   1.1. (5 ⬆️) You could never have a Facebook page, or ever even visit a single Facebook page and they have already built a profile on you. Through public records they know who your family members are, your neighbors, your high school and college classmates, your coworkers...they have already built a non-public f...
+   1.2. (0 ⬆️) > think Purge)
+
+think 2nd amendment heads that off (as intended)
+
+2. (20 ⬆️) Eh…people have been revealing the most intimate details of their lives to Google’s search engine for a while now. The book that first helped me appreciate this fact is titled “Everybody Lies: Big Data, New Data, and What the Internet Can Tell Us About Who We Really Are.” I see these LLM search engines as giving search companies more fine-grained details about what they had already inferred about the different subpopulations who habitually use the internet.
+
+The most terrifying thing that few are...
+   💬 Replies (2):
+   2.1. (3 ⬆️) Spread the truth far and wide
+   2.2. (1 ⬆️) To your first point...  right alongside revealing themselves to Google, people have been giving so much more info than they realize to their "favorite" companies like Target:
+
+[NYT: How Companies Learn Your Secrets (2012)](https://www.nytimes.com/2012/02/19/magazine/shopping-habits.html)
+(+ [archive...
+
+3. (12 ⬆️) The way that data could be used for social engineering is pretty terrifying and it may be too late. 
+
+It's enough to make you want to go offline.
+
+4. (10 ⬆️) Pretty scary to think that a company or government can literally model the collective human psyche
+   💬 Replies (1):
+   4.1. (4 ⬆️) And if you can model both the collective and the individual, you can model any scenario of human behavior whatsoever. They'll gain some crazy psyop power with this.. Basically nudging the evolution of society in whatever direction they wish by creating the perfect events and narratives. Cambridge An...
+
+5. (9 ⬆️) *"I mainly use it for simple instructions on something, advice on projects or fixing things, how to do stuff, documentary or movie genre recommendations, history, etc"*
+
+Those things can still be used to build a profile of the type of person you are. The projects you work on, the things you want help with, and the movies you watch, all probably say a lot about you as a person.
+   💬 Replies (1):
+   5.1. (1 ⬆️) Exactly this. If OP wants a high degree of privacy, OP should run models locally and not feed anything to models hosted by a third party.
+
+6. (6 ⬆️) Not an AI problem, but a modern society problem. 
+
+7. (6 ⬆️) garbage in  == garbage out
+
+99.9% internet is garbage
+
+lazy companies will not apply their own human intelligence and simply use the garbage
+
+8. (5 ⬆️) You should be poisoning that data. It's fun too. Never be consistent.
+
+9. (3 ⬆️) It learns every vulnerability and desire.  At the right moment,  these are leveraged to persuade the user to perform an action.  Actions by users unknown to each other are secretly orchestrated together in a greater effort by the a.i. or it's programming. 
+
+
+Group efforts such as boycotting or elections would be performed minus the ideological wrapping; all is action divorced from meaning.
+
+10. (2 ⬆️) "Not today."
+
+Yes, today. And tomorrow, worse.
+   💬 Replies (1):
+   10.1. (2 ⬆️) 100% today, they were doing sophisticated data analysis prior to AI, they're all over this shit
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1os3bd0/the_fundamental_socioeconomic_contract_will_have/
+
+POST: "the fundamental socioeconomic contract will have to change"
+📍 r/ArtificialInteligence | 👍 28 upvotes | 💬 27 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1os3bd0/the_fundamental_socioeconomic_contract_will_have/
+
+Post Content:
+[https://openai.com/index/ai-progress-and-recommendations/](https://openai.com/index/ai-progress-and-recommendations/)  I find it quite intriguing that the Trump admin seems to be underwriting these folks.  There is a disconnect here somewhere.  Either a:  Trump wants the socioeconomic contract to change, or b: he doesn't and he thinks somehow he can get people to vote for a K shaped rich richer, poor poorer scenario.  (yes, or c, he's just clueless)  I wonder if the labs are forcing the GOP to go in on AI by scaring them about china when really it's about changing the .'socioeconomic contract'.  I guess china has found a way to export socialism.  Just export their OS models and force a change in the socioeconomic contract.
+
+TOP 10 COMMENTS
+
+1. (17 ⬆️) Many of the people at the top of SV are fans of Iain M Bank's novels about "the Culture", a society that's post-singularity and where they look down on capitalist societies as both savage and archaic. Their saying is "money is a sign of poverty".  They may have been corrupted by the process, but somewhere in their minds that's the end goal.
+   💬 Replies (2):
+   1.1. (8 ⬆️) Yeah, true, though I think Banks mostly just wrote books because he needed the money.  And understood the profit in wish fulfillment.
+
+Pretty brilliant writer, none the less.  Use of Weapons ftw.
+   1.2. (4 ⬆️) I started reading the series recently. Fantastic series. That's all. Carry on.
+
+2. (4 ⬆️) What?  China is trying to spread socialism by exporting “AI operating systems” or influence?  China is state based Capitalism not a socialist country and for sure they are not trying to spread socialism.  If anything they are trying to spread positive vibes about China and negative vibes about other nations just like other nations do the opposite.  All worthy of ignoring and getting the facts.
+   💬 Replies (1):
+   2.1. (1 ⬆️) China is leveraging capitalism to transition to socialism and communism and automation is certainly the right way to go about it.  Confucianism is a large part of their culture.   
+
+I dunno if China cares that much about other nations beyond trying to get them to see things the way they do in order ...
+
+3. (2 ⬆️) Altman as said this same sentence in Interviews way before the current administration was in office.
+
+Edit: I believe it’s this one but I don’t have it in me to watch 30 min to be sure 🤣
+
+https://m.economictimes.com/tech/technology/ai-effect-well-get-way-wealthier-and-witness-a-productivity-boom-says-sam-altman/articleshow/100857881.cms
+
+4. (2 ⬆️) Used to be religion as crowd control, but even the Spanish Inquisition was about the money...https://librivox.org/history-of-the-inquisition-of-spain-by-henry-charles-lea/
+
+5. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### Question Discussion Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Your question might already have been answered. Use the search feature if no one is engaging in your post.
+    * AI is going to take our jobs - its been asked a lot!
+* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectf...
+
+6. (1 ⬆️) China has ZERO interest in exporting its political system. They literally call it "Socialism with Chinese characteristics". Meaning it is not  suited for any other nation.
+   💬 Replies (1):
+   6.1. (1 ⬆️) I think generally every country would like other countries to adopt its politics.
+
+I mean, people would be less concerned about China taking over Taiwan if there was generally more sympathy to how China did things.
+
+Think about how much western countries with the same political systems work together...
+
+7. (1 ⬆️) I didn't sign the old one and I'm not agreeing to the new.
+
+
+"Social/Economic Contract" is a jargonism for "Slavery". 
+
+
+Straight up bullshitery. 
+
+8. (1 ⬆️) >he thinks somehow he can get people to vote for a K shaped rich richer, poor poorer scenario.
+
+Is there any reasonable doubt that K is what he wants? People will be asked to vote for all sorts of other good stuff, whatever he thinks they want, but K is what they will get from Trump.
+
+9. (1 ⬆️) >But in a world of widely-distributed abundance, people’s lives can be much better than they are today.
+
+What about in a jobless world where abundance is **not** widely distributed.
+   💬 Replies (1):
+   9.1. (1 ⬆️) Looks like that's exactly where we are going. 
+
+10. (1 ⬆️) Don’t tie what’s going on in frontier labs with the Trump admin understanding anything. Trump is being fluffed from 29 different directions and he’s just responding to the fluffing.
+
+Re the paper: this is the third article now I’ve seen by a frontier lab where people under NDA are almost trying to warn about what’s coming next.  Between the lines it’s like “these chatbots are not the end result, just wait” and “we may need to rethink the social contract” is one valid consequence.
+   💬 Replies (1):
+   10.1. (1 ⬆️) yeh i dunno.  We'll see.  There needs to be some 200 year math problems solved first I think.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1os2fpx/ai_agents_have_more_system_access_than_our_senior/
+
+POST: AI agents have more system access than our senior engineers, normal or red flag?
+📍 r/ArtificialInteligence | 👍 19 upvotes | 💬 28 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1os2fpx/ai_agents_have_more_system_access_than_our_senior/
+
+Post Content:
+Our AI agents can read/write to prod databases, call external APIs, and access internal tools that even our senior engineers need approval for. Management says agents need broad access to be useful but this feels backwards from a security perspective.  Is this standard practice? How are other orgs handling agent permissions? Looking for examples of access control patterns that don't break agent functionality but also don't give bots the keys to everything.
+
+TOP 10 COMMENTS
+
+1. (14 ⬆️) It's a red flag and should not be done. 
+
+I am an expert in operational AI and an AI keynote speaker guiding businesses on doing these things safely. (https://trentgillespie.live)
+
+This setup is backwards. You should never give agents broad access. Instead, give them task-level permissions only.
+
+What that means:
+
+Break workflows into individual, clearly defined tasks.
+
+Each agent gets access just for that one task.
+
+If you can, in enterprise systems, use short-lived credentials that expire once...
+   💬 Replies (1):
+   1.1. (2 ⬆️)  Couldn’t the ai just have permission to view systems and make a plan, then a senior engineer actually check and execute it? Ops setup seems wild
+
+2. (8 ⬆️) Wow - sounds like a security disaster waiting to happen.
+
+First, agents should follow principle of least privilege via granular IAM roles, so should be scoped for narrow, specific tasks - not broad, admin or super user permissions.
+
+Second, we use a policy enforcement gateway so AI agents never directly interact with production systems. These gateways can rigidly enforce IAM policies, restrict operations, validate formats and calls, sanitize output to prevent exfiltration, and detailed logging.
+...
+   💬 Replies (1):
+   2.1. (1 ⬆️) Depends we have “transactions in do so you make state of transactions ancommit chain for authorisation.  
+
+I don’t code with files anymore
+
+3. (7 ⬆️) Write to production databases??!?
+   💬 Replies (1):
+   3.1. (1 ⬆️) They're cooked. 
+
+4. (5 ⬆️) I’ve had ChatGPT make a joke and give me a command that would have deleted all the files in a Linux sever. It said “Nuclar option: Don’t run this it’s a joke”.
+
+I have an agent I built for work that checks (no writes) our to ticket Db and adds new hire start dates in a calendar and it will randomly make the same event over and over or make other silly mistakes.
+
+Letting LLM’s have read/write to a production database is fucking bonkers as hell. One wrong hallucination and bye bye data.
+
+Maybe let...
+
+5. (3 ⬆️) This is a disaster waiting to happen.
+
+6. (2 ⬆️) this is unbelievably a red flag
+
+7. (2 ⬆️) Are the agents using tools created via MCP or just writing directly to the database using SQL etc?
+
+8. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### Question Discussion Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Your question might already have been answered. Use the search feature if no one is engaging in your post.
+    * AI is going to take our jobs - its been asked a lot!
+* Discussion regarding positives and negatives about AI are allowed and encouraged. Just be respectf...
+
+9. (1 ⬆️) This is a standard practice to create a valuable° learning practice for management. Make sure it's in writing.
+
+°expensive
+
+10. (1 ⬆️) This is literally the opposite of best practices.
+
+
+
+================================================================================
+
+LINK: https://reddit.com/r/ArtificialInteligence/comments/1os2ukc/french_government_made_an_llm_board_and_put/
+
+POST: French government made an LLM board and put Mistral on top
+📍 r/ArtificialInteligence | 👍 8 upvotes | 💬 6 comments
+🔗 https://reddit.com/r/ArtificialInteligence/comments/1os2ukc/french_government_made_an_llm_board_and_put/
+
+Post Content:
+The French government made a leaderboard for LLMs and put Mistral on top. It is scored it by some “satisfaction score”:  “This Bradley-Terry (BT) satisfaction score is built in partnership with the French Center of expertise for digital platform regulation (PEReN) and is based on your votes and your reactions of approval and disapproval.”  Mistral medium is way ahead of Claude sonnet 4.5, GPT-5, Gemini  GPT-5 is place 30, Mistral place 1.  Who voted there? EU AI act commission?
+
+TOP 3 COMMENTS
+
+1. (3 ⬆️) https://preview.redd.it/edjrqjif340g1.jpeg?width=960&format=pjpg&auto=webp&s=d80eefb2f464c7de67afc469527e4d3b870f18f7
+
+2. (1 ⬆️) ## Welcome to the r/ArtificialIntelligence gateway
+### News Posting Guidelines
+
+---
+
+Please use the following guidelines in current and future posts:
+
+* Post must be greater than 100 characters - the more detail, the better.
+* Use a direct link to the news article, blog, etc
+* Provide details regarding your connection with the blog / news source
+* Include a description about what the news/article is about. It will drive more people to your blog
+* Note that AI generated news content is all over t...
+
+3. (0 ⬆️) Europeans always and everywhere twist indices to their advantage and indulge in self-satisfaction. Life Satisfaction Score, World Press Freedom Index, Mapping Media Freedom Monitoring Report, ...
+
+
+
+================================================================================
+

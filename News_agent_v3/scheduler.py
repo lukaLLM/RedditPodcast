@@ -26,10 +26,41 @@ class SimpleScheduler:
         self.thread = None
         self.stop_event = threading.Event()
         
+        # ✅ Ensure config directory exists and file path is correct
+        self._ensure_config_file()
+        
+    def _ensure_config_file(self):
+        """Ensure the config file exists and is not a directory."""
+        try:
+            # Create parent directory if it doesn't exist
+            self.config_file.parent.mkdir(parents=True, exist_ok=True)
+            
+            # If path exists as directory, remove it
+            if self.config_file.exists() and self.config_file.is_dir():
+                print(f"⚠️ Removing directory at config path: {self.config_file}")
+                import shutil
+                shutil.rmtree(self.config_file)
+            
+            # Create empty config file if it doesn't exist
+            if not self.config_file.exists():
+                default_config = {
+                    "enabled": False,
+                    "hour": 9,
+                    "minute": 0,
+                    "timezone": "Etc/UTC",
+                    "config": {}
+                }
+                with open(self.config_file, 'w') as f:
+                    json.dump(default_config, f, indent=2)
+                print(f"✅ Created schedule config file: {self.config_file}")
+                
+        except Exception as e:
+            print(f"❌ Failed to ensure config file: {e}")
+        
     def load_config(self) -> dict:
         """Load schedule configuration from file."""
         try:
-            if self.config_file.exists():
+            if self.config_file.exists() and self.config_file.is_file():
                 with open(self.config_file, 'r') as f:
                     data = json.load(f)
                     self.enabled = data.get('enabled', False)
@@ -39,6 +70,9 @@ class SimpleScheduler:
                     self.config = data.get('config', {})
                     print(f"✅ Loaded schedule: {self.hour:02d}:{self.minute:02d} {self.timezone}")
                     return data
+            else:
+                print(f"⚠️ Config file not found or is directory: {self.config_file}")
+                self._ensure_config_file()  # Try to fix it
         except Exception as e:
             print(f"⚠️ Failed to load schedule config: {e}")
         return {}
@@ -47,6 +81,9 @@ class SimpleScheduler:
                     timezone: str, config: dict) -> bool:
         """Save schedule configuration to file."""
         try:
+            # Ensure file exists and is not a directory
+            self._ensure_config_file()
+            
             data = {
                 "enabled": enabled,
                 "hour": hour,
@@ -67,6 +104,8 @@ class SimpleScheduler:
             return True
         except Exception as e:
             print(f"❌ Failed to save schedule config: {e}")
+            import traceback
+            traceback.print_exc()
             return False
     
     async def run_analysis(self):
@@ -74,11 +113,9 @@ class SimpleScheduler:
         print(f"🚀 Starting scheduled analysis at {datetime.now()}")
         
         try:
-            # Import here to avoid circular imports
             from workflow import run_complete_workflow
-            
-            # Parse subreddit config
             from utils import parse_subreddit_config
+            
             subreddit_dict = parse_subreddit_config(
                 self.config.get('subreddit_config', '')
             )
@@ -86,6 +123,12 @@ class SimpleScheduler:
             if not subreddit_dict:
                 print("⚠️ No subreddits configured")
                 return
+            
+            # Parse email senders
+            sender_list = None
+            if self.config.get('fetch_emails'):
+                allowed_senders = self.config.get('allowed_senders', '')
+                sender_list = [s.strip() for s in allowed_senders.split(",") if s.strip()]
             
             # Run workflow
             await run_complete_workflow(
@@ -96,7 +139,17 @@ class SimpleScheduler:
                 model=self.config.get('model', 'gemini-2.5-pro'),
                 system_prompt=self.config.get('system_prompt', ''),
                 user_prompt=self.config.get('user_prompt', ''),
-                send_to_telegram=True
+                generate_tts=self.config.get('generate_tts', False),
+                tts_model=self.config.get('tts_model'),
+                voice_name=self.config.get('voice_name'),
+                tone_instructions=self.config.get('tone_instructions'),
+                fetch_emails=self.config.get('fetch_emails', False),
+                email_address=self.config.get('email_address'),
+                email_password=self.config.get('email_password'),
+                allowed_senders=sender_list,
+                email_hours_back=int(self.config.get('email_hours_back', 24)),
+                max_emails=int(self.config.get('max_emails', 20)),
+                send_to_telegram=True  # Always send to Telegram for scheduled runs
             )
             
             print(f"✅ Scheduled analysis completed")
@@ -106,7 +159,6 @@ class SimpleScheduler:
             import traceback
             traceback.print_exc()
             
-            # Try to send error to Telegram
             try:
                 from telegram_sender import send_error_notification
                 await send_error_notification(str(e))

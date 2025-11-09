@@ -19,11 +19,14 @@ COPY pyproject.toml uv.lock ./
 # Install dependencies using uv (It reads pyproject.toml and uv.lock for dependencies with versions)
 RUN uv sync --frozen --no-dev
 
-# Copy application code
-COPY app.py ./
+# Copy all Python application files
+COPY *.py ./
 
 # Create directory for analysis files
 RUN mkdir -p /app/outputs
+
+# Create data directory for config files
+RUN mkdir -p /app/data
 
 # Expose Gradio port
 EXPOSE 7860

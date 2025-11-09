@@ -7,12 +7,16 @@ An intelligent Reddit data fetcher and analyzer that uses AI to extract insights
 - **Manual & Scheduled Analysis**: Run on-demand or set daily automatic analysis
 - **Multi-Subreddit Fetching**: Analyze multiple subreddits in one run
 - **Intelligent Comment Analysis**: Collect and analyze top comments and replies
+- **Email Newsletter Integration**: Include AI newsletters from Gmail in analysis
 - **AI-Powered Insights**: Use Gemini or OpenAI models for deep analysis
+- **Advanced Generation Control**: Fine-tune temperature, tokens, top-p, top-k, and reasoning budget
+- **Text-to-Speech**: Generate audio narration with multiple ElevenLabs voices and custom tones
 - **Telegram Integration**: Get results delivered directly to Telegram
 - **Docker Containerized**: Easy deployment with Docker Compose
-- **Modern Web UI**: Clean Gradio interface for configuration
+- **Modern Web UI**: Clean Gradio interface with scrollable prompts
 - **Persistent Scheduling**: Survives container restarts
 - **Comprehensive Logging**: Integrated with Logfire for debugging
+- **LLM Input Tracking**: Saves exact prompts sent to AI for transparency
 
 ## 🚀 What This Tool Does
 
@@ -22,9 +26,11 @@ The Reddit AI Analyzer provides two main workflows:
 1. **📝 Configure**: Set subreddits, time filter, and AI parameters in UI
 2. **▶️ Run**: Click "Run Analysis Now"
 3. **⏳ Fetch**: Retrieves posts and comments from Reddit
-4. **🧠 Analyze**: AI processes data based on your criteria
-5. **💾 Save**: Creates timestamped analysis files
-6. **📱 Notify**: Optionally sends to Telegram
+4. **📧 Email** (Optional): Fetches AI newsletters from Gmail
+5. **🧠 Analyze**: AI processes data based on your criteria
+6. **🎙️ Audio** (Optional): Generates TTS narration
+7. **💾 Save**: Creates timestamped analysis files in run folders
+8. **📱 Notify**: Optionally sends to Telegram
 
 ### Scheduled Analysis (Automated)
 1. **⏰ Configure**: Set daily time and analysis parameters
@@ -37,6 +43,7 @@ The Reddit AI Analyzer provides two main workflows:
 - Monitor specific subreddit discussions daily
 - Feed insights into NotebookLM or other tools
 - Track community sentiment and emerging topics
+- Analyze AI newsletters alongside community discussions
 
 ## 🛠️ Installation Guide
 
@@ -45,7 +52,8 @@ The Reddit AI Analyzer provides two main workflows:
 - **Docker & Docker Compose** (Required)
 - **Reddit API credentials** (Required)
 - **Telegram Bot Token & Chat ID** (Required)
-- **AI API Key** (Gemini or OpenAI)
+- **AI API Key** (Gemini or OpenAI - Required)
+- **Gmail credentials** (Optional - for email newsletters)
 
 ### Step 1: Install Docker
 
@@ -67,7 +75,7 @@ Download and install Docker Desktop from https://www.docker.com/products/docker-
 ```bash
 # Clone the repository
 git clone https://github.com/lukaLLM/RedditPodcast.git
-cd RedditPodcast
+cd RedditPodcast/Agent_1/News_agent
 
 # Create necessary directories
 mkdir -p outputs data
@@ -116,7 +124,7 @@ touch .env
 2. Click "Create new secret key"
 3. Copy the key
 
-### Logfire Token (Optional)
+### Logfire Token (Optional - For Debugging)
 
 1. **Visit**: https://logfire.pydantic.dev/
 2. **Sign up/Login** with GitHub
@@ -136,24 +144,21 @@ REDDIT_CLIENT_SECRET=your_reddit_client_secret_here
 TELEGRAM_BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
 TELEGRAM_CHAT_ID=123456789
 
-# AI API Key (REQUIRED - choose one)
-GOOGLE_API_KEY=your_google_api_key_here      # For Gemini
-OPENAI_API_KEY=your_openai_api_key_here      # For GPT-4
+# AI API Key (REQUIRED - choose one or both)
+GOOGLE_API_KEY=your_google_api_key_here      # For Gemini models
+OPENAI_API_KEY=your_openai_api_key_here      # For OpenAI models
+
+# ElevenLabs (OPTIONAL - for Text-to-Speech)
+ELEVENLABS_API_KEY=your_elevenlabs_api_key_here
+
+# Email Integration (OPTIONAL - for newsletters)
+EMAIL_ADDRESS=your.email@gmail.com
+EMAIL_PASSWORD=your_16_char_app_password
+IMAP_SERVER=imap.gmail.com
+IMAP_PORT=993
 
 # Logfire Token (OPTIONAL - for debugging)
 LOGFIRE_TOKEN=your_logfire_token_here
-```
-
-### Environment File Example
-
-```env
-# Example .env file
-REDDIT_CLIENT_ID=abc123xyz789
-REDDIT_CLIENT_SECRET=def456uvw012-XyZ789AbC
-TELEGRAM_BOT_TOKEN=123456789:ABCdefGHIjklMNOpqrsTUVwxyz
-TELEGRAM_CHAT_ID=987654321
-GOOGLE_API_KEY=AIzaSyD1234567890abcdefghij
-LOGFIRE_TOKEN=lf_1234567890abcdef
 ```
 
 ## ⚙️ Configuration
@@ -206,43 +211,78 @@ DEFAULT_REPLIES_PER_COMMENT = 5 # Max replies per comment
 DEFAULT_TIME_FILTER = TimeFilter.DAY
 
 # AI Model
-DEFAULT_MODEL = "gemini-2.5-pro"  # Options: gemini-2.5-pro, openai:gpt-4o, etc.
+DEFAULT_MODEL = "gemini-2.5-pro"
+
+# TTS Settings
+DEFAULT_TTS_MODEL = "gemini-2.5-flash-preview-tts"
+DEFAULT_VOICE = "Sadaltager"  # Available: Jessica, Rachel, Callum, Charlie
 
 # Schedule defaults
 DEFAULT_SCHEDULE_HOUR = 7    # 7 AM
 DEFAULT_SCHEDULE_MINUTE = 0  # :00
+
+# Email defaults
+DEFAULT_EMAIL_HOURS = 48     # Look back 2 days
+DEFAULT_MAX_EMAILS = 10      # Max per sender
 ```
 
 ### Custom Analysis Criteria
 
 Default prompts in `config.py`:
 
-```python
-DEFAULT_SYSTEM_PROMPT = """You are a Reddit research analyst...
-1. Topic Analysis: Identify the most interesting topics
-2. Comments: Select the best comments
-3. Key Insights: Extract notable insights and trends
-4. Highlight conflicting opinions
-5. Summarize concisely with URL links
-"""
-
-DEFAULT_USER_PROMPT = """Look for most insightful posts and comments 
-that would enrich my knowledge as AI Engineer. Look for New AI models, 
-performance benchmarks, ideas for projects, novel ideas/techniques around AI."""
-```
+You can also change them there and model parameters
 
 **Customize these in the UI or modify defaults in config.py**
+
+### Email Newsletter Integration
+
+Analyze AI newsletters alongside Reddit data for comprehensive insights.
+
+**Setup Steps:**
+
+1. **Enable IMAP** in Gmail:
+   - Go to Gmail Settings → Forwarding and POP/IMAP
+   - Enable IMAP access
+
+2. **Create App Password**:
+   - Visit: https://myaccount.google.com/apppasswords
+   - Select "Mail" and your device
+   - Copy the 16-character password
+   - Use this as `EMAIL_PASSWORD` (NOT your regular password)
+
+3. **Add to .env**:
+```env
+EMAIL_ADDRESS=your.email@gmail.com
+EMAIL_PASSWORD=your_16_char_app_password
+IMAP_SERVER=imap.gmail.com
+IMAP_PORT=993
+```
+
+4. **Configure in UI**:
+   - Check "📬 Fetch & Analyze AI News Emails"
+   - Enter allowed senders (comma-separated):
+     ```
+     thebatch@deeplearning.ai, newsletter@openai.com, news@anthropic.com
+     ```
+   - Set max emails per sender (1-200)
+   - Set hours back to search (24-8760)
+
+**Features:**
+- Fetches from specific senders only
+- Cleans HTML and removes URLs/navigation
+- Combines with Reddit data for unified analysis
+- Saves raw emails to separate JSON file
 
 ## 🎯 Usage
 
 ### Step 1: Start the Application
 
 ```bash
+# From project root
+docker compose -f docker/docker-compose.yml up -d --build
 
-docker compose -f 'News_agent/docker-compose.yml' up -d --build 'reddit-analyzer' 
-
-# Or inside the News_agent
-# Build and start containers
+# Or from docker directory
+cd docker
 docker-compose up -d
 
 # View logs
@@ -259,17 +299,23 @@ Open your browser: **http://localhost:7860**
 ### Manual Analysis (One-Time)
 
 1. Go to **📊 Manual Analysis** tab
-2. Configure settings:
+2. Configure Reddit settings:
    - **Subreddit Configuration**: `LocalLLaMA:10, artificial:5`
    - **Time Filter**: Choose period (day, week, etc.)
    - **Top Comments**: Number per post (1-10)
    - **Replies per Comment**: Number per comment (1-5)
-   - **AI Model**: Select model (gemini-2.5-pro, gpt-4o, etc.)
-   - **What to Look For**: Your analysis criteria
-3. Optional: Enable **📱 Send results to Telegram**
-4. Click: **▶️ Run Analysis Now**
-5. Wait for completion (2-5 minutes)
-6. View results in UI or check `outputs/` folder
+3. Configure AI settings:
+   - **AI Model**: Select model (gemini-2.0-flash-thinking-exp-01-21, openai:gpt-4o, etc.)
+   - **System Prompt**: Analysis framework (scrollable textbox)
+   - **User Prompt**: What to look for (scrollable textbox)
+   - **Advanced**: Adjust tokens, temperature, top-p, top-k, thinking budget
+4. Optional features:
+   - **📱 Send to Telegram**: Get results in Telegram
+   - **🎙️ Generate Audio**: TTS narration with voice/tone controls
+   - **📧 Fetch Emails**: Include newsletters (configure senders, hours, max emails)
+5. Click: **▶️ Run Analysis Now**
+6. Wait for completion (2-5 minutes)
+7. Download files or view in UI
 
 ### Scheduled Analysis (Automated)
 
@@ -278,109 +324,62 @@ Open your browser: **http://localhost:7860**
    - **Hour**: 24-hour format (0-23)
    - **Minute**: 0-59
    - **Timezone**: Your timezone (e.g., `America/New_York`)
-3. Configure analysis settings (same as manual)
+3. Configure all analysis settings (same options as Manual)
 4. Click: **✅ Enable Schedule**
 5. Check status to see next run time
 6. Results automatically sent to Telegram
 
 **Important**: Container must be running for scheduled jobs!
 
-### Advanced Usage Examples
-
-#### 1. Quick Daily AI News
-```python
-# In UI, set:
-Subreddit Config: LocalLLaMA:3, OpenAI:3
-Time Filter: day
-AI Model: gemini-2.5-flash  # Faster model
-Schedule: 08:00 daily
-```
-
-#### 2. Deep Weekly Research
-```python
-# In UI, set:
-Subreddit Config: LocalLLaMA:10, MachineLearning:8, artificial:7
-Time Filter: week
-AI Model: openai:gpt-4o  # Higher quality
-Top Comments: 10
-Replies: 5
-Schedule: Sunday 09:00
-```
-
-#### 3. Custom Subreddit Monitoring
-```python
-# In UI, set:
-Subreddit Config: YourNicheSubreddit:15
-Time Filter: day
-User Prompt: "Focus on [your specific topic]"
-```
-
-### Output Files
-
-The tool generates files in `outputs/` directory:
-
-1. **Analysis**: `reddit_analysis_YYYY-MM-DD_HH-MM-SS.txt`
-   - AI-generated insights and trends
-   - Ready for NotebookLM or content creation
-
-2. **Raw Data**: `reddit_raw_data_YYYY-MM-DD_HH-MM-SS.txt`
-   - All fetched posts and comments
-   - Useful for manual review or reprocessing
-
-### Rate Limiting
-
-Reddit enforces rate limits (~60 requests/minute):
-
-**Built-in protection:**
-- 1-second delays between comment fetches
-- Limited post counts per subreddit
-
-**If you hit limits:**
-1. Reduce subreddit post limits
-2. Use longer time filters (WEEK vs DAY)
-3. Wait a few minutes before retrying
-
-### Memory Usage
-
-For large analyses:
-- Monitor with: `docker stats reddit-ai-analyzer`
-- Reduce `Top Comments` if needed
-- Reduce `Replies per Comment` if needed
-- Process fewer subreddits per run
-
 ## 🏗️ Project Structure
 
 ```
-reddit-ai-analyzer/
-├── app.py                      # Gradio web interface (420 lines)
-├── scheduler.py                # Background scheduler (200 lines)
-├── workflow.py                 # Orchestrates process (120 lines)
-├── reddit_fetcher.py           # Reddit API calls (210 lines)
-├── ai_analyzer.py              # AI integration (60 lines)
-├── telegram_sender.py          # Telegram notifications (120 lines)
-├── config.py                   # Configuration (90 lines)
-├── utils.py                    # Helper functions (150 lines)
-├── Dockerfile                  # Docker image
-├── docker-compose.yml          # Docker Compose config
-├── pyproject.toml              # Python dependencies
-├── .env                        # Secrets (git ignored)
-├── outputs/                    # Analysis files
+News_agent/
+├── app.py                      # Gradio web interface
+├── scheduler.py                # Background scheduler with persistence
+├── workflow.py                 # Main analysis orchestration
+├── reddit_fetcher.py           # Reddit API integration
+├── ai_analyzer.py              # AI analysis with PydanticAI
+├── telegram_sender.py          # Telegram bot integration
+├── email_fetcher.py            # Gmail IMAP email fetcher
+├── tts_generator.py            # ElevenLabs TTS generation
+├── config.py                   # Configuration and defaults
+├── utils.py                    # Helper functions
+├── pyproject.toml              # Python dependencies (uv package manager)
+├── .env                        # Environment variables (git ignored)
+├── docker/
+│   ├── Dockerfile              # Docker image definition
+│   └── docker-compose.yml      # Docker Compose configuration
+├── docs/
+│   └── README.md               # This file
+├── outputs/                    # Analysis output folders
+│   └── run_YYYY-MM-DD_HH-MM-SS/
+│       ├── analysis.txt
+│       ├── raw_data.txt
+│       ├── llm_input.txt
+│       ├── emails.json
+│       └── audio.wav
 └── data/
-    └── schedule_config.json    # Persistent schedule config
+    └── schedule_config.json    # Persistent schedule state
 ```
 
 ### Component Overview
 
 | Component | Purpose | Key Features |
 |-----------|---------|--------------|
-| `app.py` | Web UI | Gradio interface, two tabs (Manual/Scheduler) |
-| `scheduler.py` | Automation | Background thread, timezone support, persistence |
-| `workflow.py` | Orchestration | Coordinates all steps, error handling |
-| `reddit_fetcher.py` | Data collection | Async fetching, rate limiting, formatting |
-| `ai_analyzer.py` | AI analysis | PydanticAI integration, Logfire logging |
-| `telegram_sender.py` | Notifications | Messages, files, error alerts |
-| `config.py` | Configuration | Defaults, enums, constants |
-| `utils.py` | Utilities | File I/O, parsing, validation |
+| `app.py` | Web UI | Gradio interface with Manual & Scheduler tabs, scrollable prompts |
+| `scheduler.py` | Automation | APScheduler, timezone support, JSON persistence |
+| `workflow.py` | Orchestration | Coordinates Reddit → Email → AI → TTS → Telegram pipeline |
+| `reddit_fetcher.py` | Reddit | AsyncPRAW, rate limiting, comment/reply fetching |
+| `ai_analyzer.py` | AI Analysis | PydanticAI with Gemini/OpenAI, Logfire instrumentation |
+| `email_fetcher.py` | Emails | IMAP connection, HTML cleaning, sender filtering |
+| `tts_service.py` | Audio | Gemini TTS with multiple voices and tone control |
+| `telegram_sender.py` | Notifications | Messages, file uploads, error handling |
+| `config.py` | Settings | Defaults, enums (TimeFilter, TTSModel, Voice) |
+| `utils.py` | Utilities | File I/O, parsing, run folder management |
+
+### Key Dependencies (pyproject.toml)
+
 
 ## 🐛 Troubleshooting
 
@@ -397,81 +396,17 @@ docker-compose build --no-cache
 docker-compose up -d
 ```
 
-#### Scheduler not running
-```bash
-# Check if enabled
-docker exec reddit-ai-analyzer cat /app/data/schedule_config.json
-
-# Should show "enabled": true
-
-# Check logs
-docker-compose logs -f | grep -i scheduler
-```
-
-#### Reddit API errors
-```bash
-# Verify credentials
-docker exec reddit-ai-analyzer env | grep REDDIT
-
-# Rate limiting: wait a few minutes, reduce subreddit limits
-```
-
-#### Telegram not sending
-```bash
-# Test manually
-docker exec -it reddit-ai-analyzer python3 << EOF
-import asyncio
-import os
-from telegram import Bot
-
-async def test():
-    bot = Bot(token=os.getenv('TELEGRAM_BOT_TOKEN'))
-    await bot.send_message(
-        chat_id=os.getenv('TELEGRAM_CHAT_ID'),
-        text='Test message'
-    )
-
-asyncio.run(test())
-EOF
-```
-
-#### AI analysis fails
-```bash
-# Check API key
-docker exec reddit-ai-analyzer env | grep API_KEY
-
-# Verify model name:
-# Gemini: gemini-2.5-pro
-# OpenAI: openai:gpt-4o (note the prefix)
-```
-
-### Debug Commands
-
-```bash
-# View logs
-docker-compose logs -f
-
-# Execute shell in container
-docker exec -it reddit-ai-analyzer bash
-
-# Check container status
-docker-compose ps
-
-# Restart container
-docker-compose restart
-
-# Clean rebuild
-docker-compose down
-docker system prune -a
-docker-compose up -d
-```
-
 ## 🙋‍♂️ Support
 
 - **Issues**: Open a GitHub issue for bugs or feature requests
-- **YouTube**: Check out my AI tech channel for tutorials: https://www.youtube.com/@LukaszGawendaAI
-- **Documentation**: This README and code comments
+- **YouTube**: AI tech tutorials at https://www.youtube.com/@LukaszGawendaAI
+- **Documentation**: This README and inline code comments
+- **Logs**: Check `docker-compose logs -f` for troubleshooting
 
 ## 📝 License
 
 MIT License - See LICENSE file for details
+
+---
+
+**Built with ❤️ by Lukasz Gawenda** | Powered by PydanticAI, Gemini

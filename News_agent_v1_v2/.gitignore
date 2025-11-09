@@ -2,7 +2,6 @@
 .env
 .env.local
 .env.*.local
-copilot-instructions.md
 
 # Python
 __pycache__/
@@ -40,5 +39,3 @@ env/
 
 # UV specific
 .uv/
-News_agent_v3/docs/image-1.png
-News_agent_v3/docs/image.png
